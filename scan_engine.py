@@ -1,0 +1,365 @@
+"""
+scan_engine.py
+-------------------------------------------------------------------------
+The actual scanning logic -- every pillar, guardrail, tier, and pattern
+check from the whole project -- extracted so both the CLI (scanner.py)
+and the web app (app.py) run the exact same code. One set of rules, two
+ways to see the output. If you change a rule, change it here (or in
+pillars_config.py / candle_patterns.py) and both surfaces pick it up.
+
+Also holds build_reference() -- the weekly cache build (build_reference_cache.py's
+logic) -- so the web app can run it as a background job triggered by
+visiting a link, not just from a terminal.
+-------------------------------------------------------------------------
+"""
+
+import json
+import time
+from datetime import datetime, timedelta, timezone
+from zoneinfo import ZoneInfo
+
+import requests
+from alpaca.trading.client import TradingClient
+from alpaca.trading.requests import GetAssetsRequest
+from alpaca.trading.enums import AssetClass, AssetStatus
+from alpaca.data.historical import StockHistoricalDataClient
+from alpaca.data.historical.news import NewsClient
+from alpaca.data.requests import StockSnapshotRequest, NewsRequest, StockBarsRequest
+from alpaca.data.timeframe import TimeFrame
+
+from pillars_config import THRESHOLDS, VOLUME_TO_WATCH, HIGHEST_QUALITY, MIN_AVG_VOLUME_FOR_CACHE
+from candle_patterns import find_pullback_setup, is_topping_tail, CONFIRM_ON_CLOSE
+
+REFERENCE_CACHE_PATH = "reference_cache.json"
+SNAPSHOT_BATCH_SIZE = 200
+NEWS_LOOKBACK_HOURS = 24
+PATTERN_LOOKBACK_MINUTES = 30
+MARKET_TZ = ZoneInfo("America/New_York")
+
+BAR_LOOKBACK_DAYS = 75           # calendar days back, comfortably covers 50 sessions
+VOLUME_BATCH_SIZE = 200          # symbols per historical-bars request
+FINNHUB_CALLS_PER_MINUTE = 55    # stay safely under the free 60/min limit
+
+
+def load_reference():
+    with open(REFERENCE_CACHE_PATH) as f:
+        return json.load(f)
+
+
+def time_of_day_fraction(now_et):
+    """
+    Fraction of the regular session elapsed, used to scale average volume
+    into an 'expected by now' figure for relative volume. Pre-market gets
+    a small fixed floor so RVOL stays meaningful before 9:30am ET -- a
+    simplification, not a precise time-of-day volume curve.
+    """
+    open_t = now_et.replace(hour=9, minute=30, second=0, microsecond=0)
+    close_t = now_et.replace(hour=16, minute=0, second=0, microsecond=0)
+    if now_et < open_t:
+        return 0.05
+    if now_et > close_t:
+        return 1.0
+    elapsed = (now_et - open_t).total_seconds()
+    total = (close_t - open_t).total_seconds()
+    return max(elapsed / total, 0.05)
+
+
+def session_note(now_et):
+    """
+    Informational only. 7:00-9:30am ET is the cleanest window: before the
+    regular session opens, market makers don't yet have visible market
+    orders, stop orders, or halt mechanics working in their favor against
+    retail. Once the 9:30 bell rings, trading generally gets harder.
+    """
+    total_min = now_et.hour * 60 + now_et.minute
+    if total_min < 420:
+        return "Early pre-market -- thin liquidity before the target window"
+    if total_min < 570:
+        return "Pre-market -- cleanest window (before stops/halts kick in)"
+    if total_min < 660:
+        return "Regular session just opened -- market/stop orders and halts now live, harder from here"
+    if total_min < 840:
+        return "Midday -- normal caution"
+    if total_min < 930:
+        return "Afternoon -- catalysts still possible, less time to recover"
+    if total_min < 960:
+        return "Final 30 min -- little runway left before the close"
+    return "Market closed"
+
+
+def fetch_snapshots(symbols, hist_client):
+    snapshots = {}
+    for i in range(0, len(symbols), SNAPSHOT_BATCH_SIZE):
+        batch = symbols[i:i + SNAPSHOT_BATCH_SIZE]
+        try:
+            req = StockSnapshotRequest(symbol_or_symbols=batch)
+            result = hist_client.get_stock_snapshot(req)
+            snapshots.update(result)
+        except Exception:
+            pass
+    return snapshots
+
+
+def fetch_recent_bars(symbols, hist_client, minutes=PATTERN_LOOKBACK_MINUTES):
+    if not symbols:
+        return {}
+    end = datetime.now(timezone.utc)
+    start = end - timedelta(minutes=minutes)
+    try:
+        req = StockBarsRequest(symbol_or_symbols=symbols, timeframe=TimeFrame.Minute, start=start, end=end)
+        bars = hist_client.get_stock_bars(req)
+        return bars.data if hasattr(bars, "data") else bars
+    except Exception:
+        return {}
+
+
+def check_news(symbol, news_client):
+    """
+    Alpaca's news SDK response shape has shifted between versions, so this
+    is defensive on purpose.
+    """
+    try:
+        end = datetime.now(timezone.utc)
+        start = end - timedelta(hours=NEWS_LOOKBACK_HOURS)
+        req = NewsRequest(symbols=symbol, start=start, end=end, limit=1)
+        articles = news_client.get_news(req)
+        data = articles.data if hasattr(articles, "data") else {}
+        items = data.get(symbol, []) if isinstance(data, dict) else list(articles)
+        return len(items) > 0
+    except Exception:
+        return False
+
+
+def evaluate(symbol, snap, ref, now_et, th):
+    daily = getattr(snap, "daily_bar", None)
+    prev_daily = getattr(snap, "previous_daily_bar", None)
+    if not daily or not prev_daily or not prev_daily.close:
+        return None
+
+    price = daily.close
+    change_pct = (daily.close - prev_daily.close) / prev_daily.close * 100
+    volume_so_far = daily.volume or 0
+
+    avg_volume = ref["avg_volume"]
+    expected_by_now = max(avg_volume * time_of_day_fraction(now_et), 1)
+    rvol = volume_so_far / expected_by_now
+
+    shares_out_m = ref["shares_out_m"]
+
+    return {
+        "symbol": symbol,
+        "price": price,
+        "change_pct": change_pct,
+        "rvol": rvol,
+        "volume_today": volume_so_far,
+        "shares_out_m": shares_out_m,
+        "pass_up": change_pct >= th["up_pct"],
+        "pass_rvol": rvol >= th["rvol"],
+        "pass_price": th["price_min"] <= price <= th["price_max"],
+        "pass_float": shares_out_m <= th["float_max_m"],
+        "crossed_volume_watch": volume_so_far >= VOLUME_TO_WATCH,
+    }
+
+
+def run_scan(alpaca_key, alpaca_secret):
+    """
+    Runs one full scan -- every pillar, guardrail, tier, and pattern
+    check -- and returns a single JSON-serializable dict. This is the one
+    function scanner.py and app.py both call; neither has its own copy
+    of the scoring logic.
+
+    Raises FileNotFoundError if reference_cache.json is missing.
+    """
+    reference = load_reference()
+    hist_client = StockHistoricalDataClient(alpaca_key, alpaca_secret)
+    news_client = NewsClient(api_key=alpaca_key, secret_key=alpaca_secret)
+
+    symbols = [s for s, r in reference.items() if r["shares_out_m"] <= THRESHOLDS["float_max_m"]]
+    now_et = datetime.now(MARKET_TZ)
+    now_min = now_et.hour * 60 + now_et.minute
+
+    snapshots = fetch_snapshots(symbols, hist_client)
+
+    scored = []
+    for symbol, snap in snapshots.items():
+        if snap is None or symbol not in reference:
+            continue
+        result = evaluate(symbol, snap, reference[symbol], now_et, THRESHOLDS)
+        if result:
+            scored.append(result)
+
+    near_candidates = [
+        r for r in scored if r["pass_up"] and r["pass_rvol"] and r["pass_price"] and r["pass_float"]
+    ]
+    for r in near_candidates:
+        r["pass_news"] = check_news(r["symbol"], news_client) if THRESHOLDS["require_news"] else True
+        r["_was_near_candidate"] = True
+    for r in scored:
+        r.setdefault("pass_news", False if THRESHOLDS["require_news"] else True)
+        r["pillars_met"] = sum([r["pass_up"], r["pass_rvol"], r["pass_price"], r["pass_float"], r["pass_news"]])
+        r["is_candidate"] = r["pillars_met"] == 5
+        r["squeeze_watch"] = r.pop("_was_near_candidate", False) and not r["pass_news"]
+
+    in_hq_window = HIGHEST_QUALITY["window_start_min"] <= now_min < HIGHEST_QUALITY["window_end_min"]
+    for r in scored:
+        r["is_highest_quality"] = (
+            r["pass_news"]
+            and r["change_pct"] >= HIGHEST_QUALITY["up_pct"]
+            and HIGHEST_QUALITY["price_min"] <= r["price"] <= HIGHEST_QUALITY["price_max"]
+            and r["rvol"] >= HIGHEST_QUALITY["rvol"]
+            and r["shares_out_m"] <= HIGHEST_QUALITY["float_max_m"]
+            and in_hq_window
+        )
+
+    scored.sort(
+        key=lambda r: (r["is_highest_quality"], r["is_candidate"], r["pillars_met"], r["change_pct"]),
+        reverse=True,
+    )
+
+    watchlist = [r["symbol"] for r in scored if r["is_candidate"] or r["squeeze_watch"] or r["is_highest_quality"]]
+    bar_data = fetch_recent_bars(watchlist, hist_client) if watchlist else {}
+
+    patterns = {}
+    for symbol in watchlist:
+        bars = bar_data.get(symbol)
+        if not bars:
+            patterns[symbol] = {"status": "no_data"}
+            continue
+        setup = find_pullback_setup(bars)
+        topping = is_topping_tail(bars[-1])
+        entry = None
+        if setup and setup.get("crossed"):
+            entry = {
+                "entry_price": setup["entry_price"],
+                "risk": setup["risk"],
+                "risk_pct": setup["risk_pct"],
+            }
+        patterns[symbol] = {
+            "status": "breakout" if entry else ("pulling_back" if setup else "trending"),
+            "swing_high": setup["swing_high"] if setup else None,
+            "new_support": setup["new_support"] if setup else None,
+            "entry": entry,
+            "topping_tail": topping,
+        }
+
+    return {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "session_note": session_note(now_et),
+        "confirm_on_close": CONFIRM_ON_CLOSE,
+        "volume_to_watch": VOLUME_TO_WATCH,
+        "highest_quality_window": [HIGHEST_QUALITY["window_start_min"], HIGHEST_QUALITY["window_end_min"]],
+        "walk_away": {
+            "best_window_closed": now_min >= 570,
+            "no_a_plus": not any(r["is_highest_quality"] for r in scored),
+        },
+        "results": scored,
+        "patterns": patterns,
+    }
+
+
+# ---------------------------------------------------------------------
+# Weekly reference cache build (moved from build_reference_cache.py so
+# the web app can trigger it as a background job from a link, not just
+# a terminal). progress_cb, if given, is called as
+# progress_cb(stage: str, done: int, total: int) periodically -- this
+# can take several minutes, so a caller running it in the background
+# uses this to report status without blocking.
+# ---------------------------------------------------------------------
+
+def get_universe(trading_client):
+    """Active, tradable US equities on the main listed exchanges."""
+    req = GetAssetsRequest(asset_class=AssetClass.US_EQUITY, status=AssetStatus.ACTIVE)
+    assets = trading_client.get_all_assets(req)
+    symbols = []
+    for a in assets:
+        if not a.tradable:
+            continue
+        if a.exchange not in ("NASDAQ", "NYSE", "ARCA", "AMEX", "BATS"):
+            continue
+        if "." in a.symbol or "/" in a.symbol:
+            continue  # skip unusual share-class / warrant-style symbols for now
+        symbols.append(a.symbol)
+    return symbols
+
+
+def compute_avg_volumes(symbols, hist_client, progress_cb=None):
+    """50-session average volume per symbol, from Alpaca's free historical bars."""
+    end = datetime.now(timezone.utc)
+    start = end - timedelta(days=BAR_LOOKBACK_DAYS)
+    avg_volumes = {}
+
+    for i in range(0, len(symbols), VOLUME_BATCH_SIZE):
+        batch = symbols[i:i + VOLUME_BATCH_SIZE]
+        try:
+            req = StockBarsRequest(symbol_or_symbols=batch, timeframe=TimeFrame.Day, start=start, end=end)
+            bars = hist_client.get_stock_bars(req)
+        except Exception:
+            continue
+
+        data = bars.data if hasattr(bars, "data") else bars
+        for symbol, day_bars in data.items():
+            volumes = [b.volume for b in day_bars if getattr(b, "volume", None)]
+            if volumes:
+                avg_volumes[symbol] = sum(volumes) / len(volumes)
+
+        if progress_cb:
+            progress_cb("Computing average volume", min(i + VOLUME_BATCH_SIZE, len(symbols)), len(symbols))
+        time.sleep(0.2)
+
+    return avg_volumes
+
+
+def get_shares_outstanding(symbol, finnhub_key):
+    """
+    Finnhub company profile -- shareOutstanding is reported in millions.
+    This is TOTAL shares outstanding, not free float -- see README.md.
+    """
+    url = "https://finnhub.io/api/v1/stock/profile2"
+    try:
+        r = requests.get(url, params={"symbol": symbol, "token": finnhub_key}, timeout=10)
+        r.raise_for_status()
+        return r.json().get("shareOutstanding")
+    except Exception:
+        return None
+
+
+def build_reference(alpaca_key, alpaca_secret, finnhub_key, progress_cb=None):
+    """
+    Runs the full weekly cache build and writes reference_cache.json.
+    Returns a small summary dict. Raises if credentials are missing.
+    This is slow (the Finnhub lookups are rate-limited) -- expect
+    several minutes for a normal-sized universe.
+    """
+    if not alpaca_key or not alpaca_secret:
+        raise RuntimeError("Missing Alpaca credentials.")
+    if not finnhub_key:
+        raise RuntimeError("Missing Finnhub credentials.")
+
+    trading_client = TradingClient(alpaca_key, alpaca_secret, paper=True)
+    hist_client = StockHistoricalDataClient(alpaca_key, alpaca_secret)
+
+    if progress_cb:
+        progress_cb("Fetching tradable universe", 0, 0)
+    symbols = get_universe(trading_client)
+
+    avg_volumes = compute_avg_volumes(symbols, hist_client, progress_cb=progress_cb)
+
+    candidates = [s for s, v in avg_volumes.items() if v >= MIN_AVG_VOLUME_FOR_CACHE]
+
+    reference = {}
+    delay = 60.0 / FINNHUB_CALLS_PER_MINUTE
+    for idx, symbol in enumerate(candidates, 1):
+        shares_out_m = get_shares_outstanding(symbol, finnhub_key)
+        if shares_out_m is not None:
+            reference[symbol] = {"avg_volume": avg_volumes[symbol], "shares_out_m": shares_out_m}
+        if progress_cb and idx % 10 == 0:
+            progress_cb("Looking up float via Finnhub (the slow part)", idx, len(candidates))
+        time.sleep(delay)
+
+    with open(REFERENCE_CACHE_PATH, "w") as f:
+        json.dump(reference, f, indent=2)
+
+    if progress_cb:
+        progress_cb("Done", len(candidates), len(candidates))
+
+    return {"universe_size": len(symbols), "liquid_candidates": len(candidates), "cached": len(reference)}
