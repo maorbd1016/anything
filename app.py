@@ -123,9 +123,31 @@ def api_scan():
     return JSONResponse(data)
 
 
+# The page can live either inside a "static" folder (how the project is
+# laid out on disk) or sit next to this file at the top level (what you
+# get when you drag individual files into GitHub's web uploader, which
+# doesn't keep folders). Either layout works -- no rearranging needed.
+_HERE = os.path.dirname(os.path.abspath(__file__))
+_STATIC_DIR = os.path.join(_HERE, "static")
+_INDEX_CANDIDATES = [
+    os.path.join(_STATIC_DIR, "index.html"),
+    os.path.join(_HERE, "index.html"),
+]
+
+
 @app.get("/")
 def index():
-    return FileResponse(os.path.join("static", "index.html"))
+    for path in _INDEX_CANDIDATES:
+        if os.path.exists(path):
+            return FileResponse(path)
+    return JSONResponse(
+        {"error": "index.html was not found next to app.py (or in a 'static' folder). "
+                  "Upload index.html to the same place as app.py."},
+        status_code=500,
+    )
 
 
-app.mount("/static", StaticFiles(directory="static"), name="static")
+# Only mount /static if that folder actually exists -- mounting a missing
+# folder crashes the whole app at startup.
+if os.path.isdir(_STATIC_DIR):
+    app.mount("/static", StaticFiles(directory=_STATIC_DIR), name="static")
