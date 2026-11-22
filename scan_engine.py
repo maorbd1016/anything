@@ -26,6 +26,7 @@ from alpaca.data.historical import StockHistoricalDataClient
 from alpaca.data.historical.news import NewsClient
 from alpaca.data.requests import StockSnapshotRequest, NewsRequest, StockBarsRequest
 from alpaca.data.timeframe import TimeFrame
+from alpaca.data.enums import DataFeed
 
 from pillars_config import THRESHOLDS, VOLUME_TO_WATCH, HIGHEST_QUALITY, MIN_AVG_VOLUME_FOR_CACHE
 from candle_patterns import find_pullback_setup, is_topping_tail, CONFIRM_ON_CLOSE
@@ -92,7 +93,7 @@ def fetch_snapshots(symbols, hist_client):
     for i in range(0, len(symbols), SNAPSHOT_BATCH_SIZE):
         batch = symbols[i:i + SNAPSHOT_BATCH_SIZE]
         try:
-            req = StockSnapshotRequest(symbol_or_symbols=batch)
+            req = StockSnapshotRequest(symbol_or_symbols=batch, feed=DataFeed.IEX)
             result = hist_client.get_stock_snapshot(req)
             snapshots.update(result)
         except Exception:
@@ -106,7 +107,7 @@ def fetch_recent_bars(symbols, hist_client, minutes=PATTERN_LOOKBACK_MINUTES):
     end = datetime.now(timezone.utc)
     start = end - timedelta(minutes=minutes)
     try:
-        req = StockBarsRequest(symbol_or_symbols=symbols, timeframe=TimeFrame.Minute, start=start, end=end)
+        req = StockBarsRequest(symbol_or_symbols=symbols, timeframe=TimeFrame.Minute, start=start, end=end, feed=DataFeed.IEX)
         bars = hist_client.get_stock_bars(req)
         return bars.data if hasattr(bars, "data") else bars
     except Exception:
@@ -287,13 +288,18 @@ def compute_avg_volumes(symbols, hist_client, progress_cb=None):
     end = datetime.now(timezone.utc)
     start = end - timedelta(days=BAR_LOOKBACK_DAYS)
     avg_volumes = {}
+    last_error = None
 
     for i in range(0, len(symbols), VOLUME_BATCH_SIZE):
         batch = symbols[i:i + VOLUME_BATCH_SIZE]
         try:
-            req = StockBarsRequest(symbol_or_symbols=batch, timeframe=TimeFrame.Day, start=start, end=end)
+            # IEX feed on purpose: the free plan can't query recent SIP data,
+            # and using the same feed for the average and for today's live
+            # volume keeps the relative-volume ratio apples-to-apples.
+            req = StockBarsRequest(symbol_or_symbols=batch, timeframe=TimeFrame.Day, start=start, end=end, feed=DataFeed.IEX)
             bars = hist_client.get_stock_bars(req)
-        except Exception:
+        except Exception as e:
+            last_error = e
             continue
 
         data = bars.data if hasattr(bars, "data") else bars
@@ -306,6 +312,8 @@ def compute_avg_volumes(symbols, hist_client, progress_cb=None):
             progress_cb("Computing average volume", min(i + VOLUME_BATCH_SIZE, len(symbols)), len(symbols))
         time.sleep(0.2)
 
+    if not avg_volumes and last_error is not None:
+        raise RuntimeError(f"Alpaca history request failed: {last_error}")
     return avg_volumes
 
 
@@ -345,6 +353,11 @@ def build_reference(alpaca_key, alpaca_secret, finnhub_key, progress_cb=None):
     avg_volumes = compute_avg_volumes(symbols, hist_client, progress_cb=progress_cb)
 
     candidates = [s for s, v in avg_volumes.items() if v >= MIN_AVG_VOLUME_FOR_CACHE]
+    if not candidates:
+        raise RuntimeError(
+            f"No stocks passed the volume filter (universe {len(symbols)}, with volume data {len(avg_volumes)}). "
+            "Check the Alpaca keys and plan."
+        )
 
     reference = {}
     delay = 60.0 / FINNHUB_CALLS_PER_MINUTE
