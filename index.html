@@ -272,6 +272,23 @@
   });
 
   // ---- Live data ----
+  function esc(t) {
+    return String(t == null ? '' : t).replace(/[&<>"']/g, function(c) {
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
+  }
+  function newsLine(r) {
+    if (!r.news_checked) return '';
+    if (r.news_error) return '<tr class="newsrow"><td colspan="8" style="padding:2px 12px 10px; color:var(--text-muted); font-size:12px;">News lookup failed for this stock.</td></tr>';
+    if (!r.news_items || !r.news_items.length) return '<tr class="newsrow"><td colspan="8" style="padding:2px 12px 10px; color:var(--text-muted); font-size:12px;">No news in the last 24 hours.</td></tr>';
+    var n = r.news_items[0];
+    var when = '';
+    if (n.time) { try { when = new Date(n.time).toLocaleString('en-US', {timeZone:'America/New_York', month:'short', day:'numeric', hour:'numeric', minute:'2-digit'}) + ' ET'; } catch (e) {} }
+    var link = /^https?:\/\//.test(n.url) ? '<a href="' + esc(n.url) + '" target="_blank" rel="noopener" style="color:inherit;">' + esc(n.headline) + '</a>' : esc(n.headline);
+    return '<tr class="newsrow"><td colspan="8" style="padding:2px 12px 10px; font-size:12px; color:var(--text-muted);">\u25B8 ' + link +
+           ' <span style="opacity:.7;">(' + esc(n.source) + (when ? ', ' + when : '') + ')</span></td></tr>';
+  }
+
   function renderTable(results) {
     var tbody = document.getElementById('tbody');
     if (!results.length) {
@@ -290,10 +307,10 @@
         '<td class="num ' + (r.pass_up ? 'pass' : 'fail') + '">' + (r.change_pct >= 0 ? '+' : '') + r.change_pct.toFixed(1) + '%</td>' +
         '<td class="num ' + (r.pass_rvol ? 'pass' : 'fail') + '">' + r.rvol.toFixed(1) + 'x</td>' +
         '<td class="num">' + (r.volume_today / 1e6).toFixed(1) + (r.crossed_volume_watch ? ' <span class="pass">\u2713</span>' : '') + '</td>' +
-        '<td class="' + (r.pass_news ? 'pass' : 'fail') + '">' + (r.pass_news ? 'Yes' : 'No') + '</td>' +
+        '<td class="' + (r.pass_news ? 'pass' : (r.news_checked ? 'fail' : '')) + '">' + (r.pass_news ? 'Yes' : (r.news_checked ? 'No' : '\u2014')) + '</td>' +
         '<td class="num ' + (r.pass_float ? 'pass' : 'fail') + '">' + r.shares_out_m.toFixed(1) + '</td>' +
         '<td class="num">' + r.pillars_met + '/5</td>' +
-      '</tr>';
+      '</tr>' + newsLine(r);
     }).join('');
   }
 
