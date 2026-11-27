@@ -1,0 +1,8370 @@
+{
+  "STVN": {
+    "avg_volume": 50409.851851851854,
+    "shares_out_m": 273.13
+  },
+  "URG": {
+    "avg_volume": 281384.0925925926,
+    "shares_out_m": 398.74
+  },
+  "SFL": {
+    "avg_volume": 100835.0,
+    "shares_out_m": 150.44
+  },
+  "AIXI": {
+    "avg_volume": 124332.64705882352,
+    "shares_out_m": 0.39
+  },
+  "PACK": {
+    "avg_volume": 54814.98148148148,
+    "shares_out_m": 85.79
+  },
+  "NMRA": {
+    "avg_volume": 81762.83333333333,
+    "shares_out_m": 187.9
+  },
+  "DFDV": {
+    "avg_volume": 82403.0925925926,
+    "shares_out_m": 32.62
+  },
+  "AREC": {
+    "avg_volume": 109358.31481481482,
+    "shares_out_m": 106.97
+  },
+  "GLND": {
+    "avg_volume": 235321.6851851852,
+    "shares_out_m": 43.73
+  },
+  "XRX": {
+    "avg_volume": 234226.64814814815,
+    "shares_out_m": 132.69
+  },
+  "UPXI": {
+    "avg_volume": 57203.5,
+    "shares_out_m": 88.18
+  },
+  "SLN": {
+    "avg_volume": 136377.33333333334,
+    "shares_out_m": 186.61
+  },
+  "PROK": {
+    "avg_volume": 100936.20370370371,
+    "shares_out_m": 302.32
+  },
+  "VXX": {
+    "avg_volume": 1034099.9629629629,
+    "shares_out_m": 13319.14
+  },
+  "IQ": {
+    "avg_volume": 224649.53703703705,
+    "shares_out_m": 6755.17
+  },
+  "TCRT": {
+    "avg_volume": 50326.425531914894,
+    "shares_out_m": 3.61
+  },
+  "CMPX": {
+    "avg_volume": 153705.16666666666,
+    "shares_out_m": 180.09
+  },
+  "CHRS": {
+    "avg_volume": 93933.37037037036,
+    "shares_out_m": 154.5
+  },
+  "INO": {
+    "avg_volume": 263488.77777777775,
+    "shares_out_m": 103.4
+  },
+  "NUV": {
+    "avg_volume": 50895.5,
+    "shares_out_m": 210.05
+  },
+  "IVVD": {
+    "avg_volume": 117053.38888888889,
+    "shares_out_m": 294.76
+  },
+  "OTLK": {
+    "avg_volume": 55466.90740740741,
+    "shares_out_m": 243.45
+  },
+  "CAN": {
+    "avg_volume": 80456.42592592593,
+    "shares_out_m": 10872.11
+  },
+  "JELD": {
+    "avg_volume": 80174.07407407407,
+    "shares_out_m": 86.76
+  },
+  "BURU": {
+    "avg_volume": 79542.14814814815,
+    "shares_out_m": 10.51
+  },
+  "BTQ": {
+    "avg_volume": 99663.35185185185,
+    "shares_out_m": 149.77
+  },
+  "UAMY": {
+    "avg_volume": 331462.5,
+    "shares_out_m": 149.67
+  },
+  "CNDT": {
+    "avg_volume": 75297.88888888889,
+    "shares_out_m": 155.52
+  },
+  "CRBU": {
+    "avg_volume": 83568.57407407407,
+    "shares_out_m": 107.21
+  },
+  "ORBS": {
+    "avg_volume": 229310.85185185185,
+    "shares_out_m": 419.41
+  },
+  "TRX": {
+    "avg_volume": 86590.87037037036,
+    "shares_out_m": 328.33
+  },
+  "XXI": {
+    "avg_volume": 134018.92592592593,
+    "shares_out_m": 562.37
+  },
+  "XXII": {
+    "avg_volume": 56788.26666666667,
+    "shares_out_m": 19.2
+  },
+  "IVR": {
+    "avg_volume": 248732.07407407407,
+    "shares_out_m": 109.1
+  },
+  "LCTX": {
+    "avg_volume": 62008.51851851852,
+    "shares_out_m": 252.91
+  },
+  "QNC": {
+    "avg_volume": 55909.62962962963,
+    "shares_out_m": 219.42
+  },
+  "OTF": {
+    "avg_volume": 155558.5,
+    "shares_out_m": 458.19
+  },
+  "ZENA": {
+    "avg_volume": 52299.31481481482,
+    "shares_out_m": 201.16
+  },
+  "CRML": {
+    "avg_volume": 358591.3703703704,
+    "shares_out_m": 146.99
+  },
+  "NAK": {
+    "avg_volume": 155013.33333333334,
+    "shares_out_m": 562.19
+  },
+  "NAD": {
+    "avg_volume": 69268.18518518518,
+    "shares_out_m": 233.74
+  },
+  "PCT": {
+    "avg_volume": 423373.98148148146,
+    "shares_out_m": 200.9
+  },
+  "HTZ": {
+    "avg_volume": 850662.8703703703,
+    "shares_out_m": 356.45
+  },
+  "GILT": {
+    "avg_volume": 77159.79629629629,
+    "shares_out_m": 77.03
+  },
+  "PARA": {
+    "avg_volume": 78971.72549019608,
+    "shares_out_m": 0.52
+  },
+  "FMS": {
+    "avg_volume": 92940.74074074074,
+    "shares_out_m": 268.56
+  },
+  "LICN": {
+    "avg_volume": 150471.45454545456,
+    "shares_out_m": 16.33
+  },
+  "XMAX": {
+    "avg_volume": 58176.0,
+    "shares_out_m": 64.88
+  },
+  "LAES": {
+    "avg_volume": 176053.25925925927,
+    "shares_out_m": 223.43
+  },
+  "LCID": {
+    "avg_volume": 507799.0925925926,
+    "shares_out_m": 394.07
+  },
+  "GCTS": {
+    "avg_volume": 79733.24074074074,
+    "shares_out_m": 91.97
+  },
+  "GMM": {
+    "avg_volume": 66906.0,
+    "shares_out_m": 9.59
+  },
+  "HSAI": {
+    "avg_volume": 112097.01851851853,
+    "shares_out_m": 1261.14
+  },
+  "AVXL": {
+    "avg_volume": 75116.12962962964,
+    "shares_out_m": 92.7
+  },
+  "AMBP": {
+    "avg_volume": 152411.75925925927,
+    "shares_out_m": 597.71
+  },
+  "FFAI": {
+    "avg_volume": 69115.96296296296,
+    "shares_out_m": 3.86
+  },
+  "ALLO": {
+    "avg_volume": 350220.5740740741,
+    "shares_out_m": 345.49
+  },
+  "EH": {
+    "avg_volume": 50417.68518518518,
+    "shares_out_m": 151.69
+  },
+  "ETHE": {
+    "avg_volume": 89065.01851851853,
+    "shares_out_m": 96.35
+  },
+  "TLRY": {
+    "avg_volume": 228919.90740740742,
+    "shares_out_m": 147.79
+  },
+  "JPC": {
+    "avg_volume": 88168.44444444444,
+    "shares_out_m": 375.88
+  },
+  "WB": {
+    "avg_volume": 98393.96296296296,
+    "shares_out_m": 245.55
+  },
+  "IMSR": {
+    "avg_volume": 100092.37037037036,
+    "shares_out_m": 105.9
+  },
+  "TPR": {
+    "avg_volume": 148403.85185185185,
+    "shares_out_m": 198.44
+  },
+  "WFF": {
+    "avg_volume": 196032.79245283018,
+    "shares_out_m": 9.28
+  },
+  "GH": {
+    "avg_volume": 130925.33333333333,
+    "shares_out_m": 134.2
+  },
+  "AEG": {
+    "avg_volume": 354471.6666666667,
+    "shares_out_m": 1581.32
+  },
+  "BOX": {
+    "avg_volume": 162543.24074074073,
+    "shares_out_m": 137.2
+  },
+  "XYZ": {
+    "avg_volume": 276979.6666666667,
+    "shares_out_m": 600.79
+  },
+  "COMP": {
+    "avg_volume": 1190253.4444444445,
+    "shares_out_m": 757.52
+  },
+  "WEN": {
+    "avg_volume": 418960.3888888889,
+    "shares_out_m": 190.67
+  },
+  "PTY": {
+    "avg_volume": 51079.38888888889,
+    "shares_out_m": 221.88
+  },
+  "WETO": {
+    "avg_volume": 64463.62962962963,
+    "shares_out_m": 1.08
+  },
+  "ZURA": {
+    "avg_volume": 242830.12962962964,
+    "shares_out_m": 96.33
+  },
+  "CSQR": {
+    "avg_volume": 131793.6851851852,
+    "shares_out_m": 166.63
+  },
+  "DRI": {
+    "avg_volume": 68285.37037037036,
+    "shares_out_m": 113.14
+  },
+  "HLI": {
+    "avg_volume": 51871.2037037037,
+    "shares_out_m": 69.42
+  },
+  "JANX": {
+    "avg_volume": 62406.27777777778,
+    "shares_out_m": 61.14
+  },
+  "ACB": {
+    "avg_volume": 93552.11111111111,
+    "shares_out_m": 64.84
+  },
+  "XTND": {
+    "avg_volume": 52784.648148148146,
+    "shares_out_m": 249.13
+  },
+  "VELO": {
+    "avg_volume": 52359.61111111111,
+    "shares_out_m": 32.15
+  },
+  "VIVS": {
+    "avg_volume": 94859.44230769231,
+    "shares_out_m": 16.59
+  },
+  "VERI": {
+    "avg_volume": 112308.87037037036,
+    "shares_out_m": 121.63
+  },
+  "VEEA": {
+    "avg_volume": 54579.88888888889,
+    "shares_out_m": 3.11
+  },
+  "USAR": {
+    "avg_volume": 721025.1666666666,
+    "shares_out_m": 375.08
+  },
+  "UPB": {
+    "avg_volume": 79379.35185185185,
+    "shares_out_m": 54.77
+  },
+  "VUZI": {
+    "avg_volume": 61574.12962962963,
+    "shares_out_m": 84.41
+  },
+  "VTGN": {
+    "avg_volume": 52833.18518518518,
+    "shares_out_m": 44.38
+  },
+  "TOPS": {
+    "avg_volume": 108905.55555555556,
+    "shares_out_m": 7.61
+  },
+  "STAK": {
+    "avg_volume": 62640.24074074074,
+    "shares_out_m": 19.21
+  },
+  "SSMR": {
+    "avg_volume": 53565.68518518518,
+    "shares_out_m": 143.73
+  },
+  "TE": {
+    "avg_volume": 931848.2592592592,
+    "shares_out_m": 299.5
+  },
+  "SXTC": {
+    "avg_volume": 91679.47619047618,
+    "shares_out_m": 0.69
+  },
+  "PPLI": {
+    "avg_volume": 75602.70370370371,
+    "shares_out_m": 74.46
+  },
+  "LMND": {
+    "avg_volume": 63838.46296296296,
+    "shares_out_m": 77.4
+  },
+  "EPAM": {
+    "avg_volume": 76929.22222222222,
+    "shares_out_m": 51.59
+  },
+  "GAP": {
+    "avg_volume": 507104.77777777775,
+    "shares_out_m": 351.27
+  },
+  "ONON": {
+    "avg_volume": 933923.3703703703,
+    "shares_out_m": 334.21
+  },
+  "AME": {
+    "avg_volume": 82836.03703703704,
+    "shares_out_m": 229.26
+  },
+  "BP": {
+    "avg_volume": 823213.5185185185,
+    "shares_out_m": 15705.67
+  },
+  "SPCE": {
+    "avg_volume": 395733.8703703704,
+    "shares_out_m": 151.6
+  },
+  "BWA": {
+    "avg_volume": 175693.16666666666,
+    "shares_out_m": 200.81
+  },
+  "P": {
+    "avg_volume": 224705.0,
+    "shares_out_m": 333.23
+  },
+  "FSLR": {
+    "avg_volume": 119173.12962962964,
+    "shares_out_m": 107.48
+  },
+  "KBR": {
+    "avg_volume": 100636.68518518518,
+    "shares_out_m": 126.11
+  },
+  "RDDT": {
+    "avg_volume": 240081.0185185185,
+    "shares_out_m": 193.09
+  },
+  "CB": {
+    "avg_volume": 80399.9074074074,
+    "shares_out_m": 382.08
+  },
+  "ET": {
+    "avg_volume": 757744.4444444445,
+    "shares_out_m": 3443.3
+  },
+  "LNG": {
+    "avg_volume": 119378.55555555556,
+    "shares_out_m": 204.2
+  },
+  "EROC": {
+    "avg_volume": 153626.03703703705,
+    "shares_out_m": 219.4
+  },
+  "MNTN": {
+    "avg_volume": 60372.5,
+    "shares_out_m": 74.8
+  },
+  "SQM": {
+    "avg_volume": 57840.92592592593,
+    "shares_out_m": 285.64
+  },
+  "DOV": {
+    "avg_volume": 67672.0925925926,
+    "shares_out_m": 133.01
+  },
+  "KIM": {
+    "avg_volume": 425196.74074074073,
+    "shares_out_m": 664.49
+  },
+  "LODE": {
+    "avg_volume": 113769.42592592593,
+    "shares_out_m": 75.99
+  },
+  "OC": {
+    "avg_volume": 66883.62962962964,
+    "shares_out_m": 79.05
+  },
+  "CNC": {
+    "avg_volume": 279181.462962963,
+    "shares_out_m": 495.07
+  },
+  "DOLE": {
+    "avg_volume": 93968.74074074074,
+    "shares_out_m": 94.46
+  },
+  "GSM": {
+    "avg_volume": 138596.0185185185,
+    "shares_out_m": 186.86
+  },
+  "WAB": {
+    "avg_volume": 56511.81481481482,
+    "shares_out_m": 167.8
+  },
+  "TDOC": {
+    "avg_volume": 260019.44444444444,
+    "shares_out_m": 182.29
+  },
+  "TTE": {
+    "avg_volume": 107512.64814814815,
+    "shares_out_m": 2281.66
+  },
+  "TU": {
+    "avg_volume": 649838.425925926,
+    "shares_out_m": 1590.21
+  },
+  "CIM": {
+    "avg_volume": 100339.87037037036,
+    "shares_out_m": 83.71
+  },
+  "ETSY": {
+    "avg_volume": 187667.87037037036,
+    "shares_out_m": 86.21
+  },
+  "FULC": {
+    "avg_volume": 92164.70370370371,
+    "shares_out_m": 76.3
+  },
+  "GIL": {
+    "avg_volume": 153492.5185185185,
+    "shares_out_m": 185.2
+  },
+  "MP": {
+    "avg_volume": 246525.46296296295,
+    "shares_out_m": 178.1
+  },
+  "PPG": {
+    "avg_volume": 90273.53703703704,
+    "shares_out_m": 220.9
+  },
+  "GDYN": {
+    "avg_volume": 103896.0925925926,
+    "shares_out_m": 80.37
+  },
+  "MAT": {
+    "avg_volume": 466361.2037037037,
+    "shares_out_m": 285.7
+  },
+  "CC": {
+    "avg_volume": 157125.33333333334,
+    "shares_out_m": 150.5
+  },
+  "CRGY": {
+    "avg_volume": 572322.7407407408,
+    "shares_out_m": 422.46
+  },
+  "PODD": {
+    "avg_volume": 75767.98148148147,
+    "shares_out_m": 69.35
+  },
+  "IBN": {
+    "avg_volume": 517648.1296296296,
+    "shares_out_m": 7181.09
+  },
+  "TV": {
+    "avg_volume": 132121.3148148148,
+    "shares_out_m": 357307.27
+  },
+  "MGA": {
+    "avg_volume": 81140.9074074074,
+    "shares_out_m": 259.66
+  },
+  "RF": {
+    "avg_volume": 667705.7037037037,
+    "shares_out_m": 850
+  },
+  "TREX": {
+    "avg_volume": 129928.5925925926,
+    "shares_out_m": 101.87
+  },
+  "RXT": {
+    "avg_volume": 305405.2037037037,
+    "shares_out_m": 254.87
+  },
+  "TOST": {
+    "avg_volume": 624730.6666666666,
+    "shares_out_m": 578
+  },
+  "DTE": {
+    "avg_volume": 74130.75925925926,
+    "shares_out_m": 208.09
+  },
+  "INIO": {
+    "avg_volume": 490930.51851851854,
+    "shares_out_m": 750
+  },
+  "ITW": {
+    "avg_volume": 63681.37037037037,
+    "shares_out_m": 284.2
+  },
+  "ABT": {
+    "avg_volume": 462558.962962963,
+    "shares_out_m": 1730.38
+  },
+  "KGS": {
+    "avg_volume": 120519.77777777778,
+    "shares_out_m": 101.1
+  },
+  "GPN": {
+    "avg_volume": 165157.05555555556,
+    "shares_out_m": 264.62
+  },
+  "JBL": {
+    "avg_volume": 88818.87037037036,
+    "shares_out_m": 102.97
+  },
+  "NFGC": {
+    "avg_volume": 61197.46296296296,
+    "shares_out_m": 385.93
+  },
+  "FNB": {
+    "avg_volume": 293337.25925925927,
+    "shares_out_m": 350.84
+  },
+  "PATH": {
+    "avg_volume": 1248931.5925925926,
+    "shares_out_m": 521.16
+  },
+  "TAL": {
+    "avg_volume": 408727.72222222225,
+    "shares_out_m": 184.48
+  },
+  "COIN": {
+    "avg_volume": 280095.01851851854,
+    "shares_out_m": 264.76
+  },
+  "FAST": {
+    "avg_volume": 458610.44444444444,
+    "shares_out_m": 1147.3
+  },
+  "BURL": {
+    "avg_volume": 106420.12962962964,
+    "shares_out_m": 62.82
+  },
+  "DT": {
+    "avg_volume": 458087.48148148146,
+    "shares_out_m": 289
+  },
+  "HLIT": {
+    "avg_volume": 92446.51851851853,
+    "shares_out_m": 109.07
+  },
+  "ERO": {
+    "avg_volume": 89067.22222222222,
+    "shares_out_m": 104.41
+  },
+  "RBA": {
+    "avg_volume": 126534.9074074074,
+    "shares_out_m": 185.17
+  },
+  "TALO": {
+    "avg_volume": 209544.42592592593,
+    "shares_out_m": 166.97
+  },
+  "AIG": {
+    "avg_volume": 253505.62962962964,
+    "shares_out_m": 522.89
+  },
+  "ASB": {
+    "avg_volume": 151784.16666666666,
+    "shares_out_m": 185.71
+  },
+  "CHWY": {
+    "avg_volume": 582117.8703703703,
+    "shares_out_m": 401.93
+  },
+  "ESTC": {
+    "avg_volume": 117216.92592592593,
+    "shares_out_m": 105.98
+  },
+  "EVMN": {
+    "avg_volume": 56255.31481481482,
+    "shares_out_m": 36.29
+  },
+  "KEYS": {
+    "avg_volume": 80581.38888888889,
+    "shares_out_m": 170.24
+  },
+  "TXNM": {
+    "avg_volume": 71207.92592592593,
+    "shares_out_m": 110.13
+  },
+  "CABA": {
+    "avg_volume": 331591.8333333333,
+    "shares_out_m": 169.55
+  },
+  "NMR": {
+    "avg_volume": 67457.74074074074,
+    "shares_out_m": 3088.56
+  },
+  "TIC": {
+    "avg_volume": 115458.72222222222,
+    "shares_out_m": 218.22
+  },
+  "AEM": {
+    "avg_volume": 113000.14814814815,
+    "shares_out_m": 505.55
+  },
+  "SNAP": {
+    "avg_volume": 2759432.907407407,
+    "shares_out_m": 1691.2
+  },
+  "BG": {
+    "avg_volume": 90213.9074074074,
+    "shares_out_m": 192.14
+  },
+  "KKR": {
+    "avg_volume": 253722.62962962964,
+    "shares_out_m": 897.64
+  },
+  "JEF": {
+    "avg_volume": 153762.16666666666,
+    "shares_out_m": 229.67
+  },
+  "S": {
+    "avg_volume": 800835.1481481482,
+    "shares_out_m": 348.05
+  },
+  "CMS": {
+    "avg_volume": 278354.8333333333,
+    "shares_out_m": 313.63
+  },
+  "BAH": {
+    "avg_volume": 118893.68518518518,
+    "shares_out_m": 118.6
+  },
+  "TH": {
+    "avg_volume": 156336.5,
+    "shares_out_m": 99.62
+  },
+  "UNIT": {
+    "avg_volume": 261818.07407407407,
+    "shares_out_m": 242.73
+  },
+  "ATI": {
+    "avg_volume": 110176.72222222222,
+    "shares_out_m": 135.82
+  },
+  "BRBS": {
+    "avg_volume": 86808.25925925926,
+    "shares_out_m": 89.69
+  },
+  "EXLS": {
+    "avg_volume": 145058.3148148148,
+    "shares_out_m": 150.79
+  },
+  "GXO": {
+    "avg_volume": 79283.68518518518,
+    "shares_out_m": 114.68
+  },
+  "IEX": {
+    "avg_volume": 50705.75925925926,
+    "shares_out_m": 73.45
+  },
+  "PBF": {
+    "avg_volume": 132169.9814814815,
+    "shares_out_m": 121.33
+  },
+  "RMD": {
+    "avg_volume": 75947.16666666667,
+    "shares_out_m": 140.66
+  },
+  "TECH": {
+    "avg_volume": 173007.85185185185,
+    "shares_out_m": 157.06
+  },
+  "BA": {
+    "avg_volume": 367557.7037037037,
+    "shares_out_m": 792.45
+  },
+  "NOMD": {
+    "avg_volume": 111795.18518518518,
+    "shares_out_m": 139.79
+  },
+  "RRC": {
+    "avg_volume": 309211.0,
+    "shares_out_m": 233.69
+  },
+  "EVC": {
+    "avg_volume": 80548.01851851853,
+    "shares_out_m": 92.29
+  },
+  "GLW": {
+    "avg_volume": 439774.0,
+    "shares_out_m": 861.4
+  },
+  "TGTX": {
+    "avg_volume": 87512.20370370371,
+    "shares_out_m": 153.07
+  },
+  "CVE": {
+    "avg_volume": 652083.6481481482,
+    "shares_out_m": 1816.47
+  },
+  "ECHO": {
+    "avg_volume": 213504.53703703705,
+    "shares_out_m": 290.82
+  },
+  "OVV": {
+    "avg_volume": 198982.40740740742,
+    "shares_out_m": 270.92
+  },
+  "PAGS": {
+    "avg_volume": 338032.4259259259,
+    "shares_out_m": 279.52
+  },
+  "WRBY": {
+    "avg_volume": 252702.61111111112,
+    "shares_out_m": 123.61
+  },
+  "V": {
+    "avg_volume": 325969.4074074074,
+    "shares_out_m": 1858.7
+  },
+  "WVE": {
+    "avg_volume": 205008.88888888888,
+    "shares_out_m": 197.23
+  },
+  "WCN": {
+    "avg_volume": 129018.94444444444,
+    "shares_out_m": 250.18
+  },
+  "ZIP": {
+    "avg_volume": 63108.31481481482,
+    "shares_out_m": 82.23
+  },
+  "NVS": {
+    "avg_volume": 109886.03703703704,
+    "shares_out_m": 2034.82
+  },
+  "ABBV": {
+    "avg_volume": 225614.03703703705,
+    "shares_out_m": 1767.12
+  },
+  "AMPX": {
+    "avg_volume": 356654.25925925927,
+    "shares_out_m": 146.08
+  },
+  "BXP": {
+    "avg_volume": 72626.55555555556,
+    "shares_out_m": 159.67
+  },
+  "CVI": {
+    "avg_volume": 73075.16666666667,
+    "shares_out_m": 100.53
+  },
+  "FLS": {
+    "avg_volume": 96747.29629629629,
+    "shares_out_m": 126.81
+  },
+  "PBLS": {
+    "avg_volume": 55962.944444444445,
+    "shares_out_m": 121.95
+  },
+  "UNH": {
+    "avg_volume": 313265.8703703704,
+    "shares_out_m": 897.59
+  },
+  "DPC": {
+    "avg_volume": 95876.07407407407,
+    "shares_out_m": 149.39
+  },
+  "FLR": {
+    "avg_volume": 154847.77777777778,
+    "shares_out_m": 133.74
+  },
+  "HRB": {
+    "avg_volume": 98389.70370370371,
+    "shares_out_m": 122.49
+  },
+  "HAL": {
+    "avg_volume": 720240.6851851852,
+    "shares_out_m": 827.13
+  },
+  "HD": {
+    "avg_volume": 238919.05555555556,
+    "shares_out_m": 997.69
+  },
+  "TS": {
+    "avg_volume": 74984.4074074074,
+    "shares_out_m": 1009.64
+  },
+  "CF": {
+    "avg_volume": 111722.07407407407,
+    "shares_out_m": 151.34
+  },
+  "DVN": {
+    "avg_volume": 906669.3518518518,
+    "shares_out_m": 1100
+  },
+  "KURA": {
+    "avg_volume": 110980.55555555556,
+    "shares_out_m": 88.96
+  },
+  "LPL": {
+    "avg_volume": 156909.42592592593,
+    "shares_out_m": 500
+  },
+  "RYAN": {
+    "avg_volume": 117577.5925925926,
+    "shares_out_m": 251.58
+  },
+  "GGB": {
+    "avg_volume": 1207125.9259259258,
+    "shares_out_m": 1977.74
+  },
+  "HPQ": {
+    "avg_volume": 1026535.2407407408,
+    "shares_out_m": 901.79
+  },
+  "LION": {
+    "avg_volume": 222520.0,
+    "shares_out_m": 297.56
+  },
+  "CRI": {
+    "avg_volume": 75252.61111111111,
+    "shares_out_m": 36.69
+  },
+  "NRG": {
+    "avg_volume": 166226.11111111112,
+    "shares_out_m": 210.21
+  },
+  "DSX": {
+    "avg_volume": 80899.66666666667,
+    "shares_out_m": 124.41
+  },
+  "OKE": {
+    "avg_volume": 137066.64814814815,
+    "shares_out_m": 630.45
+  },
+  "OMER": {
+    "avg_volume": 67336.53703703704,
+    "shares_out_m": 72.39
+  },
+  "UBS": {
+    "avg_volume": 181433.22222222222,
+    "shares_out_m": 3277.81
+  },
+  "SGML": {
+    "avg_volume": 225131.9814814815,
+    "shares_out_m": 112.69
+  },
+  "KR": {
+    "avg_volume": 442790.81481481483,
+    "shares_out_m": 590.59
+  },
+  "VVV": {
+    "avg_volume": 184307.1851851852,
+    "shares_out_m": 127.59
+  },
+  "NMRK": {
+    "avg_volume": 146683.09259259258,
+    "shares_out_m": 181.23
+  },
+  "TRGP": {
+    "avg_volume": 78762.27777777778,
+    "shares_out_m": 214.43
+  },
+  "AQN": {
+    "avg_volume": 361064.68518518517,
+    "shares_out_m": 769.92
+  },
+  "UGI": {
+    "avg_volume": 111705.72222222222,
+    "shares_out_m": 214.49
+  },
+  "COP": {
+    "avg_volume": 297095.0,
+    "shares_out_m": 1201.34
+  },
+  "VFF": {
+    "avg_volume": 57239.166666666664,
+    "shares_out_m": 122.29
+  },
+  "CNM": {
+    "avg_volume": 187517.5,
+    "shares_out_m": 190.49
+  },
+  "PAR": {
+    "avg_volume": 53566.75925925926,
+    "shares_out_m": 41.36
+  },
+  "DXC": {
+    "avg_volume": 290590.6296296296,
+    "shares_out_m": 155.47
+  },
+  "FER": {
+    "avg_volume": 160933.1851851852,
+    "shares_out_m": 729.56
+  },
+  "KOS": {
+    "avg_volume": 977394.1666666666,
+    "shares_out_m": 595.49
+  },
+  "MMM": {
+    "avg_volume": 162136.44444444444,
+    "shares_out_m": 516.73
+  },
+  "OSCR": {
+    "avg_volume": 242430.14814814815,
+    "shares_out_m": 308.64
+  },
+  "SPHR": {
+    "avg_volume": 53586.81481481482,
+    "shares_out_m": 35.91
+  },
+  "DB": {
+    "avg_volume": 193768.11111111112,
+    "shares_out_m": 1910.58
+  },
+  "SANA": {
+    "avg_volume": 225040.2962962963,
+    "shares_out_m": 299.36
+  },
+  "SO": {
+    "avg_volume": 347224.3703703704,
+    "shares_out_m": 1150.36
+  },
+  "USA": {
+    "avg_volume": 125939.44444444444,
+    "shares_out_m": 308.22
+  },
+  "ARLO": {
+    "avg_volume": 112349.79629629629,
+    "shares_out_m": 107.61
+  },
+  "CLX": {
+    "avg_volume": 134285.57407407407,
+    "shares_out_m": 120.94
+  },
+  "MNDY": {
+    "avg_volume": 61037.90740740741,
+    "shares_out_m": 42.27
+  },
+  "SAP": {
+    "avg_volume": 117660.94444444444,
+    "shares_out_m": 1228.5
+  },
+  "DHT": {
+    "avg_volume": 387482.77777777775,
+    "shares_out_m": 161.24
+  },
+  "SG": {
+    "avg_volume": 421662.962962963,
+    "shares_out_m": 119.04
+  },
+  "CDE": {
+    "avg_volume": 1528859.851851852,
+    "shares_out_m": 1027.93
+  },
+  "ESRT": {
+    "avg_volume": 283907.44444444444,
+    "shares_out_m": 173.13
+  },
+  "BNS": {
+    "avg_volume": 51099.09259259259,
+    "shares_out_m": 1218.81
+  },
+  "ELV": {
+    "avg_volume": 81585.77777777778,
+    "shares_out_m": 216.06
+  },
+  "IRM": {
+    "avg_volume": 80670.03703703704,
+    "shares_out_m": 297.7
+  },
+  "LEGN": {
+    "avg_volume": 165095.96296296295,
+    "shares_out_m": 388.98
+  },
+  "CMTG": {
+    "avg_volume": 58325.81481481482,
+    "shares_out_m": 141.08
+  },
+  "DV": {
+    "avg_volume": 149761.53703703705,
+    "shares_out_m": 156.21
+  },
+  "HLF": {
+    "avg_volume": 92019.68518518518,
+    "shares_out_m": 104.8
+  },
+  "LFTO": {
+    "avg_volume": 66864.4074074074,
+    "shares_out_m": 0
+  },
+  "LPLA": {
+    "avg_volume": 81974.5,
+    "shares_out_m": 77.87
+  },
+  "FN": {
+    "avg_volume": 67868.27777777778,
+    "shares_out_m": 35.83
+  },
+  "LQDA": {
+    "avg_volume": 163895.74074074073,
+    "shares_out_m": 89.51
+  },
+  "BEN": {
+    "avg_volume": 285264.037037037,
+    "shares_out_m": 508.08
+  },
+  "HLT": {
+    "avg_volume": 120707.20370370371,
+    "shares_out_m": 222.5
+  },
+  "IT": {
+    "avg_volume": 62005.12962962963,
+    "shares_out_m": 63.15
+  },
+  "LFMD": {
+    "avg_volume": 51200.2037037037,
+    "shares_out_m": 48.2
+  },
+  "LFST": {
+    "avg_volume": 388547.75925925927,
+    "shares_out_m": 382.15
+  },
+  "REYN": {
+    "avg_volume": 81265.16666666667,
+    "shares_out_m": 210.79
+  },
+  "ERII": {
+    "avg_volume": 54675.81481481482,
+    "shares_out_m": 51.04
+  },
+  "EQPT": {
+    "avg_volume": 234785.57407407407,
+    "shares_out_m": 253.38
+  },
+  "EMBJ": {
+    "avg_volume": 128321.44444444444,
+    "shares_out_m": 740.47
+  },
+  "CGAU": {
+    "avg_volume": 108673.20370370371,
+    "shares_out_m": 195.44
+  },
+  "DHI": {
+    "avg_volume": 167771.25925925927,
+    "shares_out_m": 271.44
+  },
+  "HASI": {
+    "avg_volume": 62420.2037037037,
+    "shares_out_m": 127.95
+  },
+  "LADR": {
+    "avg_volume": 128616.03703703704,
+    "shares_out_m": 125.99
+  },
+  "EMBC": {
+    "avg_volume": 62187.18518518518,
+    "shares_out_m": 56.66
+  },
+  "FIVE": {
+    "avg_volume": 56721.46296296296,
+    "shares_out_m": 55.05
+  },
+  "EIX": {
+    "avg_volume": 214695.59259259258,
+    "shares_out_m": 384.79
+  },
+  "FLO": {
+    "avg_volume": 545193.0925925926,
+    "shares_out_m": 212.06
+  },
+  "KT": {
+    "avg_volume": 160130.87037037036,
+    "shares_out_m": 252.02
+  },
+  "ESAB": {
+    "avg_volume": 75756.66666666667,
+    "shares_out_m": 62.17
+  },
+  "MAS": {
+    "avg_volume": 113059.18518518518,
+    "shares_out_m": 192.77
+  },
+  "NNBR": {
+    "avg_volume": 163127.40740740742,
+    "shares_out_m": 93.74
+  },
+  "AAP": {
+    "avg_volume": 101168.48148148147,
+    "shares_out_m": 60.4
+  },
+  "EL": {
+    "avg_volume": 195270.46296296295,
+    "shares_out_m": 362.32
+  },
+  "EQNR": {
+    "avg_volume": 410361.1111111111,
+    "shares_out_m": 2390.75
+  },
+  "MTG": {
+    "avg_volume": 164742.59259259258,
+    "shares_out_m": 205.12
+  },
+  "MS": {
+    "avg_volume": 358415.6666666667,
+    "shares_out_m": 1565
+  },
+  "BE": {
+    "avg_volume": 482799.22222222225,
+    "shares_out_m": 295.66
+  },
+  "LOGI": {
+    "avg_volume": 59948.77777777778,
+    "shares_out_m": 156.15
+  },
+  "UE": {
+    "avg_volume": 70442.87037037036,
+    "shares_out_m": 126.26
+  },
+  "BIDU": {
+    "avg_volume": 97105.12962962964,
+    "shares_out_m": 2733.56
+  },
+  "EHC": {
+    "avg_volume": 69913.24074074074,
+    "shares_out_m": 98.65
+  },
+  "BYD": {
+    "avg_volume": 65168.5,
+    "shares_out_m": 70.67
+  },
+  "ELVN": {
+    "avg_volume": 62026.68518518518,
+    "shares_out_m": 73.27
+  },
+  "EQH": {
+    "avg_volume": 160377.2962962963,
+    "shares_out_m": 272.77
+  },
+  "ERIC": {
+    "avg_volume": 841770.0,
+    "shares_out_m": 3371.35
+  },
+  "ACM": {
+    "avg_volume": 73707.81481481482,
+    "shares_out_m": 128.7
+  },
+  "HAS": {
+    "avg_volume": 104903.03703703704,
+    "shares_out_m": 139.86
+  },
+  "NTAP": {
+    "avg_volume": 114110.61111111111,
+    "shares_out_m": 196.42
+  },
+  "PTRN": {
+    "avg_volume": 74022.18518518518,
+    "shares_out_m": 177.4
+  },
+  "NEXT": {
+    "avg_volume": 191591.0,
+    "shares_out_m": 268.8
+  },
+  "RXO": {
+    "avg_volume": 286799.0740740741,
+    "shares_out_m": 164.95
+  },
+  "ZTS": {
+    "avg_volume": 186570.94444444444,
+    "shares_out_m": 413.22
+  },
+  "WT": {
+    "avg_volume": 160142.40740740742,
+    "shares_out_m": 151.15
+  },
+  "ZLAB": {
+    "avg_volume": 66364.0,
+    "shares_out_m": 1251.23
+  },
+  "WHR": {
+    "avg_volume": 177143.88888888888,
+    "shares_out_m": 65.74
+  },
+  "VRRM": {
+    "avg_volume": 303119.4259259259,
+    "shares_out_m": 152.01
+  },
+  "SVM": {
+    "avg_volume": 228969.0,
+    "shares_out_m": 221.21
+  },
+  "ABVX": {
+    "avg_volume": 103518.35185185185,
+    "shares_out_m": 87.55
+  },
+  "HYLN": {
+    "avg_volume": 99793.61111111111,
+    "shares_out_m": 178.6
+  },
+  "GM": {
+    "avg_volume": 414364.037037037,
+    "shares_out_m": 843.55
+  },
+  "HOMB": {
+    "avg_volume": 112120.81481481482,
+    "shares_out_m": 199.21
+  },
+  "POWW": {
+    "avg_volume": 50591.40740740741,
+    "shares_out_m": 116.06
+  },
+  "GLPI": {
+    "avg_volume": 178958.77777777778,
+    "shares_out_m": 290.92
+  },
+  "PRCT": {
+    "avg_volume": 84397.4074074074,
+    "shares_out_m": 57.27
+  },
+  "GENI": {
+    "avg_volume": 680988.2962962963,
+    "shares_out_m": 277.63
+  },
+  "NXDR": {
+    "avg_volume": 165434.22222222222,
+    "shares_out_m": 386.85
+  },
+  "GLBE": {
+    "avg_volume": 124267.03703703704,
+    "shares_out_m": 167.97
+  },
+  "HNRG": {
+    "avg_volume": 51903.59259259259,
+    "shares_out_m": 47.14
+  },
+  "PPC": {
+    "avg_volume": 63207.61111111111,
+    "shares_out_m": 238.11
+  },
+  "FWONK": {
+    "avg_volume": 169405.83333333334,
+    "shares_out_m": 250.71
+  },
+  "GOOGL": {
+    "avg_volume": 1118944.962962963,
+    "shares_out_m": 12294
+  },
+  "NRIX": {
+    "avg_volume": 153629.7037037037,
+    "shares_out_m": 109.25
+  },
+  "TEX": {
+    "avg_volume": 96662.0925925926,
+    "shares_out_m": 112.4
+  },
+  "GFL": {
+    "avg_volume": 274877.037037037,
+    "shares_out_m": 424.2
+  },
+  "GKOS": {
+    "avg_volume": 80802.68518518518,
+    "shares_out_m": 59.2
+  },
+  "GO": {
+    "avg_volume": 158121.33333333334,
+    "shares_out_m": 99.08
+  },
+  "HLN": {
+    "avg_volume": 1229274.8333333333,
+    "shares_out_m": 8796.58
+  },
+  "HOG": {
+    "avg_volume": 132078.11111111112,
+    "shares_out_m": 104.07
+  },
+  "HUN": {
+    "avg_volume": 276320.2037037037,
+    "shares_out_m": 175.38
+  },
+  "GFS": {
+    "avg_volume": 255278.24074074073,
+    "shares_out_m": 548.75
+  },
+  "JNJ": {
+    "avg_volume": 301876.5,
+    "shares_out_m": 2407.31
+  },
+  "NVTS": {
+    "avg_volume": 594997.3888888889,
+    "shares_out_m": 261.09
+  },
+  "PLTK": {
+    "avg_volume": 88758.68518518518,
+    "shares_out_m": 381.42
+  },
+  "SBAC": {
+    "avg_volume": 73518.72222222222,
+    "shares_out_m": 106.09
+  },
+  "TFX": {
+    "avg_volume": 69271.92592592593,
+    "shares_out_m": 42.37
+  },
+  "FWDI": {
+    "avg_volume": 115754.72222222222,
+    "shares_out_m": 76.29
+  },
+  "NET": {
+    "avg_volume": 205036.1851851852,
+    "shares_out_m": 356.08
+  },
+  "VRTX": {
+    "avg_volume": 69351.46296296296,
+    "shares_out_m": 253.46
+  },
+  "FVRR": {
+    "avg_volume": 66623.96296296296,
+    "shares_out_m": 35.95
+  },
+  "GDS": {
+    "avg_volume": 245522.64814814815,
+    "shares_out_m": 1651.02
+  },
+  "NVT": {
+    "avg_volume": 160136.66666666666,
+    "shares_out_m": 161.6
+  },
+  "NWS": {
+    "avg_volume": 77391.35185185185,
+    "shares_out_m": 540.45
+  },
+  "PMT": {
+    "avg_volume": 146490.61111111112,
+    "shares_out_m": 87.2
+  },
+  "FUTU": {
+    "avg_volume": 52974.92592592593,
+    "shares_out_m": 1121.34
+  },
+  "GIS": {
+    "avg_volume": 600505.5925925926,
+    "shares_out_m": 534.69
+  },
+  "SB": {
+    "avg_volume": 89303.07407407407,
+    "shares_out_m": 113.83
+  },
+  "GILD": {
+    "avg_volume": 263222.3703703704,
+    "shares_out_m": 1240.34
+  },
+  "FWRG": {
+    "avg_volume": 122612.87037037036,
+    "shares_out_m": 61.71
+  },
+  "GLUE": {
+    "avg_volume": 76240.37037037036,
+    "shares_out_m": 85.31
+  },
+  "GNL": {
+    "avg_volume": 178335.05555555556,
+    "shares_out_m": 231.32
+  },
+  "TLS": {
+    "avg_volume": 62849.09259259259,
+    "shares_out_m": 74.74
+  },
+  "UNP": {
+    "avg_volume": 140480.55555555556,
+    "shares_out_m": 594.25
+  },
+  "HNST": {
+    "avg_volume": 132879.16666666666,
+    "shares_out_m": 107.28
+  },
+  "KHC": {
+    "avg_volume": 879242.3333333334,
+    "shares_out_m": 1185.82
+  },
+  "IART": {
+    "avg_volume": 69663.87037037036,
+    "shares_out_m": 77.8
+  },
+  "BDN": {
+    "avg_volume": 144070.37037037036,
+    "shares_out_m": 170.05
+  },
+  "GEHC": {
+    "avg_volume": 193442.57407407407,
+    "shares_out_m": 452.14
+  },
+  "GGG": {
+    "avg_volume": 86488.74074074074,
+    "shares_out_m": 160.38
+  },
+  "GLXY": {
+    "avg_volume": 463590.35185185185,
+    "shares_out_m": 389.1
+  },
+  "UPWK": {
+    "avg_volume": 228487.35185185185,
+    "shares_out_m": 124.9
+  },
+  "GOOG": {
+    "avg_volume": 633330.2407407408,
+    "shares_out_m": 12294
+  },
+  "NWSA": {
+    "avg_volume": 288258.2037037037,
+    "shares_out_m": 540.45
+  },
+  "OABI": {
+    "avg_volume": 111680.11111111111,
+    "shares_out_m": 145.86
+  },
+  "KD": {
+    "avg_volume": 298913.7962962963,
+    "shares_out_m": 217.82
+  },
+  "AKR": {
+    "avg_volume": 89695.16666666667,
+    "shares_out_m": 137.33
+  },
+  "GMED": {
+    "avg_volume": 99881.83333333333,
+    "shares_out_m": 134.26
+  },
+  "HUCK": {
+    "avg_volume": 60145.37037037037,
+    "shares_out_m": 47.04
+  },
+  "GBDC": {
+    "avg_volume": 97933.37037037036,
+    "shares_out_m": 259.65
+  },
+  "GENB": {
+    "avg_volume": 56955.944444444445,
+    "shares_out_m": 128.35
+  },
+  "HZN": {
+    "avg_volume": 80382.20370370371,
+    "shares_out_m": 76.25
+  },
+  "SITE": {
+    "avg_volume": 75140.70370370371,
+    "shares_out_m": 43.13
+  },
+  "GEN": {
+    "avg_volume": 603130.6481481482,
+    "shares_out_m": 593.28
+  },
+  "GNTX": {
+    "avg_volume": 187027.38888888888,
+    "shares_out_m": 210.68
+  },
+  "SONY": {
+    "avg_volume": 384802.18518518517,
+    "shares_out_m": 5965.32
+  },
+  "VRT": {
+    "avg_volume": 365000.2037037037,
+    "shares_out_m": 385.06
+  },
+  "HYMC": {
+    "avg_volume": 105414.14814814815,
+    "shares_out_m": 93.18
+  },
+  "SBSW": {
+    "avg_volume": 440051.22222222225,
+    "shares_out_m": 2830.57
+  },
+  "GOGO": {
+    "avg_volume": 122351.83333333333,
+    "shares_out_m": 135.51
+  },
+  "HMC": {
+    "avg_volume": 65680.98148148147,
+    "shares_out_m": 4533
+  },
+  "HMY": {
+    "avg_volume": 376234.51851851854,
+    "shares_out_m": 638.86
+  },
+  "NESR": {
+    "avg_volume": 141526.7037037037,
+    "shares_out_m": 100.85
+  },
+  "CCI": {
+    "avg_volume": 247861.05555555556,
+    "shares_out_m": 426
+  },
+  "VYGR": {
+    "avg_volume": 63156.7037037037,
+    "shares_out_m": 61.62
+  },
+  "WSE": {
+    "avg_volume": 300662.55555555556,
+    "shares_out_m": 1016.32
+  },
+  "WY": {
+    "avg_volume": 518980.64814814815,
+    "shares_out_m": 720.34
+  },
+  "ZS": {
+    "avg_volume": 166702.16666666666,
+    "shares_out_m": 163.05
+  },
+  "WAT": {
+    "avg_volume": 64565.53703703704,
+    "shares_out_m": 98.25
+  },
+  "WNC": {
+    "avg_volume": 51986.31481481482,
+    "shares_out_m": 40.74
+  },
+  "XRAY": {
+    "avg_volume": 413786.7037037037,
+    "shares_out_m": 199.35
+  },
+  "WAY": {
+    "avg_volume": 123393.81481481482,
+    "shares_out_m": 191.75
+  },
+  "FE": {
+    "avg_volume": 297661.24074074073,
+    "shares_out_m": 578.89
+  },
+  "IBRX": {
+    "avg_volume": 636062.9444444445,
+    "shares_out_m": 1059.84
+  },
+  "IMNM": {
+    "avg_volume": 93322.0,
+    "shares_out_m": 118
+  },
+  "INTU": {
+    "avg_volume": 168916.38888888888,
+    "shares_out_m": 267.24
+  },
+  "IRON": {
+    "avg_volume": 61456.555555555555,
+    "shares_out_m": 44.35
+  },
+  "IR": {
+    "avg_volume": 258882.44444444444,
+    "shares_out_m": 384.02
+  },
+  "GOOS": {
+    "avg_volume": 72327.35185185185,
+    "shares_out_m": 44.39
+  },
+  "INDI": {
+    "avg_volume": 332543.4074074074,
+    "shares_out_m": 231.81
+  },
+  "APTV": {
+    "avg_volume": 178167.12962962964,
+    "shares_out_m": 207.63
+  },
+  "CAT": {
+    "avg_volume": 148060.74074074073,
+    "shares_out_m": 459.67
+  },
+  "IFF": {
+    "avg_volume": 129641.37037037036,
+    "shares_out_m": 255.15
+  },
+  "INVH": {
+    "avg_volume": 445288.3703703704,
+    "shares_out_m": 576.15
+  },
+  "JPM": {
+    "avg_volume": 262926.7037037037,
+    "shares_out_m": 2658.19
+  },
+  "IKT": {
+    "avg_volume": 55647.944444444445,
+    "shares_out_m": 139.54
+  },
+  "IMVT": {
+    "avg_volume": 75492.25925925926,
+    "shares_out_m": 206.55
+  },
+  "ING": {
+    "avg_volume": 182291.57407407407,
+    "shares_out_m": 2873.31
+  },
+  "IFRX": {
+    "avg_volume": 58856.75925925926,
+    "shares_out_m": 147.37
+  },
+  "ADT": {
+    "avg_volume": 844173.2222222222,
+    "shares_out_m": 730.53
+  },
+  "IEP": {
+    "avg_volume": 86649.55555555556,
+    "shares_out_m": 710.92
+  },
+  "IRWD": {
+    "avg_volume": 171342.14814814815,
+    "shares_out_m": 165.24
+  },
+  "ICE": {
+    "avg_volume": 191995.25925925927,
+    "shares_out_m": 558.86
+  },
+  "INSM": {
+    "avg_volume": 263333.72222222225,
+    "shares_out_m": 219.38
+  },
+  "LIN": {
+    "avg_volume": 99636.85185185185,
+    "shares_out_m": 459.08
+  },
+  "INFY": {
+    "avg_volume": 1746701.0,
+    "shares_out_m": 4050.38
+  },
+  "IREN": {
+    "avg_volume": 2117420.2407407407,
+    "shares_out_m": 404.61
+  },
+  "IMXI": {
+    "avg_volume": 50402.90740740741,
+    "shares_out_m": 30.21
+  },
+  "INOD": {
+    "avg_volume": 55817.7962962963,
+    "shares_out_m": 34.38
+  },
+  "SHW": {
+    "avg_volume": 87535.64814814815,
+    "shares_out_m": 241.59
+  },
+  "IBM": {
+    "avg_volume": 185888.05555555556,
+    "shares_out_m": 945.12
+  },
+  "MBGL": {
+    "avg_volume": 340730.81481481483,
+    "shares_out_m": 294.82
+  },
+  "BX": {
+    "avg_volume": 245490.07407407407,
+    "shares_out_m": 1203.83
+  },
+  "ICL": {
+    "avg_volume": 179968.96296296295,
+    "shares_out_m": 1290.72
+  },
+  "IOVA": {
+    "avg_volume": 852699.425925926,
+    "shares_out_m": 452.97
+  },
+  "IBKR": {
+    "avg_volume": 238404.8148148148,
+    "shares_out_m": 1703.82
+  },
+  "AVTX": {
+    "avg_volume": 138987.0,
+    "shares_out_m": 53.63
+  },
+  "IONQ": {
+    "avg_volume": 692685.7222222222,
+    "shares_out_m": 429.41
+  },
+  "MDLZ": {
+    "avg_volume": 563682.8518518518,
+    "shares_out_m": 1265.84
+  },
+  "IMRX": {
+    "avg_volume": 50815.01851851852,
+    "shares_out_m": 64.76
+  },
+  "IPSC": {
+    "avg_volume": 79753.57407407407,
+    "shares_out_m": 181.08
+  },
+  "ITUB": {
+    "avg_volume": 2811967.7407407407,
+    "shares_out_m": 11026.87
+  },
+  "ILMN": {
+    "avg_volume": 162099.27777777778,
+    "shares_out_m": 151.2
+  },
+  "BVN": {
+    "avg_volume": 57249.98148148148,
+    "shares_out_m": 275.63
+  },
+  "IVA": {
+    "avg_volume": 201832.22222222222,
+    "shares_out_m": 239.15
+  },
+  "PUK": {
+    "avg_volume": 76840.57407407407,
+    "shares_out_m": 2463.59
+  },
+  "ISRG": {
+    "avg_volume": 122756.70370370371,
+    "shares_out_m": 346.64
+  },
+  "IDYA": {
+    "avg_volume": 56887.27777777778,
+    "shares_out_m": 96.49
+  },
+  "IMMX": {
+    "avg_volume": 71777.9074074074,
+    "shares_out_m": 82.9
+  },
+  "INTC": {
+    "avg_volume": 3572624.8333333335,
+    "shares_out_m": 5315
+  },
+  "GEVO": {
+    "avg_volume": 182269.7962962963,
+    "shares_out_m": 247.24
+  },
+  "INTR": {
+    "avg_volume": 869393.6666666666,
+    "shares_out_m": 441.49
+  },
+  "IONS": {
+    "avg_volume": 221748.77777777778,
+    "shares_out_m": 166.18
+  },
+  "BLDR": {
+    "avg_volume": 149242.2037037037,
+    "shares_out_m": 107.61
+  },
+  "TKR": {
+    "avg_volume": 65182.444444444445,
+    "shares_out_m": 69.3
+  },
+  "TTMI": {
+    "avg_volume": 228895.22222222222,
+    "shares_out_m": 105.38
+  },
+  "VRNS": {
+    "avg_volume": 198461.8148148148,
+    "shares_out_m": 115.3
+  },
+  "SRRK": {
+    "avg_volume": 100045.75925925926,
+    "shares_out_m": 121.79
+  },
+  "TXRH": {
+    "avg_volume": 102732.61111111111,
+    "shares_out_m": 65.64
+  },
+  "VSAT": {
+    "avg_volume": 107885.31481481482,
+    "shares_out_m": 137.76
+  },
+  "SLDE": {
+    "avg_volume": 73583.24074074074,
+    "shares_out_m": 117.25
+  },
+  "VIRT": {
+    "avg_volume": 69713.29629629629,
+    "shares_out_m": 155.2
+  },
+  "SLDP": {
+    "avg_volume": 189428.24074074073,
+    "shares_out_m": 228.18
+  },
+  "NEM": {
+    "avg_volume": 294380.81481481483,
+    "shares_out_m": 1039.19
+  },
+  "SYF": {
+    "avg_volume": 215195.12962962964,
+    "shares_out_m": 311.4
+  },
+  "BLSH": {
+    "avg_volume": 59786.5,
+    "shares_out_m": 150.3
+  },
+  "HIW": {
+    "avg_volume": 66354.55555555556,
+    "shares_out_m": 110.32
+  },
+  "SVV": {
+    "avg_volume": 115731.05555555556,
+    "shares_out_m": 154.26
+  },
+  "TBLA": {
+    "avg_volume": 153456.74074074073,
+    "shares_out_m": 270.16
+  },
+  "NNDM": {
+    "avg_volume": 197955.44444444444,
+    "shares_out_m": 210.84
+  },
+  "ALHC": {
+    "avg_volume": 545718.9444444445,
+    "shares_out_m": 209.27
+  },
+  "SVC": {
+    "avg_volume": 141242.64814814815,
+    "shares_out_m": 129.51
+  },
+  "TGB": {
+    "avg_volume": 407309.81481481483,
+    "shares_out_m": 366.76
+  },
+  "HIG": {
+    "avg_volume": 81971.68518518518,
+    "shares_out_m": 267.41
+  },
+  "TENB": {
+    "avg_volume": 209672.55555555556,
+    "shares_out_m": 104.86
+  },
+  "TENX": {
+    "avg_volume": 93618.38888888889,
+    "shares_out_m": 37.42
+  },
+  "GRPN": {
+    "avg_volume": 61164.38888888889,
+    "shares_out_m": 40.67
+  },
+  "HUT": {
+    "avg_volume": 302678.31481481483,
+    "shares_out_m": 93.51
+  },
+  "TAK": {
+    "avg_volume": 169631.42592592593,
+    "shares_out_m": 1602.22
+  },
+  "TEM": {
+    "avg_volume": 275785.537037037,
+    "shares_out_m": 182.24
+  },
+  "GTES": {
+    "avg_volume": 145704.61111111112,
+    "shares_out_m": 251.14
+  },
+  "REI": {
+    "avg_volume": 205357.25925925927,
+    "shares_out_m": 260.54
+  },
+  "GTLB": {
+    "avg_volume": 186709.46296296295,
+    "shares_out_m": 166.6
+  },
+  "HALO": {
+    "avg_volume": 117401.68518518518,
+    "shares_out_m": 113.5
+  },
+  "HIMS": {
+    "avg_volume": 425127.31481481483,
+    "shares_out_m": 233.31
+  },
+  "MAC": {
+    "avg_volume": 247699.6851851852,
+    "shares_out_m": 283.56
+  },
+  "TFC": {
+    "avg_volume": 586818.2777777778,
+    "shares_out_m": 1221.63
+  },
+  "NN": {
+    "avg_volume": 163093.75925925927,
+    "shares_out_m": 168.81
+  },
+  "GBTC": {
+    "avg_volume": 100065.48148148147,
+    "shares_out_m": 692.37
+  },
+  "PBR": {
+    "avg_volume": 2260946.592592593,
+    "shares_out_m": 12888.73
+  },
+  "TER": {
+    "avg_volume": 143837.61111111112,
+    "shares_out_m": 156.12
+  },
+  "GPCR": {
+    "avg_volume": 61101.48148148148,
+    "shares_out_m": 213.93
+  },
+  "NRDS": {
+    "avg_volume": 59974.648148148146,
+    "shares_out_m": 63.92
+  },
+  "PTEN": {
+    "avg_volume": 633480.1481481482,
+    "shares_out_m": 381.38
+  },
+  "TARA": {
+    "avg_volume": 80694.53703703704,
+    "shares_out_m": 59.1
+  },
+  "ABEV": {
+    "avg_volume": 2118290.796296296,
+    "shares_out_m": 15484.66
+  },
+  "HIMX": {
+    "avg_volume": 63188.40740740741,
+    "shares_out_m": 348.8
+  },
+  "NTLA": {
+    "avg_volume": 341419.7962962963,
+    "shares_out_m": 140.13
+  },
+  "SWKS": {
+    "avg_volume": 274690.962962963,
+    "shares_out_m": 235.17
+  },
+  "SWIM": {
+    "avg_volume": 70294.48148148147,
+    "shares_out_m": 117.65
+  },
+  "HESM": {
+    "avg_volume": 134599.37037037036,
+    "shares_out_m": 206.18
+  },
+  "RRX": {
+    "avg_volume": 103420.68518518518,
+    "shares_out_m": 66.59
+  },
+  "CNXC": {
+    "avg_volume": 79944.53703703704,
+    "shares_out_m": 61.11
+  },
+  "GRAB": {
+    "avg_volume": 4856886.611111111,
+    "shares_out_m": 4091.3
+  },
+  "SW": {
+    "avg_volume": 271058.74074074073,
+    "shares_out_m": 524.53
+  },
+  "GTX": {
+    "avg_volume": 183893.7037037037,
+    "shares_out_m": 184.61
+  },
+  "HAPN": {
+    "avg_volume": 120338.64814814815,
+    "shares_out_m": 115.2
+  },
+  "HELP": {
+    "avg_volume": 88968.55555555556,
+    "shares_out_m": 79.59
+  },
+  "PNR": {
+    "avg_volume": 141265.2037037037,
+    "shares_out_m": 159.65
+  },
+  "PTCT": {
+    "avg_volume": 57559.31481481482,
+    "shares_out_m": 83.54
+  },
+  "AMZN": {
+    "avg_volume": 1603825.9259259258,
+    "shares_out_m": 10813.14
+  },
+  "GTM": {
+    "avg_volume": 311326.3333333333,
+    "shares_out_m": 291.11
+  },
+  "CTRE": {
+    "avg_volume": 196539.74074074073,
+    "shares_out_m": 236.29
+  },
+  "HBAN": {
+    "avg_volume": 1467540.2222222222,
+    "shares_out_m": 2015.39
+  },
+  "SXC": {
+    "avg_volume": 68370.07407407407,
+    "shares_out_m": 84.87
+  },
+  "GOTU": {
+    "avg_volume": 56883.61111111111,
+    "shares_out_m": 156.7
+  },
+  "GSK": {
+    "avg_volume": 333642.962962963,
+    "shares_out_m": 4045.43
+  },
+  "TDAY": {
+    "avg_volume": 165340.22222222222,
+    "shares_out_m": 146.82
+  },
+  "BGS": {
+    "avg_volume": 135651.83333333334,
+    "shares_out_m": 81.28
+  },
+  "CAG": {
+    "avg_volume": 689886.0,
+    "shares_out_m": 477.41
+  },
+  "STLD": {
+    "avg_volume": 54062.98148148148,
+    "shares_out_m": 142.22
+  },
+  "TECK": {
+    "avg_volume": 184886.83333333334,
+    "shares_out_m": 488.19
+  },
+  "TGT": {
+    "avg_volume": 199043.57407407407,
+    "shares_out_m": 454.3
+  },
+  "GRFS": {
+    "avg_volume": 59311.42592592593,
+    "shares_out_m": 687.55
+  },
+  "SFNC": {
+    "avg_volume": 140110.88888888888,
+    "shares_out_m": 144.52
+  },
+  "GT": {
+    "avg_volume": 526556.1666666666,
+    "shares_out_m": 287.9
+  },
+  "LEN": {
+    "avg_volume": 226979.94444444444,
+    "shares_out_m": 237.9
+  },
+  "TAP": {
+    "avg_volume": 185838.24074074073,
+    "shares_out_m": 176.68
+  },
+  "HLLY": {
+    "avg_volume": 84129.29629629629,
+    "shares_out_m": 121.23
+  },
+  "SNDL": {
+    "avg_volume": 50783.01851851852,
+    "shares_out_m": 243.3
+  },
+  "TEVA": {
+    "avg_volume": 448387.0925925926,
+    "shares_out_m": 1165.3
+  },
+  "GROY": {
+    "avg_volume": 118499.61111111111,
+    "shares_out_m": 231.68
+  },
+  "GPRE": {
+    "avg_volume": 66648.03703703704,
+    "shares_out_m": 70.1
+  },
+  "CORZ": {
+    "avg_volume": 1288601.7777777778,
+    "shares_out_m": 321.34
+  },
+  "SUZ": {
+    "avg_volume": 445244.9074074074,
+    "shares_out_m": 1264.12
+  },
+  "WAFD": {
+    "avg_volume": 54844.48148148148,
+    "shares_out_m": 74.02
+  },
+  "WOLF": {
+    "avg_volume": 134065.87037037036,
+    "shares_out_m": 52.93
+  },
+  "WRD": {
+    "avg_volume": 191468.94444444444,
+    "shares_out_m": 986.87
+  },
+  "ZONE": {
+    "avg_volume": 64961.933333333334,
+    "shares_out_m": 8.5
+  },
+  "THRM": {
+    "avg_volume": 90046.4074074074,
+    "shares_out_m": 52.5
+  },
+  "TIGO": {
+    "avg_volume": 74922.5,
+    "shares_out_m": 167.54
+  },
+  "WPC": {
+    "avg_volume": 79567.0925925926,
+    "shares_out_m": 230.12
+  },
+  "CVNA": {
+    "avg_volume": 523591.0,
+    "shares_out_m": 1103.26
+  },
+  "CXM": {
+    "avg_volume": 176135.0,
+    "shares_out_m": 232.17
+  },
+  "OCUL": {
+    "avg_volume": 203073.87037037036,
+    "shares_out_m": 219.62
+  },
+  "RBLX": {
+    "avg_volume": 523611.35185185185,
+    "shares_out_m": 715.71
+  },
+  "RUN": {
+    "avg_volume": 596455.6296296297,
+    "shares_out_m": 240.85
+  },
+  "CFG": {
+    "avg_volume": 294597.85185185185,
+    "shares_out_m": 419.2
+  },
+  "GRAL": {
+    "avg_volume": 61497.3962264151,
+    "shares_out_m": 44.67
+  },
+  "SANM": {
+    "avg_volume": 54080.51851851852,
+    "shares_out_m": 53.6
+  },
+  "TBBB": {
+    "avg_volume": 61833.18518518518,
+    "shares_out_m": 121.19
+  },
+  "VSTS": {
+    "avg_volume": 73446.42592592593,
+    "shares_out_m": 132.16
+  },
+  "DC": {
+    "avg_volume": 86580.48148148147,
+    "shares_out_m": 134.17
+  },
+  "KMI": {
+    "avg_volume": 992344.2037037037,
+    "shares_out_m": 2227.72
+  },
+  "JAN": {
+    "avg_volume": 149753.09259259258,
+    "shares_out_m": 234.37
+  },
+  "SEDG": {
+    "avg_volume": 141563.66666666666,
+    "shares_out_m": 61.53
+  },
+  "SLNH": {
+    "avg_volume": 174395.27777777778,
+    "shares_out_m": 251.62
+  },
+  "OLN": {
+    "avg_volume": 286330.462962963,
+    "shares_out_m": 114.01
+  },
+  "RMBS": {
+    "avg_volume": 97196.20370370371,
+    "shares_out_m": 107.1
+  },
+  "SNOW": {
+    "avg_volume": 235283.94444444444,
+    "shares_out_m": 352.8
+  },
+  "VFC": {
+    "avg_volume": 742126.8518518518,
+    "shares_out_m": 393.64
+  },
+  "GLNG": {
+    "avg_volume": 77802.14814814815,
+    "shares_out_m": 102.1
+  },
+  "NU": {
+    "avg_volume": 4626735.148148148,
+    "shares_out_m": 4830.69
+  },
+  "STM": {
+    "avg_volume": 700832.0925925926,
+    "shares_out_m": 911.28
+  },
+  "STT": {
+    "avg_volume": 103319.74074074074,
+    "shares_out_m": 272.08
+  },
+  "TSCO": {
+    "avg_volume": 805599.6851851852,
+    "shares_out_m": 521.04
+  },
+  "BTG": {
+    "avg_volume": 1541296.537037037,
+    "shares_out_m": 1317.05
+  },
+  "COHR": {
+    "avg_volume": 356366.24074074073,
+    "shares_out_m": 196.93
+  },
+  "CMI": {
+    "avg_volume": 75403.44444444444,
+    "shares_out_m": 137.66
+  },
+  "LOAR": {
+    "avg_volume": 60694.68518518518,
+    "shares_out_m": 93.69
+  },
+  "PSN": {
+    "avg_volume": 66347.81481481482,
+    "shares_out_m": 105.54
+  },
+  "UUUU": {
+    "avg_volume": 574377.2962962963,
+    "shares_out_m": 264.83
+  },
+  "ARX": {
+    "avg_volume": 80743.05555555556,
+    "shares_out_m": 217.19
+  },
+  "DEI": {
+    "avg_volume": 155314.7037037037,
+    "shares_out_m": 167.49
+  },
+  "MPC": {
+    "avg_volume": 118793.22222222222,
+    "shares_out_m": 280.82
+  },
+  "MTDR": {
+    "avg_volume": 78671.05555555556,
+    "shares_out_m": 123.75
+  },
+  "ENPH": {
+    "avg_volume": 302623.1666666667,
+    "shares_out_m": 132.31
+  },
+  "MET": {
+    "avg_volume": 149544.4814814815,
+    "shares_out_m": 635.48
+  },
+  "PRGO": {
+    "avg_volume": 164246.5185185185,
+    "shares_out_m": 138.77
+  },
+  "QNST": {
+    "avg_volume": 51945.833333333336,
+    "shares_out_m": 57.22
+  },
+  "BOOT": {
+    "avg_volume": 61056.40740740741,
+    "shares_out_m": 29.9
+  },
+  "FUBO": {
+    "avg_volume": 60207.88888888889,
+    "shares_out_m": 109.2
+  },
+  "NI": {
+    "avg_volume": 433815.8703703704,
+    "shares_out_m": 479.67
+  },
+  "MRSH": {
+    "avg_volume": 131652.88888888888,
+    "shares_out_m": 475.51
+  },
+  "AMH": {
+    "avg_volume": 245602.24074074073,
+    "shares_out_m": 359.82
+  },
+  "AVTR": {
+    "avg_volume": 698697.7592592592,
+    "shares_out_m": 677.62
+  },
+  "AEP": {
+    "avg_volume": 154218.27777777778,
+    "shares_out_m": 544.53
+  },
+  "AXP": {
+    "avg_volume": 141769.88888888888,
+    "shares_out_m": 670.55
+  },
+  "BBY": {
+    "avg_volume": 191053.2037037037,
+    "shares_out_m": 209.73
+  },
+  "DINO": {
+    "avg_volume": 119275.31481481482,
+    "shares_out_m": 171.37
+  },
+  "TJX": {
+    "avg_volume": 413915.9259259259,
+    "shares_out_m": 1099.97
+  },
+  "TSN": {
+    "avg_volume": 165312.7962962963,
+    "shares_out_m": 351.8
+  },
+  "CALY": {
+    "avg_volume": 161217.64814814815,
+    "shares_out_m": 178.51
+  },
+  "CNP": {
+    "avg_volume": 644829.9444444445,
+    "shares_out_m": 662.88
+  },
+  "SUPN": {
+    "avg_volume": 149932.61111111112,
+    "shares_out_m": 118.04
+  },
+  "GFI": {
+    "avg_volume": 365266.01851851854,
+    "shares_out_m": 886.66
+  },
+  "VG": {
+    "avg_volume": 1032075.5,
+    "shares_out_m": 2500.09
+  },
+  "BKV": {
+    "avg_volume": 112870.05555555556,
+    "shares_out_m": 109.44
+  },
+  "CALX": {
+    "avg_volume": 66016.0925925926,
+    "shares_out_m": 62.96
+  },
+  "OMC": {
+    "avg_volume": 134621.4814814815,
+    "shares_out_m": 272.85
+  },
+  "EMN": {
+    "avg_volume": 74603.83333333333,
+    "shares_out_m": 114.38
+  },
+  "EXK": {
+    "avg_volume": 496493.462962963,
+    "shares_out_m": 296.14
+  },
+  "FSM": {
+    "avg_volume": 320561.81481481483,
+    "shares_out_m": 295.96
+  },
+  "MUR": {
+    "avg_volume": 85797.12962962964,
+    "shares_out_m": 143.38
+  },
+  "SSL": {
+    "avg_volume": 150746.07407407407,
+    "shares_out_m": 654.09
+  },
+  "G": {
+    "avg_volume": 124811.37037037036,
+    "shares_out_m": 167.23
+  },
+  "PWR": {
+    "avg_volume": 85566.94444444444,
+    "shares_out_m": 150.68
+  },
+  "CVS": {
+    "avg_volume": 633556.9444444445,
+    "shares_out_m": 1278.97
+  },
+  "NAT": {
+    "avg_volume": 326561.1666666667,
+    "shares_out_m": 211.75
+  },
+  "PDI": {
+    "avg_volume": 121747.96296296296,
+    "shares_out_m": 476.62
+  },
+  "SRE": {
+    "avg_volume": 189589.3148148148,
+    "shares_out_m": 653.9
+  },
+  "NOW": {
+    "avg_volume": 700885.9814814815,
+    "shares_out_m": 1037.92
+  },
+  "QSR": {
+    "avg_volume": 175569.24074074073,
+    "shares_out_m": 348.35
+  },
+  "DLR": {
+    "avg_volume": 125031.85185185185,
+    "shares_out_m": 378.33
+  },
+  "NXE": {
+    "avg_volume": 523032.3888888889,
+    "shares_out_m": 669.28
+  },
+  "OMF": {
+    "avg_volume": 55874.92592592593,
+    "shares_out_m": 114.46
+  },
+  "REXR": {
+    "avg_volume": 250760.38888888888,
+    "shares_out_m": 212.14
+  },
+  "ALB": {
+    "avg_volume": 120008.5925925926,
+    "shares_out_m": 118.01
+  },
+  "ECL": {
+    "avg_volume": 83374.44444444444,
+    "shares_out_m": 280.47
+  },
+  "BAX": {
+    "avg_volume": 524078.0,
+    "shares_out_m": 517.35
+  },
+  "XIFR": {
+    "avg_volume": 127236.64814814815,
+    "shares_out_m": 94.27
+  },
+  "XEL": {
+    "avg_volume": 483085.9259259259,
+    "shares_out_m": 641.87
+  },
+  "XE": {
+    "avg_volume": 353195.3703703704,
+    "shares_out_m": 406.37
+  },
+  "XPO": {
+    "avg_volume": 86572.79629629629,
+    "shares_out_m": 116.51
+  },
+  "YELP": {
+    "avg_volume": 70240.01851851853,
+    "shares_out_m": 54.26
+  },
+  "YSS": {
+    "avg_volume": 121907.79629629629,
+    "shares_out_m": 137.36
+  },
+  "WELL": {
+    "avg_volume": 169472.0185185185,
+    "shares_out_m": 733.61
+  },
+  "WH": {
+    "avg_volume": 77329.01851851853,
+    "shares_out_m": 72.9
+  },
+  "WFC": {
+    "avg_volume": 838044.6851851852,
+    "shares_out_m": 3001.85
+  },
+  "CRVS": {
+    "avg_volume": 64638.07407407407,
+    "shares_out_m": 84.12
+  },
+  "BMBL": {
+    "avg_volume": 314306.72222222225,
+    "shares_out_m": 153.11
+  },
+  "KLAR": {
+    "avg_volume": 560244.1481481482,
+    "shares_out_m": 378.11
+  },
+  "STGW": {
+    "avg_volume": 123188.75925925926,
+    "shares_out_m": 247.97
+  },
+  "CDNS": {
+    "avg_volume": 125737.31481481482,
+    "shares_out_m": 274.38
+  },
+  "LRMR": {
+    "avg_volume": 116074.35185185185,
+    "shares_out_m": 103.88
+  },
+  "RY": {
+    "avg_volume": 50208.48148148148,
+    "shares_out_m": 1386.6
+  },
+  "DNOW": {
+    "avg_volume": 174797.03703703705,
+    "shares_out_m": 180.79
+  },
+  "EFX": {
+    "avg_volume": 108667.01851851853,
+    "shares_out_m": 117.02
+  },
+  "GRND": {
+    "avg_volume": 111595.31481481482,
+    "shares_out_m": 173.82
+  },
+  "MDU": {
+    "avg_volume": 114188.29629629629,
+    "shares_out_m": 210.35
+  },
+  "PFG": {
+    "avg_volume": 61778.5,
+    "shares_out_m": 212.38
+  },
+  "STEP": {
+    "avg_volume": 51726.03703703704,
+    "shares_out_m": 120.68
+  },
+  "ASM": {
+    "avg_volume": 176256.77777777778,
+    "shares_out_m": 169.86
+  },
+  "AAON": {
+    "avg_volume": 99081.20370370371,
+    "shares_out_m": 82.45
+  },
+  "ASX": {
+    "avg_volume": 608705.0,
+    "shares_out_m": 4488.09
+  },
+  "MRP": {
+    "avg_volume": 145554.27777777778,
+    "shares_out_m": 166
+  },
+  "SF": {
+    "avg_volume": 71031.37037037036,
+    "shares_out_m": 150.06
+  },
+  "J": {
+    "avg_volume": 51875.944444444445,
+    "shares_out_m": 117.04
+  },
+  "EQX": {
+    "avg_volume": 1031751.074074074,
+    "shares_out_m": 1167.46
+  },
+  "ITRG": {
+    "avg_volume": 131498.87037037036,
+    "shares_out_m": 202.88
+  },
+  "GAU": {
+    "avg_volume": 171699.87037037036,
+    "shares_out_m": 262.05
+  },
+  "MO": {
+    "avg_volume": 430738.1111111111,
+    "shares_out_m": 1663.44
+  },
+  "RIO": {
+    "avg_volume": 116450.72222222222,
+    "shares_out_m": 1627
+  },
+  "AES": {
+    "avg_volume": 390668.1111111111,
+    "shares_out_m": 713.44
+  },
+  "SNPS": {
+    "avg_volume": 108859.37037037036,
+    "shares_out_m": 191.64
+  },
+  "AXGN": {
+    "avg_volume": 97036.77777777778,
+    "shares_out_m": 59.73
+  },
+  "BCS": {
+    "avg_volume": 388110.74074074073,
+    "shares_out_m": 13319.14
+  },
+  "COR": {
+    "avg_volume": 73965.61111111111,
+    "shares_out_m": 190.83
+  },
+  "PUMP": {
+    "avg_volume": 374032.5,
+    "shares_out_m": 122.86
+  },
+  "VEEV": {
+    "avg_volume": 78137.22222222222,
+    "shares_out_m": 161.91
+  },
+  "VIST": {
+    "avg_volume": 64463.5,
+    "shares_out_m": 110.62
+  },
+  "AS": {
+    "avg_volume": 532905.8333333334,
+    "shares_out_m": 557.67
+  },
+  "BBVA": {
+    "avg_volume": 119224.94444444444,
+    "shares_out_m": 5510.87
+  },
+  "IHS": {
+    "avg_volume": 51485.2037037037,
+    "shares_out_m": 338.34
+  },
+  "OCTV": {
+    "avg_volume": 156189.09259259258,
+    "shares_out_m": 268.44
+  },
+  "VET": {
+    "avg_volume": 115547.01851851853,
+    "shares_out_m": 152.95
+  },
+  "CERT": {
+    "avg_volume": 214516.42592592593,
+    "shares_out_m": 152.54
+  },
+  "MEOH": {
+    "avg_volume": 63322.944444444445,
+    "shares_out_m": 77.36
+  },
+  "MRNA": {
+    "avg_volume": 443812.7037037037,
+    "shares_out_m": 399.24
+  },
+  "PD": {
+    "avg_volume": 105634.66666666667,
+    "shares_out_m": 78.65
+  },
+  "MKSI": {
+    "avg_volume": 94153.87037037036,
+    "shares_out_m": 67.62
+  },
+  "ADC": {
+    "avg_volume": 88690.38888888889,
+    "shares_out_m": 130.1
+  },
+  "AXON": {
+    "avg_volume": 69538.0925925926,
+    "shares_out_m": 81.24
+  },
+  "FIGS": {
+    "avg_volume": 208446.0185185185,
+    "shares_out_m": 166.14
+  },
+  "HAYW": {
+    "avg_volume": 312370.1296296296,
+    "shares_out_m": 208.39
+  },
+  "MAN": {
+    "avg_volume": 50470.81481481482,
+    "shares_out_m": 46.51
+  },
+  "SYY": {
+    "avg_volume": 192108.5,
+    "shares_out_m": 491.93
+  },
+  "TD": {
+    "avg_volume": 53864.72222222222,
+    "shares_out_m": 1644.82
+  },
+  "DECK": {
+    "avg_volume": 171952.66666666666,
+    "shares_out_m": 133.48
+  },
+  "HTGC": {
+    "avg_volume": 85508.85185185185,
+    "shares_out_m": 189.55
+  },
+  "INCY": {
+    "avg_volume": 89059.07407407407,
+    "shares_out_m": 203.83
+  },
+  "ORI": {
+    "avg_volume": 86058.53703703704,
+    "shares_out_m": 239.81
+  },
+  "CWH": {
+    "avg_volume": 169988.6851851852,
+    "shares_out_m": 103.29
+  },
+  "VGZ": {
+    "avg_volume": 238471.92592592593,
+    "shares_out_m": 145.97
+  },
+  "UEC": {
+    "avg_volume": 723690.7037037037,
+    "shares_out_m": 495.58
+  },
+  "AZN": {
+    "avg_volume": 138769.96296296295,
+    "shares_out_m": 1551.05
+  },
+  "OGN": {
+    "avg_volume": 171768.94444444444,
+    "shares_out_m": 262.62
+  },
+  "OWL": {
+    "avg_volume": 1277235.9814814816,
+    "shares_out_m": 1566.71
+  },
+  "SJM": {
+    "avg_volume": 69548.4074074074,
+    "shares_out_m": 106.82
+  },
+  "APH": {
+    "avg_volume": 789994.0,
+    "shares_out_m": 2469.26
+  },
+  "BRBR": {
+    "avg_volume": 268678.44444444444,
+    "shares_out_m": 116.28
+  },
+  "JD": {
+    "avg_volume": 652786.0925925926,
+    "shares_out_m": 2818.3
+  },
+  "ARMK": {
+    "avg_volume": 186528.0,
+    "shares_out_m": 263.63
+  },
+  "CVBF": {
+    "avg_volume": 96953.62962962964,
+    "shares_out_m": 175.49
+  },
+  "FIG": {
+    "avg_volume": 719393.3518518518,
+    "shares_out_m": 533.01
+  },
+  "FRMI": {
+    "avg_volume": 1253385.351851852,
+    "shares_out_m": 641.26
+  },
+  "GFR": {
+    "avg_volume": 75689.29629629629,
+    "shares_out_m": 125.4
+  },
+  "SVIA": {
+    "avg_volume": 65549.5925925926,
+    "shares_out_m": 79.38
+  },
+  "CTVA": {
+    "avg_volume": 1150907.0555555555,
+    "shares_out_m": 667.2
+  },
+  "PAYX": {
+    "avg_volume": 139300.55555555556,
+    "shares_out_m": 355.98
+  },
+  "VCYT": {
+    "avg_volume": 122596.5,
+    "shares_out_m": 80.39
+  },
+  "FRPT": {
+    "avg_volume": 62489.22222222222,
+    "shares_out_m": 48.06
+  },
+  "SHC": {
+    "avg_volume": 172354.24074074073,
+    "shares_out_m": 285.37
+  },
+  "CIFR": {
+    "avg_volume": 2370651.6666666665,
+    "shares_out_m": 415.03
+  },
+  "GD": {
+    "avg_volume": 61574.92592592593,
+    "shares_out_m": 270.22
+  },
+  "HLMN": {
+    "avg_volume": 138705.88888888888,
+    "shares_out_m": 194.54
+  },
+  "VTR": {
+    "avg_volume": 179874.3148148148,
+    "shares_out_m": 528.82
+  },
+  "VYLR": {
+    "avg_volume": 263426.14634146343,
+    "shares_out_m": 667.2
+  },
+  "YOU": {
+    "avg_volume": 77523.53703703704,
+    "shares_out_m": 135.29
+  },
+  "YUM": {
+    "avg_volume": 138933.7962962963,
+    "shares_out_m": 272.9
+  },
+  "WDC": {
+    "avg_volume": 347608.2037037037,
+    "shares_out_m": 374.32
+  },
+  "YEXT": {
+    "avg_volume": 68858.75925925926,
+    "shares_out_m": 98.98
+  },
+  "AEO": {
+    "avg_volume": 375004.1666666667,
+    "shares_out_m": 167.57
+  },
+  "AHCO": {
+    "avg_volume": 161031.75925925927,
+    "shares_out_m": 136.34
+  },
+  "AIRJ": {
+    "avg_volume": 54437.444444444445,
+    "shares_out_m": 75.21
+  },
+  "ALM": {
+    "avg_volume": 395950.68518518517,
+    "shares_out_m": 288.11
+  },
+  "AESI": {
+    "avg_volume": 305558.01851851854,
+    "shares_out_m": 125
+  },
+  "BIP": {
+    "avg_volume": 105715.29629629629,
+    "shares_out_m": 457.71
+  },
+  "DAN": {
+    "avg_volume": 86053.07407407407,
+    "shares_out_m": 101.06
+  },
+  "AEHR": {
+    "avg_volume": 79064.48148148147,
+    "shares_out_m": 32.66
+  },
+  "ALNY": {
+    "avg_volume": 148271.46296296295,
+    "shares_out_m": 133.94
+  },
+  "PENN": {
+    "avg_volume": 248553.0185185185,
+    "shares_out_m": 134.07
+  },
+  "ADMA": {
+    "avg_volume": 285889.22222222225,
+    "shares_out_m": 223.98
+  },
+  "AG": {
+    "avg_volume": 719466.8703703703,
+    "shares_out_m": 493.08
+  },
+  "TLK": {
+    "avg_volume": 127867.48148148147,
+    "shares_out_m": 99062.22
+  },
+  "ALMS": {
+    "avg_volume": 111457.9074074074,
+    "shares_out_m": 129.44
+  },
+  "NOV": {
+    "avg_volume": 327263.4074074074,
+    "shares_out_m": 356.51
+  },
+  "AIV": {
+    "avg_volume": 178371.61111111112,
+    "shares_out_m": 145.24
+  },
+  "FNF": {
+    "avg_volume": 144893.25925925927,
+    "shares_out_m": 268.19
+  },
+  "AHR": {
+    "avg_volume": 174597.87037037036,
+    "shares_out_m": 232.84
+  },
+  "ALAB": {
+    "avg_volume": 187835.55555555556,
+    "shares_out_m": 173.49
+  },
+  "AJG": {
+    "avg_volume": 94776.35185185185,
+    "shares_out_m": 256.42
+  },
+  "CLS": {
+    "avg_volume": 168306.03703703705,
+    "shares_out_m": 126.11
+  },
+  "TRIP": {
+    "avg_volume": 307246.7037037037,
+    "shares_out_m": 117.2
+  },
+  "ADEA": {
+    "avg_volume": 77182.12962962964,
+    "shares_out_m": 110.28
+  },
+  "ADIG": {
+    "avg_volume": 51139.148148148146,
+    "shares_out_m": 75.92
+  },
+  "AER": {
+    "avg_volume": 61441.055555555555,
+    "shares_out_m": 149.11
+  },
+  "ALGM": {
+    "avg_volume": 168297.62962962964,
+    "shares_out_m": 186.48
+  },
+  "ALLE": {
+    "avg_volume": 61509.7962962963,
+    "shares_out_m": 84.32
+  },
+  "ALLY": {
+    "avg_volume": 281986.94444444444,
+    "shares_out_m": 300.54
+  },
+  "FMC": {
+    "avg_volume": 394855.81481481483,
+    "shares_out_m": 155.56
+  },
+  "AAPL": {
+    "avg_volume": 1282514.0,
+    "shares_out_m": 14594.18
+  },
+  "CX": {
+    "avg_volume": 1013161.3148148148,
+    "shares_out_m": 15154.92
+  },
+  "ACMR": {
+    "avg_volume": 61753.444444444445,
+    "shares_out_m": 69.65
+  },
+  "AEVA": {
+    "avg_volume": 75337.96296296296,
+    "shares_out_m": 69.71
+  },
+  "AVGO": {
+    "avg_volume": 874034.3888888889,
+    "shares_out_m": 4773.63
+  },
+  "ABNB": {
+    "avg_volume": 228533.24074074073,
+    "shares_out_m": 589.59
+  },
+  "ACDC": {
+    "avg_volume": 112973.03703703704,
+    "shares_out_m": 182.12
+  },
+  "BIRK": {
+    "avg_volume": 123688.05555555556,
+    "shares_out_m": 165.13
+  },
+  "CNH": {
+    "avg_volume": 1055399.9074074074,
+    "shares_out_m": 1237.73
+  },
+  "ABCL": {
+    "avg_volume": 245327.53703703705,
+    "shares_out_m": 323.91
+  },
+  "BRX": {
+    "avg_volume": 258959.37037037036,
+    "shares_out_m": 306.87
+  },
+  "ADI": {
+    "avg_volume": 166192.57407407407,
+    "shares_out_m": 484.57
+  },
+  "AGNC": {
+    "avg_volume": 1771438.5,
+    "shares_out_m": 1273.81
+  },
+  "AKAM": {
+    "avg_volume": 285512.9074074074,
+    "shares_out_m": 143.72
+  },
+  "CHD": {
+    "avg_volume": 99655.70370370371,
+    "shares_out_m": 236.03
+  },
+  "GMRS": {
+    "avg_volume": 73427.33333333333,
+    "shares_out_m": 54.02
+  },
+  "LHX": {
+    "avg_volume": 91599.27777777778,
+    "shares_out_m": 186.2
+  },
+  "AA": {
+    "avg_volume": 236833.7037037037,
+    "shares_out_m": 263.97
+  },
+  "CGNX": {
+    "avg_volume": 123524.94444444444,
+    "shares_out_m": 168.22
+  },
+  "ABEO": {
+    "avg_volume": 104166.03703703704,
+    "shares_out_m": 57.18
+  },
+  "AAL": {
+    "avg_volume": 2375759.222222222,
+    "shares_out_m": 662.62
+  },
+  "ACAD": {
+    "avg_volume": 152782.2962962963,
+    "shares_out_m": 172.31
+  },
+  "A": {
+    "avg_volume": 141621.35185185185,
+    "shares_out_m": 281.93
+  },
+  "CRON": {
+    "avg_volume": 62179.68518518518,
+    "shares_out_m": 368.54
+  },
+  "ABUS": {
+    "avg_volume": 355125.4074074074,
+    "shares_out_m": 198.11
+  },
+  "ACHC": {
+    "avg_volume": 113103.11111111111,
+    "shares_out_m": 93.1
+  },
+  "MNST": {
+    "avg_volume": 667270.8148148148,
+    "shares_out_m": 1956.02
+  },
+  "BETA": {
+    "avg_volume": 117129.72222222222,
+    "shares_out_m": 233.94
+  },
+  "ADAM": {
+    "avg_volume": 76887.62962962964,
+    "shares_out_m": 90.3
+  },
+  "ALK": {
+    "avg_volume": 162698.16666666666,
+    "shares_out_m": 111.63
+  },
+  "ACGL": {
+    "avg_volume": 116766.42592592593,
+    "shares_out_m": 326.4
+  },
+  "ALGN": {
+    "avg_volume": 68024.79629629629,
+    "shares_out_m": 71.04
+  },
+  "JHX": {
+    "avg_volume": 776086.925925926,
+    "shares_out_m": 2907.86
+  },
+  "ACCV": {
+    "avg_volume": 96608.09523809524,
+    "shares_out_m": 225
+  },
+  "DHR": {
+    "avg_volume": 247920.74074074073,
+    "shares_out_m": 703.53
+  },
+  "GEO": {
+    "avg_volume": 115562.05555555556,
+    "shares_out_m": 131.62
+  },
+  "SCCO": {
+    "avg_volume": 76773.11111111111,
+    "shares_out_m": 844.34
+  },
+  "SPGI": {
+    "avg_volume": 87600.18518518518,
+    "shares_out_m": 289.9
+  },
+  "BIIB": {
+    "avg_volume": 71670.48148148147,
+    "shares_out_m": 147.82
+  },
+  "FBP": {
+    "avg_volume": 99929.57407407407,
+    "shares_out_m": 150.92
+  },
+  "QDEL": {
+    "avg_volume": 137018.5185185185,
+    "shares_out_m": 68.58
+  },
+  "ABX": {
+    "avg_volume": 50498.7962962963,
+    "shares_out_m": 97.79
+  },
+  "CNX": {
+    "avg_volume": 113773.66666666667,
+    "shares_out_m": 142.86
+  },
+  "AADX": {
+    "avg_volume": 102812.4074074074,
+    "shares_out_m": 172.39
+  },
+  "AAOI": {
+    "avg_volume": 372591.18518518517,
+    "shares_out_m": 84.57
+  },
+  "ACHR": {
+    "avg_volume": 967593.574074074,
+    "shares_out_m": 770.03
+  },
+  "LLY": {
+    "avg_volume": 111598.55555555556,
+    "shares_out_m": 940.75
+  },
+  "RIG": {
+    "avg_volume": 3218760.3518518517,
+    "shares_out_m": 1116.92
+  },
+  "ACI": {
+    "avg_volume": 555998.7592592592,
+    "shares_out_m": 470.48
+  },
+  "CRL": {
+    "avg_volume": 77976.07407407407,
+    "shares_out_m": 47.74
+  },
+  "ABSI": {
+    "avg_volume": 297605.0,
+    "shares_out_m": 171.61
+  },
+  "VLRS": {
+    "avg_volume": 111440.12962962964,
+    "shares_out_m": 1165.98
+  },
+  "WYNN": {
+    "avg_volume": 128942.88888888889,
+    "shares_out_m": 102.97
+  },
+  "XNCR": {
+    "avg_volume": 68599.68518518518,
+    "shares_out_m": 74.35
+  },
+  "VOYG": {
+    "avg_volume": 85875.07407407407,
+    "shares_out_m": 61.03
+  },
+  "APD": {
+    "avg_volume": 51108.38888888889,
+    "shares_out_m": 222.69
+  },
+  "AU": {
+    "avg_volume": 117772.5,
+    "shares_out_m": 505.77
+  },
+  "AVBP": {
+    "avg_volume": 106628.79629629629,
+    "shares_out_m": 49.31
+  },
+  "AOS": {
+    "avg_volume": 90990.44444444444,
+    "shares_out_m": 134.33
+  },
+  "APPS": {
+    "avg_volume": 137358.25925925927,
+    "shares_out_m": 121.72
+  },
+  "ARVN": {
+    "avg_volume": 56085.148148148146,
+    "shares_out_m": 65.39
+  },
+  "ATRC": {
+    "avg_volume": 53739.03703703704,
+    "shares_out_m": 50.87
+  },
+  "AR": {
+    "avg_volume": 327667.4074074074,
+    "shares_out_m": 307.14
+  },
+  "BBIO": {
+    "avg_volume": 175463.14814814815,
+    "shares_out_m": 194.8
+  },
+  "BLDP": {
+    "avg_volume": 193975.38888888888,
+    "shares_out_m": 351.09
+  },
+  "AMLX": {
+    "avg_volume": 83479.27777777778,
+    "shares_out_m": 125.46
+  },
+  "ATAT": {
+    "avg_volume": 76342.87037037036,
+    "shares_out_m": 408.13
+  },
+  "BCAX": {
+    "avg_volume": 90675.4074074074,
+    "shares_out_m": 66.17
+  },
+  "APLE": {
+    "avg_volume": 181614.3148148148,
+    "shares_out_m": 236.08
+  },
+  "AVR": {
+    "avg_volume": 67204.35185185185,
+    "shares_out_m": 97.46
+  },
+  "BGC": {
+    "avg_volume": 201230.75925925927,
+    "shares_out_m": 467.09
+  },
+  "AXSM": {
+    "avg_volume": 61887.88888888889,
+    "shares_out_m": 52.38
+  },
+  "AXTI": {
+    "avg_volume": 285844.64814814815,
+    "shares_out_m": 65.57
+  },
+  "BHP": {
+    "avg_volume": 196284.96296296295,
+    "shares_out_m": 5084.18
+  },
+  "AMBA": {
+    "avg_volume": 78087.9074074074,
+    "shares_out_m": 44.14
+  },
+  "ARHS": {
+    "avg_volume": 152861.1851851852,
+    "shares_out_m": 141.75
+  },
+  "AUPH": {
+    "avg_volume": 52973.46296296296,
+    "shares_out_m": 134
+  },
+  "ALXO": {
+    "avg_volume": 96132.05555555556,
+    "shares_out_m": 124.92
+  },
+  "AMCR": {
+    "avg_volume": 193529.94444444444,
+    "shares_out_m": 462.35
+  },
+  "AMPL": {
+    "avg_volume": 106914.94444444444,
+    "shares_out_m": 124.92
+  },
+  "AMT": {
+    "avg_volume": 141597.7962962963,
+    "shares_out_m": 463.76
+  },
+  "BKNG": {
+    "avg_volume": 448789.14814814815,
+    "shares_out_m": 751.38
+  },
+  "ALTO": {
+    "avg_volume": 65610.11111111111,
+    "shares_out_m": 77.57
+  },
+  "AMKR": {
+    "avg_volume": 185324.22222222222,
+    "shares_out_m": 247.81
+  },
+  "APO": {
+    "avg_volume": 194870.24074074073,
+    "shares_out_m": 590.54
+  },
+  "ASND": {
+    "avg_volume": 52468.59259259259,
+    "shares_out_m": 66.4
+  },
+  "BFLY": {
+    "avg_volume": 355989.6111111111,
+    "shares_out_m": 267.46
+  },
+  "ANF": {
+    "avg_volume": 71568.29629629629,
+    "shares_out_m": 42.43
+  },
+  "ANT": {
+    "avg_volume": 16878432.166666668,
+    "shares_out_m": 13091.06
+  },
+  "ASO": {
+    "avg_volume": 88525.25925925926,
+    "shares_out_m": 61.58
+  },
+  "AMTM": {
+    "avg_volume": 106612.62962962964,
+    "shares_out_m": 244.51
+  },
+  "ANET": {
+    "avg_volume": 374639.55555555556,
+    "shares_out_m": 1261.22
+  },
+  "ARE": {
+    "avg_volume": 110964.22222222222,
+    "shares_out_m": 174.16
+  },
+  "BBD": {
+    "avg_volume": 4148381.9814814813,
+    "shares_out_m": 11196.86
+  },
+  "AMD": {
+    "avg_volume": 837960.4814814815,
+    "shares_out_m": 1632.48
+  },
+  "BBAI": {
+    "avg_volume": 877770.0555555555,
+    "shares_out_m": 481.39
+  },
+  "BFAM": {
+    "avg_volume": 61703.055555555555,
+    "shares_out_m": 47.93
+  },
+  "BKR": {
+    "avg_volume": 456009.18518518517,
+    "shares_out_m": 993.08
+  },
+  "ALT": {
+    "avg_volume": 198544.35185185185,
+    "shares_out_m": 194.52
+  },
+  "BCRX": {
+    "avg_volume": 389136.2037037037,
+    "shares_out_m": 255.54
+  },
+  "BILI": {
+    "avg_volume": 291084.4074074074,
+    "shares_out_m": 420.13
+  },
+  "BLMN": {
+    "avg_volume": 168235.2037037037,
+    "shares_out_m": 85.62
+  },
+  "APP": {
+    "avg_volume": 206369.72222222222,
+    "shares_out_m": 334.65
+  },
+  "ARDX": {
+    "avg_volume": 379624.01851851854,
+    "shares_out_m": 249.19
+  },
+  "ARIS": {
+    "avg_volume": 164107.72222222222,
+    "shares_out_m": 170.9
+  },
+  "AVPT": {
+    "avg_volume": 190292.64814814815,
+    "shares_out_m": 211.57
+  },
+  "APG": {
+    "avg_volume": 193190.44444444444,
+    "shares_out_m": 425.26
+  },
+  "APLD": {
+    "avg_volume": 1176278.7037037036,
+    "shares_out_m": 302.39
+  },
+  "ARKO": {
+    "avg_volume": 51412.87037037037,
+    "shares_out_m": 112.19
+  },
+  "AROC": {
+    "avg_volume": 109907.94444444444,
+    "shares_out_m": 175.34
+  },
+  "ATEC": {
+    "avg_volume": 270469.7037037037,
+    "shares_out_m": 155.14
+  },
+  "BABA": {
+    "avg_volume": 403195.0740740741,
+    "shares_out_m": 19063.63
+  },
+  "AUR": {
+    "avg_volume": 1822650.2407407407,
+    "shares_out_m": 2020.45
+  },
+  "BBNX": {
+    "avg_volume": 76581.05555555556,
+    "shares_out_m": 54.37
+  },
+  "BBWI": {
+    "avg_volume": 491074.75925925927,
+    "shares_out_m": 201.65
+  },
+  "BKD": {
+    "avg_volume": 517580.2037037037,
+    "shares_out_m": 238.82
+  },
+  "AMC": {
+    "avg_volume": 1062359.0925925926,
+    "shares_out_m": 892.6
+  },
+  "ARES": {
+    "avg_volume": 144852.0185185185,
+    "shares_out_m": 330.28
+  },
+  "ARRY": {
+    "avg_volume": 628261.1481481482,
+    "shares_out_m": 154.01
+  },
+  "AXTA": {
+    "avg_volume": 125292.96296296296,
+    "shares_out_m": 214.05
+  },
+  "ANGX": {
+    "avg_volume": 92994.11111111111,
+    "shares_out_m": 186.76
+  },
+  "AVAH": {
+    "avg_volume": 188805.16666666666,
+    "shares_out_m": 218.29
+  },
+  "AWK": {
+    "avg_volume": 118185.05555555556,
+    "shares_out_m": 199.1
+  },
+  "AMAT": {
+    "avg_volume": 304507.35185185185,
+    "shares_out_m": 793.6
+  },
+  "ARCO": {
+    "avg_volume": 174219.14814814815,
+    "shares_out_m": 208.35
+  },
+  "ARR": {
+    "avg_volume": 282477.27777777775,
+    "shares_out_m": 148.42
+  },
+  "AUB": {
+    "avg_volume": 79893.46296296296,
+    "shares_out_m": 140.45
+  },
+  "AMX": {
+    "avg_volume": 312932.24074074073,
+    "shares_out_m": 59710
+  },
+  "BEKE": {
+    "avg_volume": 425361.1296296296,
+    "shares_out_m": 3416.54
+  },
+  "BMNR": {
+    "avg_volume": 1395390.0925925926,
+    "shares_out_m": 603.23
+  },
+  "BMRN": {
+    "avg_volume": 162994.12962962964,
+    "shares_out_m": 193.57
+  },
+  "OMDA": {
+    "avg_volume": 65945.57407407407,
+    "shares_out_m": 61.22
+  },
+  "TDS": {
+    "avg_volume": 82360.81481481482,
+    "shares_out_m": 115.12
+  },
+  "BL": {
+    "avg_volume": 52503.25925925926,
+    "shares_out_m": 58.13
+  },
+  "B": {
+    "avg_volume": 798056.574074074,
+    "shares_out_m": 1645.88
+  },
+  "BLZE": {
+    "avg_volume": 97352.14814814815,
+    "shares_out_m": 61.9
+  },
+  "BNY": {
+    "avg_volume": 160461.59259259258,
+    "shares_out_m": 672.9
+  },
+  "COST": {
+    "avg_volume": 95203.94444444444,
+    "shares_out_m": 443.13
+  },
+  "BTSG": {
+    "avg_volume": 140597.55555555556,
+    "shares_out_m": 198.98
+  },
+  "CAI": {
+    "avg_volume": 298919.98148148146,
+    "shares_out_m": 282.6
+  },
+  "CLYM": {
+    "avg_volume": 74011.87037037036,
+    "shares_out_m": 57.44
+  },
+  "COO": {
+    "avg_volume": 223588.40740740742,
+    "shares_out_m": 190.16
+  },
+  "BNL": {
+    "avg_volume": 193630.74074074073,
+    "shares_out_m": 191.98
+  },
+  "CLNE": {
+    "avg_volume": 112747.75925925926,
+    "shares_out_m": 220.45
+  },
+  "CPRT": {
+    "avg_volume": 733637.1296296297,
+    "shares_out_m": 926.38
+  },
+  "CDNL": {
+    "avg_volume": 74890.42592592593,
+    "shares_out_m": 48.48
+  },
+  "CMCSA": {
+    "avg_volume": 1963768.4814814816,
+    "shares_out_m": 3551.01
+  },
+  "CMG": {
+    "avg_volume": 1321701.648148148,
+    "shares_out_m": 1264.97
+  },
+  "CP": {
+    "avg_volume": 150532.16666666666,
+    "shares_out_m": 869.55
+  },
+  "CLVT": {
+    "avg_volume": 276348.3703703704,
+    "shares_out_m": 639.66
+  },
+  "BRUN": {
+    "avg_volume": 129717.05555555556,
+    "shares_out_m": 79.49
+  },
+  "BSBR": {
+    "avg_volume": 455473.2037037037,
+    "shares_out_m": 7498.53
+  },
+  "BV": {
+    "avg_volume": 69261.98148148147,
+    "shares_out_m": 92.6
+  },
+  "CG": {
+    "avg_volume": 194070.1851851852,
+    "shares_out_m": 356.33
+  },
+  "CALM": {
+    "avg_volume": 63074.81481481482,
+    "shares_out_m": 46.71
+  },
+  "CEG": {
+    "avg_volume": 167335.11111111112,
+    "shares_out_m": 354.31
+  },
+  "CLF": {
+    "avg_volume": 913510.925925926,
+    "shares_out_m": 570.58
+  },
+  "CHTR": {
+    "avg_volume": 150627.40740740742,
+    "shares_out_m": 114.58
+  },
+  "CMC": {
+    "avg_volume": 55922.555555555555,
+    "shares_out_m": 109.98
+  },
+  "BULL": {
+    "avg_volume": 651483.8518518518,
+    "shares_out_m": 540.67
+  },
+  "CAKE": {
+    "avg_volume": 79420.12962962964,
+    "shares_out_m": 49.76
+  },
+  "CELH": {
+    "avg_volume": 328882.962962963,
+    "shares_out_m": 253.04
+  },
+  "CGON": {
+    "avg_volume": 92914.53703703704,
+    "shares_out_m": 88.64
+  },
+  "CPT": {
+    "avg_volume": 52470.61111111111,
+    "shares_out_m": 100.54
+  },
+  "BRZE": {
+    "avg_volume": 267385.9074074074,
+    "shares_out_m": 112.36
+  },
+  "CCL": {
+    "avg_volume": 1385436.7777777778,
+    "shares_out_m": 1344.61
+  },
+  "CLMT": {
+    "avg_volume": 76544.66666666667,
+    "shares_out_m": 87.9
+  },
+  "BRSL": {
+    "avg_volume": 217564.90740740742,
+    "shares_out_m": 183.69
+  },
+  "COGT": {
+    "avg_volume": 137081.75925925927,
+    "shares_out_m": 173.52
+  },
+  "CLBK": {
+    "avg_volume": 271943.962962963,
+    "shares_out_m": 269.55
+  },
+  "BMY": {
+    "avg_volume": 669724.5925925926,
+    "shares_out_m": 2044.09
+  },
+  "CARG": {
+    "avg_volume": 88160.85185185185,
+    "shares_out_m": 89.07
+  },
+  "CENX": {
+    "avg_volume": 106728.22222222222,
+    "shares_out_m": 98.99
+  },
+  "CHDN": {
+    "avg_volume": 79581.44444444444,
+    "shares_out_m": 68.55
+  },
+  "BN": {
+    "avg_volume": 452051.037037037,
+    "shares_out_m": 2452.01
+  },
+  "CHRD": {
+    "avg_volume": 53497.74074074074,
+    "shares_out_m": 54.7
+  },
+  "BXDC": {
+    "avg_volume": 157306.74074074073,
+    "shares_out_m": 100.65
+  },
+  "CBC": {
+    "avg_volume": 56552.166666666664,
+    "shares_out_m": 239.38
+  },
+  "CME": {
+    "avg_volume": 97674.51851851853,
+    "shares_out_m": 357.93
+  },
+  "BSY": {
+    "avg_volume": 157139.0185185185,
+    "shares_out_m": 302.09
+  },
+  "CCCC": {
+    "avg_volume": 202825.61111111112,
+    "shares_out_m": 123.03
+  },
+  "COHU": {
+    "avg_volume": 60510.833333333336,
+    "shares_out_m": 47.35
+  },
+  "COLD": {
+    "avg_volume": 341417.75925925927,
+    "shares_out_m": 285.48
+  },
+  "BRSP": {
+    "avg_volume": 149710.9814814815,
+    "shares_out_m": 124.68
+  },
+  "BR": {
+    "avg_volume": 53322.944444444445,
+    "shares_out_m": 112.9
+  },
+  "CON": {
+    "avg_volume": 65562.20370370371,
+    "shares_out_m": 126.52
+  },
+  "CPRI": {
+    "avg_volume": 350037.6296296296,
+    "shares_out_m": 103.35
+  },
+  "CBOE": {
+    "avg_volume": 71985.14814814815,
+    "shares_out_m": 104.33
+  },
+  "CL": {
+    "avg_volume": 290014.6666666667,
+    "shares_out_m": 794.92
+  },
+  "CPB": {
+    "avg_volume": 408783.462962963,
+    "shares_out_m": 298.23
+  },
+  "BWIN": {
+    "avg_volume": 117930.12962962964,
+    "shares_out_m": 135.59
+  },
+  "CGEM": {
+    "avg_volume": 58969.25925925926,
+    "shares_out_m": 64.35
+  },
+  "CLDX": {
+    "avg_volume": 88746.9074074074,
+    "shares_out_m": 78.53
+  },
+  "CRBG": {
+    "avg_volume": 477710.0740740741,
+    "shares_out_m": 445.77
+  },
+  "CHKP": {
+    "avg_volume": 78928.37037037036,
+    "shares_out_m": 102.1
+  },
+  "BTDR": {
+    "avg_volume": 712370.2407407408,
+    "shares_out_m": 276.15
+  },
+  "BNTX": {
+    "avg_volume": 63108.98148148148,
+    "shares_out_m": 251.2
+  },
+  "CCC": {
+    "avg_volume": 1262788.3333333333,
+    "shares_out_m": 591.04
+  },
+  "CORT": {
+    "avg_volume": 56163.90740740741,
+    "shares_out_m": 108.1
+  },
+  "CADL": {
+    "avg_volume": 58582.61111111111,
+    "shares_out_m": 76.52
+  },
+  "CBRL": {
+    "avg_volume": 50587.77777777778,
+    "shares_out_m": 22.35
+  },
+  "CLBT": {
+    "avg_volume": 197880.90740740742,
+    "shares_out_m": 251.34
+  },
+  "CNK": {
+    "avg_volume": 111839.27777777778,
+    "shares_out_m": 115.91
+  },
+  "BW": {
+    "avg_volume": 284964.8888888889,
+    "shares_out_m": 148.97
+  },
+  "CLSK": {
+    "avg_volume": 975297.4814814815,
+    "shares_out_m": 256.82
+  },
+  "CDNA": {
+    "avg_volume": 77518.53703703704,
+    "shares_out_m": 52.54
+  },
+  "CHRW": {
+    "avg_volume": 116545.85185185185,
+    "shares_out_m": 115.94
+  },
+  "BUSE": {
+    "avg_volume": 65335.7037037037,
+    "shares_out_m": 81.28
+  },
+  "CMPS": {
+    "avg_volume": 181201.94444444444,
+    "shares_out_m": 138.48
+  },
+  "COCO": {
+    "avg_volume": 83168.03703703704,
+    "shares_out_m": 57.06
+  },
+  "CRM": {
+    "avg_volume": 358611.55555555556,
+    "shares_out_m": 823
+  },
+  "CRSP": {
+    "avg_volume": 80377.61111111111,
+    "shares_out_m": 96.69
+  },
+  "CRSR": {
+    "avg_volume": 53733.37037037037,
+    "shares_out_m": 108.18
+  },
+  "CRK": {
+    "avg_volume": 178819.25925925927,
+    "shares_out_m": 293.62
+  },
+  "CRMD": {
+    "avg_volume": 100942.74074074074,
+    "shares_out_m": 77.94
+  },
+  "CROX": {
+    "avg_volume": 69571.64814814815,
+    "shares_out_m": 45.73
+  },
+  "CRH": {
+    "avg_volume": 269060.72222222225,
+    "shares_out_m": 665.23
+  },
+  "CRS": {
+    "avg_volume": 66001.0,
+    "shares_out_m": 49.54
+  },
+  "DAL": {
+    "avg_volume": 328830.68518518517,
+    "shares_out_m": 657.91
+  },
+  "DFTX": {
+    "avg_volume": 126894.85185185185,
+    "shares_out_m": 134.37
+  },
+  "DNTH": {
+    "avg_volume": 52186.24074074074,
+    "shares_out_m": 55.93
+  },
+  "CTKB": {
+    "avg_volume": 132828.2962962963,
+    "shares_out_m": 129.98
+  },
+  "DBX": {
+    "avg_volume": 276987.9259259259,
+    "shares_out_m": 217.44
+  },
+  "DKS": {
+    "avg_volume": 151684.40740740742,
+    "shares_out_m": 88.93
+  },
+  "EBAY": {
+    "avg_volume": 217711.27777777778,
+    "shares_out_m": 439
+  },
+  "ENGN": {
+    "avg_volume": 83783.42592592593,
+    "shares_out_m": 67.02
+  },
+  "DKNG": {
+    "avg_volume": 946634.6481481482,
+    "shares_out_m": 496.45
+  },
+  "CSX": {
+    "avg_volume": 878955.0370370371,
+    "shares_out_m": 1843.4
+  },
+  "CTAS": {
+    "avg_volume": 97626.05555555556,
+    "shares_out_m": 397.08
+  },
+  "EBC": {
+    "avg_volume": 182511.33333333334,
+    "shares_out_m": 226.3
+  },
+  "EFC": {
+    "avg_volume": 139101.5185185185,
+    "shares_out_m": 128.89
+  },
+  "CSGP": {
+    "avg_volume": 367576.537037037,
+    "shares_out_m": 402.34
+  },
+  "CUZ": {
+    "avg_volume": 94036.62962962964,
+    "shares_out_m": 164.6
+  },
+  "DTM": {
+    "avg_volume": 57804.68518518518,
+    "shares_out_m": 102.02
+  },
+  "D": {
+    "avg_volume": 399708.0740740741,
+    "shares_out_m": 879.57
+  },
+  "EGY": {
+    "avg_volume": 86166.9074074074,
+    "shares_out_m": 105.19
+  },
+  "CYPH": {
+    "avg_volume": 452964.48148148146,
+    "shares_out_m": 107.76
+  },
+  "EGHT": {
+    "avg_volume": 93382.20370370371,
+    "shares_out_m": 144.44
+  },
+  "ELAN": {
+    "avg_volume": 479245.3888888889,
+    "shares_out_m": 499.62
+  },
+  "DELL": {
+    "avg_volume": 296565.35185185185,
+    "shares_out_m": 635.81
+  },
+  "DGX": {
+    "avg_volume": 65658.53703703704,
+    "shares_out_m": 110.02
+  },
+  "DK": {
+    "avg_volume": 82875.29629629629,
+    "shares_out_m": 61.23
+  },
+  "EDIT": {
+    "avg_volume": 154390.96296296295,
+    "shares_out_m": 153.58
+  },
+  "CSTM": {
+    "avg_volume": 81080.12962962964,
+    "shares_out_m": 134.54
+  },
+  "CYRX": {
+    "avg_volume": 54758.88888888889,
+    "shares_out_m": 50.65
+  },
+  "DFH": {
+    "avg_volume": 65927.31481481482,
+    "shares_out_m": 90.72
+  },
+  "CYH": {
+    "avg_volume": 121026.37037037036,
+    "shares_out_m": 141.03
+  },
+  "DRVN": {
+    "avg_volume": 68805.20370370371,
+    "shares_out_m": 164.98
+  },
+  "ELF": {
+    "avg_volume": 67228.20370370371,
+    "shares_out_m": 59.01
+  },
+  "ELS": {
+    "avg_volume": 98549.4074074074,
+    "shares_out_m": 194.79
+  },
+  "DGXX": {
+    "avg_volume": 148474.94444444444,
+    "shares_out_m": 102.06
+  },
+  "EAT": {
+    "avg_volume": 92878.96296296296,
+    "shares_out_m": 41.54
+  },
+  "ENTG": {
+    "avg_volume": 129695.96296296296,
+    "shares_out_m": 152.8
+  },
+  "DRS": {
+    "avg_volume": 60465.25925925926,
+    "shares_out_m": 266.62
+  },
+  "EOLS": {
+    "avg_volume": 50817.77777777778,
+    "shares_out_m": 66.05
+  },
+  "DLO": {
+    "avg_volume": 174872.61111111112,
+    "shares_out_m": 288.42
+  },
+  "CWEN": {
+    "avg_volume": 68436.0925925926,
+    "shares_out_m": 205.27
+  },
+  "DLTR": {
+    "avg_volume": 122794.16666666667,
+    "shares_out_m": 187.63
+  },
+  "DYN": {
+    "avg_volume": 182656.5,
+    "shares_out_m": 186.75
+  },
+  "DRH": {
+    "avg_volume": 263288.31481481483,
+    "shares_out_m": 204.61
+  },
+  "DNLI": {
+    "avg_volume": 118204.79629629629,
+    "shares_out_m": 159.85
+  },
+  "DDOG": {
+    "avg_volume": 202573.42592592593,
+    "shares_out_m": 359.08
+  },
+  "DXCM": {
+    "avg_volume": 222259.62962962964,
+    "shares_out_m": 372.95
+  },
+  "DNA": {
+    "avg_volume": 128758.03703703704,
+    "shares_out_m": 64.34
+  },
+  "CSIQ": {
+    "avg_volume": 107050.83333333333,
+    "shares_out_m": 67.9
+  },
+  "DUOT": {
+    "avg_volume": 52469.25925925926,
+    "shares_out_m": 31.47
+  },
+  "ELDN": {
+    "avg_volume": 59939.055555555555,
+    "shares_out_m": 81.26
+  },
+  "DNUT": {
+    "avg_volume": 168462.38888888888,
+    "shares_out_m": 173.5
+  },
+  "EGO": {
+    "avg_volume": 280689.94444444444,
+    "shares_out_m": 261.56
+  },
+  "DDD": {
+    "avg_volume": 163743.09259259258,
+    "shares_out_m": 166.15
+  },
+  "DHC": {
+    "avg_volume": 117732.57407407407,
+    "shares_out_m": 242.13
+  },
+  "ENR": {
+    "avg_volume": 52661.42592592593,
+    "shares_out_m": 68.48
+  },
+  "EPD": {
+    "avg_volume": 378241.01851851854,
+    "shares_out_m": 2159.48
+  },
+  "EPRT": {
+    "avg_volume": 192087.90740740742,
+    "shares_out_m": 220.28
+  },
+  "TDUP": {
+    "avg_volume": 119027.14814814815,
+    "shares_out_m": 131.33
+  },
+  "ERAS": {
+    "avg_volume": 364120.2962962963,
+    "shares_out_m": 349.76
+  },
+  "EWTX": {
+    "avg_volume": 87367.96296296296,
+    "shares_out_m": 108.6
+  },
+  "EVRG": {
+    "avg_volume": 113741.38888888889,
+    "shares_out_m": 230.57
+  },
+  "FCF": {
+    "avg_volume": 65883.18518518518,
+    "shares_out_m": 96.93
+  },
+  "EVEX": {
+    "avg_volume": 71367.44444444444,
+    "shares_out_m": 348.49
+  },
+  "FOUR": {
+    "avg_volume": 132257.57407407407,
+    "shares_out_m": 78.96
+  },
+  "FLNC": {
+    "avg_volume": 501714.9074074074,
+    "shares_out_m": 184.6
+  },
+  "EVGO": {
+    "avg_volume": 271253.8333333333,
+    "shares_out_m": 314.52
+  },
+  "FBIN": {
+    "avg_volume": 160572.83333333334,
+    "shares_out_m": 119.37
+  },
+  "FIGR": {
+    "avg_volume": 271141.24074074073,
+    "shares_out_m": 227.94
+  },
+  "FROG": {
+    "avg_volume": 129365.05555555556,
+    "shares_out_m": 123.3
+  },
+  "JBHT": {
+    "avg_volume": 63048.75925925926,
+    "shares_out_m": 93.22
+  },
+  "EXPE": {
+    "avg_volume": 120827.11111111111,
+    "shares_out_m": 120.02
+  },
+  "EYE": {
+    "avg_volume": 122925.61111111111,
+    "shares_out_m": 79.07
+  },
+  "FAF": {
+    "avg_volume": 58101.166666666664,
+    "shares_out_m": 102.1
+  },
+  "FANG": {
+    "avg_volume": 173096.61111111112,
+    "shares_out_m": 280.02
+  },
+  "FA": {
+    "avg_volume": 124326.14814814815,
+    "shares_out_m": 171.75
+  },
+  "FITB": {
+    "avg_volume": 628984.2222222222,
+    "shares_out_m": 907.37
+  },
+  "FNKO": {
+    "avg_volume": 70546.37037037036,
+    "shares_out_m": 56.09
+  },
+  "FCEL": {
+    "avg_volume": 265350.0,
+    "shares_out_m": 79.95
+  },
+  "FERG": {
+    "avg_volume": 87610.57407407407,
+    "shares_out_m": 193.45
+  },
+  "FFBC": {
+    "avg_volume": 65200.2962962963,
+    "shares_out_m": 105.17
+  },
+  "FIBK": {
+    "avg_volume": 77479.12962962964,
+    "shares_out_m": 93.52
+  },
+  "FIVN": {
+    "avg_volume": 117121.79629629629,
+    "shares_out_m": 74.72
+  },
+  "FCX": {
+    "avg_volume": 720370.0555555555,
+    "shares_out_m": 1400
+  },
+  "FLUT": {
+    "avg_volume": 143487.35185185185,
+    "shares_out_m": 173.54
+  },
+  "EXC": {
+    "avg_volume": 526645.7222222222,
+    "shares_out_m": 1034.9
+  },
+  "FLEX": {
+    "avg_volume": 274156.24074074073,
+    "shares_out_m": 369.46
+  },
+  "FND": {
+    "avg_volume": 187648.61111111112,
+    "shares_out_m": 104.23
+  },
+  "FRNM": {
+    "avg_volume": 63355.851851851854,
+    "shares_out_m": 107.45
+  },
+  "F": {
+    "avg_volume": 1926675.2222222222,
+    "shares_out_m": 3993.22
+  },
+  "EXTR": {
+    "avg_volume": 97514.14814814815,
+    "shares_out_m": 131.19
+  },
+  "FRO": {
+    "avg_volume": 203663.42592592593,
+    "shares_out_m": 222.62
+  },
+  "FTNT": {
+    "avg_volume": 195628.05555555556,
+    "shares_out_m": 734.71
+  },
+  "FRVO": {
+    "avg_volume": 475238.64814814815,
+    "shares_out_m": 294.76
+  },
+  "FUN": {
+    "avg_volume": 241337.7037037037,
+    "shares_out_m": 102.32
+  },
+  "FTAI": {
+    "avg_volume": 118422.05555555556,
+    "shares_out_m": 102.45
+  },
+  "EW": {
+    "avg_volume": 253675.8148148148,
+    "shares_out_m": 576.4
+  },
+  "FDMT": {
+    "avg_volume": 65663.94444444444,
+    "shares_out_m": 55.24
+  },
+  "FHB": {
+    "avg_volume": 213912.2962962963,
+    "shares_out_m": 121.68
+  },
+  "EXPD": {
+    "avg_volume": 69196.62962962964,
+    "shares_out_m": 129.99
+  },
+  "FLG": {
+    "avg_volume": 489432.48148148146,
+    "shares_out_m": 400.64
+  },
+  "FFIN": {
+    "avg_volume": 58920.38888888889,
+    "shares_out_m": 143.4
+  },
+  "FOXA": {
+    "avg_volume": 311947.7037037037,
+    "shares_out_m": 421.67
+  },
+  "FLY": {
+    "avg_volume": 152269.03703703705,
+    "shares_out_m": 167.4
+  },
+  "FR": {
+    "avg_volume": 84119.14814814815,
+    "shares_out_m": 132.58
+  },
+  "FLYW": {
+    "avg_volume": 124424.38888888889,
+    "shares_out_m": 121.67
+  },
+  "FULT": {
+    "avg_volume": 132387.35185185185,
+    "shares_out_m": 189.28
+  },
+  "EXEL": {
+    "avg_volume": 125705.66666666667,
+    "shares_out_m": 244.01
+  },
+  "FDXF": {
+    "avg_volume": 77529.72222222222,
+    "shares_out_m": 149.52
+  },
+  "FISV": {
+    "avg_volume": 466928.6111111111,
+    "shares_out_m": 531.77
+  },
+  "FBRT": {
+    "avg_volume": 106924.07407407407,
+    "shares_out_m": 75.67
+  },
+  "FPS": {
+    "avg_volume": 659886.0185185185,
+    "shares_out_m": 304.43
+  },
+  "FSK": {
+    "avg_volume": 118382.01851851853,
+    "shares_out_m": 276.34
+  },
+  "FHTX": {
+    "avg_volume": 52585.31481481482,
+    "shares_out_m": 59.39
+  },
+  "EXR": {
+    "avg_volume": 75492.44444444444,
+    "shares_out_m": 208.72
+  },
+  "FTRE": {
+    "avg_volume": 109064.83333333333,
+    "shares_out_m": 96.5
+  },
+  "JBI": {
+    "avg_volume": 147436.66666666666,
+    "shares_out_m": 136.44
+  },
+  "RKT": {
+    "avg_volume": 2502428.4814814813,
+    "shares_out_m": 2837.9
+  },
+  "JCI": {
+    "avg_volume": 234862.46296296295,
+    "shares_out_m": 605.74
+  },
+  "JKHY": {
+    "avg_volume": 53686.27777777778,
+    "shares_out_m": 70.11
+  },
+  "JBLU": {
+    "avg_volume": 1382472.2777777778,
+    "shares_out_m": 377.35
+  },
+  "SGI": {
+    "avg_volume": 194582.1851851852,
+    "shares_out_m": 230.24
+  },
+  "MAZE": {
+    "avg_volume": 58088.77777777778,
+    "shares_out_m": 53.93
+  },
+  "KGC": {
+    "avg_volume": 834168.9444444445,
+    "shares_out_m": 1173.3
+  },
+  "LEVI": {
+    "avg_volume": 272110.1666666667,
+    "shares_out_m": 383.47
+  },
+  "MQY": {
+    "avg_volume": 52968.7037037037,
+    "shares_out_m": 150.43
+  },
+  "KOD": {
+    "avg_volume": 77399.37037037036,
+    "shares_out_m": 62.85
+  },
+  "MGTX": {
+    "avg_volume": 58651.74074074074,
+    "shares_out_m": 96.04
+  },
+  "MGY": {
+    "avg_volume": 341910.98148148146,
+    "shares_out_m": 236.97
+  },
+  "MGNI": {
+    "avg_volume": 148678.3148148148,
+    "shares_out_m": 143.42
+  },
+  "MLCO": {
+    "avg_volume": 154981.27777777778,
+    "shares_out_m": 1140.73
+  },
+  "LIFE": {
+    "avg_volume": 90308.42592592593,
+    "shares_out_m": 64.98
+  },
+  "LXEO": {
+    "avg_volume": 121589.92592592593,
+    "shares_out_m": 82.09
+  },
+  "MLM": {
+    "avg_volume": 55677.74074074074,
+    "shares_out_m": 71.02
+  },
+  "LW": {
+    "avg_volume": 122071.0,
+    "shares_out_m": 137.78
+  },
+  "LBTYA": {
+    "avg_volume": 378291.7037037037,
+    "shares_out_m": 341.09
+  },
+  "MLYS": {
+    "avg_volume": 90842.16666666667,
+    "shares_out_m": 88.41
+  },
+  "KDP": {
+    "avg_volume": 1238917.9814814816,
+    "shares_out_m": 1360.83
+  },
+  "KLAC": {
+    "avg_volume": 471899.037037037,
+    "shares_out_m": 1302.96
+  },
+  "LWLG": {
+    "avg_volume": 247307.12962962964,
+    "shares_out_m": 154.17
+  },
+  "LKQ": {
+    "avg_volume": 325652.27777777775,
+    "shares_out_m": 252.4
+  },
+  "LNTH": {
+    "avg_volume": 59575.57407407407,
+    "shares_out_m": 65.3
+  },
+  "LU": {
+    "avg_volume": 58264.555555555555,
+    "shares_out_m": 173.34
+  },
+  "LYG": {
+    "avg_volume": 1279595.9814814816,
+    "shares_out_m": 57262.65
+  },
+  "MDXG": {
+    "avg_volume": 90175.03703703704,
+    "shares_out_m": 145.93
+  },
+  "KC": {
+    "avg_volume": 123406.38888888889,
+    "shares_out_m": 4531.78
+  },
+  "LTRX": {
+    "avg_volume": 61067.12962962963,
+    "shares_out_m": 46.88
+  },
+  "MHK": {
+    "avg_volume": 81216.53703703704,
+    "shares_out_m": 58.13
+  },
+  "MPT": {
+    "avg_volume": 1035192.1296296297,
+    "shares_out_m": 597.16
+  },
+  "LSPD": {
+    "avg_volume": 82459.0,
+    "shares_out_m": 132.84
+  },
+  "MCHP": {
+    "avg_volume": 522399.5925925926,
+    "shares_out_m": 543.01
+  },
+  "MNSO": {
+    "avg_volume": 112461.29629629629,
+    "shares_out_m": 1214.04
+  },
+  "MGM": {
+    "avg_volume": 345083.4259259259,
+    "shares_out_m": 253.01
+  },
+  "LINE": {
+    "avg_volume": 67405.37037037036,
+    "shares_out_m": 227.71
+  },
+  "LTH": {
+    "avg_volume": 160146.27777777778,
+    "shares_out_m": 224.6
+  },
+  "LPTH": {
+    "avg_volume": 159872.38888888888,
+    "shares_out_m": 70.09
+  },
+  "LUMN": {
+    "avg_volume": 816167.425925926,
+    "shares_out_m": 1031.45
+  },
+  "MIAX": {
+    "avg_volume": 86105.70370370371,
+    "shares_out_m": 99.95
+  },
+  "LUNR": {
+    "avg_volume": 406114.5925925926,
+    "shares_out_m": 228.92
+  },
+  "MDB": {
+    "avg_volume": 110220.27777777778,
+    "shares_out_m": 80.56
+  },
+  "KREF": {
+    "avg_volume": 88254.33333333333,
+    "shares_out_m": 57.31
+  },
+  "LYB": {
+    "avg_volume": 182479.33333333334,
+    "shares_out_m": 323.24
+  },
+  "LUV": {
+    "avg_volume": 361792.3703703704,
+    "shares_out_m": 489.6
+  },
+  "LXRX": {
+    "avg_volume": 182013.53703703705,
+    "shares_out_m": 444.96
+  },
+  "LIVN": {
+    "avg_volume": 53061.46296296296,
+    "shares_out_m": 55.09
+  },
+  "KEP": {
+    "avg_volume": 65176.88888888889,
+    "shares_out_m": 641.96
+  },
+  "KNX": {
+    "avg_volume": 218679.24074074073,
+    "shares_out_m": 162.78
+  },
+  "LGN": {
+    "avg_volume": 96062.66666666667,
+    "shares_out_m": 108.08
+  },
+  "MLTX": {
+    "avg_volume": 108153.16666666667,
+    "shares_out_m": 85.11
+  },
+  "MICC": {
+    "avg_volume": 68015.92592592593,
+    "shares_out_m": 612.26
+  },
+  "MOMO": {
+    "avg_volume": 72521.85185185185,
+    "shares_out_m": 287.27
+  },
+  "LBTYK": {
+    "avg_volume": 169548.42592592593,
+    "shares_out_m": 341.09
+  },
+  "LPX": {
+    "avg_volume": 71158.01851851853,
+    "shares_out_m": 69.92
+  },
+  "LRCX": {
+    "avg_volume": 494246.962962963,
+    "shares_out_m": 1249.17
+  },
+  "LULU": {
+    "avg_volume": 172514.7037037037,
+    "shares_out_m": 110.71
+  },
+  "LVS": {
+    "avg_volume": 401069.94444444444,
+    "shares_out_m": 626.99
+  },
+  "MAIR": {
+    "avg_volume": 161621.4814814815,
+    "shares_out_m": 501.72
+  },
+  "KDK": {
+    "avg_volume": 332552.3888888889,
+    "shares_out_m": 200.62
+  },
+  "KLRA": {
+    "avg_volume": 68621.64814814815,
+    "shares_out_m": 129.64
+  },
+  "KRC": {
+    "avg_volume": 82608.98148148147,
+    "shares_out_m": 116.31
+  },
+  "MAR": {
+    "avg_volume": 78915.51851851853,
+    "shares_out_m": 260.77
+  },
+  "MDLN": {
+    "avg_volume": 697910.5370370371,
+    "shares_out_m": 1314.71
+  },
+  "LYFT": {
+    "avg_volume": 703885.5925925926,
+    "shares_out_m": 378.54
+  },
+  "MNR": {
+    "avg_volume": 53753.57407407407,
+    "shares_out_m": 166.95
+  },
+  "KMB": {
+    "avg_volume": 254888.87037037036,
+    "shares_out_m": 332.58
+  },
+  "KTOS": {
+    "avg_volume": 201100.5,
+    "shares_out_m": 187.72
+  },
+  "LNT": {
+    "avg_volume": 177286.59259259258,
+    "shares_out_m": 259.36
+  },
+  "MFG": {
+    "avg_volume": 266866.85185185185,
+    "shares_out_m": 2418.48
+  },
+  "MGNX": {
+    "avg_volume": 61664.7037037037,
+    "shares_out_m": 63.7
+  },
+  "KEEL": {
+    "avg_volume": 1368834.7592592593,
+    "shares_out_m": 617.72
+  },
+  "LILAK": {
+    "avg_volume": 106700.51851851853,
+    "shares_out_m": 195.9
+  },
+  "LYV": {
+    "avg_volume": 109463.9074074074,
+    "shares_out_m": 232.96
+  },
+  "MMED": {
+    "avg_volume": 614291.9444444445,
+    "shares_out_m": 281.35
+  },
+  "KRG": {
+    "avg_volume": 172355.0185185185,
+    "shares_out_m": 197.97
+  },
+  "LAUR": {
+    "avg_volume": 68230.83333333333,
+    "shares_out_m": 135.75
+  },
+  "LSCC": {
+    "avg_volume": 157533.66666666666,
+    "shares_out_m": 142.03
+  },
+  "MBLY": {
+    "avg_volume": 545648.7222222222,
+    "shares_out_m": 850.17
+  },
+  "TEAM": {
+    "avg_volume": 176419.3148148148,
+    "shares_out_m": 251.85
+  },
+  "MRVI": {
+    "avg_volume": 198778.42592592593,
+    "shares_out_m": 259.67
+  },
+  "MRVL": {
+    "avg_volume": 697467.925925926,
+    "shares_out_m": 876.9
+  },
+  "MSFT": {
+    "avg_volume": 838586.4629629629,
+    "shares_out_m": 7426.19
+  },
+  "MSM": {
+    "avg_volume": 55412.0,
+    "shares_out_m": 55.86
+  },
+  "MSTR": {
+    "avg_volume": 492520.7962962963,
+    "shares_out_m": 429.73
+  },
+  "ONTO": {
+    "avg_volume": 60980.12962962963,
+    "shares_out_m": 49.07
+  },
+  "MNRO": {
+    "avg_volume": 51529.81481481482,
+    "shares_out_m": 31.33
+  },
+  "NABL": {
+    "avg_volume": 101620.92592592593,
+    "shares_out_m": 188.91
+  },
+  "NB": {
+    "avg_volume": 131570.16666666666,
+    "shares_out_m": 145.85
+  },
+  "ORIC": {
+    "avg_volume": 103839.20370370371,
+    "shares_out_m": 103.65
+  },
+  "ORLY": {
+    "avg_volume": 272800.6296296296,
+    "shares_out_m": 804.61
+  },
+  "PBI": {
+    "avg_volume": 82635.16666666667,
+    "shares_out_m": 135.55
+  },
+  "MYGN": {
+    "avg_volume": 176393.0185185185,
+    "shares_out_m": 95.65
+  },
+  "OXLC": {
+    "avg_volume": 88869.42592592593,
+    "shares_out_m": 98
+  },
+  "NCNO": {
+    "avg_volume": 126839.87037037036,
+    "shares_out_m": 105.74
+  },
+  "NKTX": {
+    "avg_volume": 69576.48148148147,
+    "shares_out_m": 71.62
+  },
+  "NTR": {
+    "avg_volume": 121844.62962962964,
+    "shares_out_m": 477.21
+  },
+  "NCLH": {
+    "avg_volume": 1217899.7592592593,
+    "shares_out_m": 459.28
+  },
+  "NNE": {
+    "avg_volume": 75342.9074074074,
+    "shares_out_m": 53.7
+  },
+  "OZK": {
+    "avg_volume": 93429.22222222222,
+    "shares_out_m": 108.4
+  },
+  "PAX": {
+    "avg_volume": 97344.61111111111,
+    "shares_out_m": 163.42
+  },
+  "NAVN": {
+    "avg_volume": 194325.07407407407,
+    "shares_out_m": 260.41
+  },
+  "ORC": {
+    "avg_volume": 386024.48148148146,
+    "shares_out_m": 192.99
+  },
+  "NTRA": {
+    "avg_volume": 131859.6851851852,
+    "shares_out_m": 144.14
+  },
+  "NVAX": {
+    "avg_volume": 415739.98148148146,
+    "shares_out_m": 164.95
+  },
+  "NTSK": {
+    "avg_volume": 485271.44444444444,
+    "shares_out_m": 408.59
+  },
+  "OUT": {
+    "avg_volume": 84870.94444444444,
+    "shares_out_m": 176.14
+  },
+  "PBA": {
+    "avg_volume": 53959.74074074074,
+    "shares_out_m": 581.56
+  },
+  "MTSI": {
+    "avg_volume": 82247.4074074074,
+    "shares_out_m": 76.37
+  },
+  "NVO": {
+    "avg_volume": 798768.0185185185,
+    "shares_out_m": 3390.13
+  },
+  "NIO": {
+    "avg_volume": 1775089.4444444445,
+    "shares_out_m": 2477.22
+  },
+  "ON": {
+    "avg_volume": 453295.74074074073,
+    "shares_out_m": 389.31
+  },
+  "OTEX": {
+    "avg_volume": 112690.37037037036,
+    "shares_out_m": 242.13
+  },
+  "NVCR": {
+    "avg_volume": 95019.62962962964,
+    "shares_out_m": 116.92
+  },
+  "NBIX": {
+    "avg_volume": 86610.72222222222,
+    "shares_out_m": 101.65
+  },
+  "NHP": {
+    "avg_volume": 69700.64814814815,
+    "shares_out_m": 72.91
+  },
+  "NXH": {
+    "avg_volume": 214646.27777777778,
+    "shares_out_m": 109.95
+  },
+  "MUFG": {
+    "avg_volume": 262254.0925925926,
+    "shares_out_m": 11867.71
+  },
+  "NE": {
+    "avg_volume": 63147.444444444445,
+    "shares_out_m": 159.66
+  },
+  "OLMA": {
+    "avg_volume": 85944.29629629629,
+    "shares_out_m": 87.5
+  },
+  "PACB": {
+    "avg_volume": 960690.9074074074,
+    "shares_out_m": 310.83
+  },
+  "PAYO": {
+    "avg_volume": 175356.53703703705,
+    "shares_out_m": 338.85
+  },
+  "NEOG": {
+    "avg_volume": 232151.35185185185,
+    "shares_out_m": 218.31
+  },
+  "OUST": {
+    "avg_volume": 82071.55555555556,
+    "shares_out_m": 72.11
+  },
+  "MXL": {
+    "avg_volume": 145228.5185185185,
+    "shares_out_m": 91
+  },
+  "NCMI": {
+    "avg_volume": 80024.37037037036,
+    "shares_out_m": 94.07
+  },
+  "NDAQ": {
+    "avg_volume": 170501.85185185185,
+    "shares_out_m": 554.96
+  },
+  "NTNX": {
+    "avg_volume": 139257.3148148148,
+    "shares_out_m": 272.73
+  },
+  "NVDA": {
+    "avg_volume": 6392157.481481481,
+    "shares_out_m": 24100
+  },
+  "NEO": {
+    "avg_volume": 112827.81481481482,
+    "shares_out_m": 129.39
+  },
+  "OXY": {
+    "avg_volume": 734115.2777777778,
+    "shares_out_m": 999.64
+  },
+  "ORKA": {
+    "avg_volume": 59647.2962962963,
+    "shares_out_m": 66.21
+  },
+  "NLY": {
+    "avg_volume": 721532.0185185185,
+    "shares_out_m": 787.86
+  },
+  "NOK": {
+    "avg_volume": 4223794.518518519,
+    "shares_out_m": 5742.24
+  },
+  "OBDC": {
+    "avg_volume": 306882.1296296296,
+    "shares_out_m": 493.14
+  },
+  "PANW": {
+    "avg_volume": 282289.44444444444,
+    "shares_out_m": 818.44
+  },
+  "NAVI": {
+    "avg_volume": 105324.38888888889,
+    "shares_out_m": 93.78
+  },
+  "NWBI": {
+    "avg_volume": 70174.66666666667,
+    "shares_out_m": 146.56
+  },
+  "OPCH": {
+    "avg_volume": 266184.25925925927,
+    "shares_out_m": 149.79
+  },
+  "NKTR": {
+    "avg_volume": 54314.555555555555,
+    "shares_out_m": 34.14
+  },
+  "NUVB": {
+    "avg_volume": 352514.94444444444,
+    "shares_out_m": 351.12
+  },
+  "OLLI": {
+    "avg_volume": 109121.48148148147,
+    "shares_out_m": 59.4
+  },
+  "ONB": {
+    "avg_volume": 301704.72222222225,
+    "shares_out_m": 378.26
+  },
+  "NIQ": {
+    "avg_volume": 73423.61111111111,
+    "shares_out_m": 294.96
+  },
+  "OVID": {
+    "avg_volume": 160446.35185185185,
+    "shares_out_m": 195.3
+  },
+  "PAA": {
+    "avg_volume": 254291.62962962964,
+    "shares_out_m": 705.57
+  },
+  "PAL": {
+    "avg_volume": 55340.88888888889,
+    "shares_out_m": 28.05
+  },
+  "PCAR": {
+    "avg_volume": 174008.85185185185,
+    "shares_out_m": 526.51
+  },
+  "PCG": {
+    "avg_volume": 1870308.2962962964,
+    "shares_out_m": 2202.43
+  },
+  "PCVX": {
+    "avg_volume": 133747.0,
+    "shares_out_m": 152.2
+  },
+  "NXT": {
+    "avg_volume": 167355.62962962964,
+    "shares_out_m": 151.73
+  },
+  "NWG": {
+    "avg_volume": 332918.2037037037,
+    "shares_out_m": 7911.21
+  },
+  "NWL": {
+    "avg_volume": 317623.962962963,
+    "shares_out_m": 426
+  },
+  "OPEN": {
+    "avg_volume": 1739855.3703703703,
+    "shares_out_m": 971.09
+  },
+  "NXPI": {
+    "avg_volume": 185121.0,
+    "shares_out_m": 252.05
+  },
+  "OKTA": {
+    "avg_volume": 202937.62962962964,
+    "shares_out_m": 174.82
+  },
+  "OSS": {
+    "avg_volume": 54868.98148148148,
+    "shares_out_m": 25.04
+  },
+  "PAGP": {
+    "avg_volume": 151364.0,
+    "shares_out_m": 197.9
+  },
+  "MIR": {
+    "avg_volume": 340010.5740740741,
+    "shares_out_m": 245.49
+  },
+  "NAUT": {
+    "avg_volume": 215886.05555555556,
+    "shares_out_m": 127.37
+  },
+  "OIS": {
+    "avg_volume": 50805.055555555555,
+    "shares_out_m": 59.81
+  },
+  "MU": {
+    "avg_volume": 726234.9444444445,
+    "shares_out_m": 1131.42
+  },
+  "NAMS": {
+    "avg_volume": 111781.51851851853,
+    "shares_out_m": 119.54
+  },
+  "PDM": {
+    "avg_volume": 113163.27777777778,
+    "shares_out_m": 123.82
+  },
+  "PECO": {
+    "avg_volume": 66821.20370370371,
+    "shares_out_m": 129
+  },
+  "PEGA": {
+    "avg_volume": 129556.74074074074,
+    "shares_out_m": 163.66
+  },
+  "PEG": {
+    "avg_volume": 219124.7037037037,
+    "shares_out_m": 498.42
+  },
+  "SNY": {
+    "avg_volume": 253447.75925925927,
+    "shares_out_m": 1207.77
+  },
+  "PENG": {
+    "avg_volume": 112394.38888888889,
+    "shares_out_m": 60.24
+  },
+  "PEP": {
+    "avg_volume": 397232.537037037,
+    "shares_out_m": 1362.74
+  },
+  "RERE": {
+    "avg_volume": 57652.98148148148,
+    "shares_out_m": 146.34
+  },
+  "RCKT": {
+    "avg_volume": 125681.68518518518,
+    "shares_out_m": 109.77
+  },
+  "QMCO": {
+    "avg_volume": 73941.29629629629,
+    "shares_out_m": 39.41
+  },
+  "PHYS": {
+    "avg_volume": 188855.62962962964,
+    "shares_out_m": 469.36
+  },
+  "PLBY": {
+    "avg_volume": 55762.12962962963,
+    "shares_out_m": 119.81
+  },
+  "POR": {
+    "avg_volume": 87979.57407407407,
+    "shares_out_m": 119.1
+  },
+  "PLX": {
+    "avg_volume": 80256.18518518518,
+    "shares_out_m": 80.57
+  },
+  "RLX": {
+    "avg_volume": 241178.83333333334,
+    "shares_out_m": 1222.25
+  },
+  "PRVA": {
+    "avg_volume": 84507.85185185185,
+    "shares_out_m": 127.73
+  },
+  "PZZA": {
+    "avg_volume": 67120.29629629629,
+    "shares_out_m": 32.92
+  },
+  "QTRX": {
+    "avg_volume": 53160.25925925926,
+    "shares_out_m": 47.29
+  },
+  "PNFP": {
+    "avg_volume": 57926.61111111111,
+    "shares_out_m": 151.12
+  },
+  "PHAT": {
+    "avg_volume": 100995.51851851853,
+    "shares_out_m": 81.29
+  },
+  "POET": {
+    "avg_volume": 390054.27777777775,
+    "shares_out_m": 173.06
+  },
+  "PRTH": {
+    "avg_volume": 65685.35185185185,
+    "shares_out_m": 82.47
+  },
+  "PWP": {
+    "avg_volume": 128242.33333333333,
+    "shares_out_m": 99.02
+  },
+  "PK": {
+    "avg_volume": 267162.74074074073,
+    "shares_out_m": 201.34
+  },
+  "ROIV": {
+    "avg_volume": 474072.462962963,
+    "shares_out_m": 722.32
+  },
+  "PRM": {
+    "avg_volume": 58912.5,
+    "shares_out_m": 163.69
+  },
+  "RJF": {
+    "avg_volume": 53782.31481481482,
+    "shares_out_m": 192
+  },
+  "PFLT": {
+    "avg_volume": 50298.0,
+    "shares_out_m": 99.22
+  },
+  "RIOT": {
+    "avg_volume": 1348681.2777777778,
+    "shares_out_m": 375.26
+  },
+  "REZI": {
+    "avg_volume": 100416.11111111111,
+    "shares_out_m": 151.85
+  },
+  "PL": {
+    "avg_volume": 473667.72222222225,
+    "shares_out_m": 363.85
+  },
+  "RMIX": {
+    "avg_volume": 53935.03703703704,
+    "shares_out_m": 73.49
+  },
+  "RNW": {
+    "avg_volume": 103655.5,
+    "shares_out_m": 403.26
+  },
+  "PNC": {
+    "avg_volume": 87801.94444444444,
+    "shares_out_m": 397.24
+  },
+  "RPD": {
+    "avg_volume": 82365.81481481482,
+    "shares_out_m": 67.4
+  },
+  "PGR": {
+    "avg_volume": 155460.24074074073,
+    "shares_out_m": 579.5
+  },
+  "PINS": {
+    "avg_volume": 902084.925925926,
+    "shares_out_m": 573.51
+  },
+  "PPTA": {
+    "avg_volume": 70550.81481481482,
+    "shares_out_m": 125.1
+  },
+  "PSNL": {
+    "avg_volume": 191896.46296296295,
+    "shares_out_m": 108.39
+  },
+  "RSI": {
+    "avg_volume": 258322.77777777778,
+    "shares_out_m": 230.6
+  },
+  "POWI": {
+    "avg_volume": 50458.055555555555,
+    "shares_out_m": 55.87
+  },
+  "RARE": {
+    "avg_volume": 262494.5,
+    "shares_out_m": 98.59
+  },
+  "RPM": {
+    "avg_volume": 59376.77777777778,
+    "shares_out_m": 127.53
+  },
+  "QURE": {
+    "avg_volume": 112751.29629629629,
+    "shares_out_m": 69.37
+  },
+  "ENB": {
+    "avg_volume": 369628.8333333333,
+    "shares_out_m": 2228.83
+  },
+  "NUE": {
+    "avg_volume": 72136.83333333333,
+    "shares_out_m": 226.88
+  },
+  "PHG": {
+    "avg_volume": 92610.25925925926,
+    "shares_out_m": 982.89
+  },
+  "RAL": {
+    "avg_volume": 98006.9074074074,
+    "shares_out_m": 110.64
+  },
+  "RCL": {
+    "avg_volume": 148432.9814814815,
+    "shares_out_m": 267.47
+  },
+  "PM": {
+    "avg_volume": 264150.1296296296,
+    "shares_out_m": 1558.66
+  },
+  "PERI": {
+    "avg_volume": 55133.42592592593,
+    "shares_out_m": 39.33
+  },
+  "PFGC": {
+    "avg_volume": 102163.07407407407,
+    "shares_out_m": 157.79
+  },
+  "PIPR": {
+    "avg_volume": 64836.31481481482,
+    "shares_out_m": 70.6
+  },
+  "RUM": {
+    "avg_volume": 222999.0,
+    "shares_out_m": 400.02
+  },
+  "PGNY": {
+    "avg_volume": 62599.851851851854,
+    "shares_out_m": 76.73
+  },
+  "PONY": {
+    "avg_volume": 313557.98148148146,
+    "shares_out_m": 435.18
+  },
+  "RGNX": {
+    "avg_volume": 69627.68518518518,
+    "shares_out_m": 66.01
+  },
+  "RLMD": {
+    "avg_volume": 124944.61111111111,
+    "shares_out_m": 106.67
+  },
+  "RPRX": {
+    "avg_volume": 220740.37037037036,
+    "shares_out_m": 575
+  },
+  "RRR": {
+    "avg_volume": 60989.055555555555,
+    "shares_out_m": 105.02
+  },
+  "PYXS": {
+    "avg_volume": 65781.83333333333,
+    "shares_out_m": 119.58
+  },
+  "PFS": {
+    "avg_volume": 53848.24074074074,
+    "shares_out_m": 130.42
+  },
+  "PTON": {
+    "avg_volume": 649715.9444444445,
+    "shares_out_m": 445.6
+  },
+  "REG": {
+    "avg_volume": 71452.51851851853,
+    "shares_out_m": 183.12
+  },
+  "PLAY": {
+    "avg_volume": 97203.18518518518,
+    "shares_out_m": 34.83
+  },
+  "PRME": {
+    "avg_volume": 327822.7037037037,
+    "shares_out_m": 181.38
+  },
+  "QS": {
+    "avg_volume": 731267.3518518518,
+    "shares_out_m": 622.06
+  },
+  "RTO": {
+    "avg_volume": 148190.83333333334,
+    "shares_out_m": 2526.04
+  },
+  "PGEN": {
+    "avg_volume": 495971.3703703704,
+    "shares_out_m": 358.04
+  },
+  "PRIM": {
+    "avg_volume": 98780.25925925926,
+    "shares_out_m": 53.83
+  },
+  "PTLO": {
+    "avg_volume": 131330.09259259258,
+    "shares_out_m": 75.94
+  },
+  "QNT": {
+    "avg_volume": 105887.12962962964,
+    "shares_out_m": 263.31
+  },
+  "PLUG": {
+    "avg_volume": 2141840.185185185,
+    "shares_out_m": 1397.2
+  },
+  "PRMB": {
+    "avg_volume": 460123.6111111111,
+    "shares_out_m": 361.94
+  },
+  "PYPL": {
+    "avg_volume": 466716.5740740741,
+    "shares_out_m": 830.66
+  },
+  "SBH": {
+    "avg_volume": 75208.66666666667,
+    "shares_out_m": 93.62
+  },
+  "RYAAY": {
+    "avg_volume": 122766.4074074074,
+    "shares_out_m": 1035.85
+  },
+  "RZLT": {
+    "avg_volume": 124977.48148148147,
+    "shares_out_m": 96.73
+  },
+  "VIK": {
+    "avg_volume": 280257.3703703704,
+    "shares_out_m": 446.64
+  },
+  "RXRX": {
+    "avg_volume": 1523459.1666666667,
+    "shares_out_m": 594.73
+  },
+  "SAN": {
+    "avg_volume": 779891.8703703703,
+    "shares_out_m": 14556.48
+  },
+  "SMA": {
+    "avg_volume": 62554.61111111111,
+    "shares_out_m": 55.37
+  },
+  "NRGV": {
+    "avg_volume": 262806.51851851854,
+    "shares_out_m": 181.84
+  },
+  "SABR": {
+    "avg_volume": 576622.7592592592,
+    "shares_out_m": 403.58
+  },
+  "SGRY": {
+    "avg_volume": 194243.37037037036,
+    "shares_out_m": 128.87
+  },
+  "SGMT": {
+    "avg_volume": 70587.68518518518,
+    "shares_out_m": 70.53
+  },
+  "KOPN": {
+    "avg_volume": 197966.1851851852,
+    "shares_out_m": 185.87
+  },
+  "SGHC": {
+    "avg_volume": 211234.77777777778,
+    "shares_out_m": 508.08
+  },
+  "CIG": {
+    "avg_volume": 555073.7222222222,
+    "shares_out_m": 2861.78
+  },
+  "SNDK": {
+    "avg_volume": 471748.1296296296,
+    "shares_out_m": 142.29
+  },
+  "SOLV": {
+    "avg_volume": 53027.81481481482,
+    "shares_out_m": 170.22
+  },
+  "SBS": {
+    "avg_volume": 1214691.9074074074,
+    "shares_out_m": 3534.41
+  },
+  "HCA": {
+    "avg_volume": 72925.77777777778,
+    "shares_out_m": 208.89
+  },
+  "PEB": {
+    "avg_volume": 188057.74074074073,
+    "shares_out_m": 111.69
+  },
+  "ROK": {
+    "avg_volume": 56777.7962962963,
+    "shares_out_m": 111.05
+  },
+  "ADTN": {
+    "avg_volume": 124138.20370370371,
+    "shares_out_m": 81.48
+  },
+  "FINV": {
+    "avg_volume": 96117.44444444444,
+    "shares_out_m": 1216.44
+  },
+  "SCHW": {
+    "avg_volume": 483191.2037037037,
+    "shares_out_m": 1729.34
+  },
+  "QCOM": {
+    "avg_volume": 424237.51851851854,
+    "shares_out_m": 1050
+  },
+  "SNDX": {
+    "avg_volume": 189277.55555555556,
+    "shares_out_m": 89.3
+  },
+  "SMCI": {
+    "avg_volume": 1645138.2407407407,
+    "shares_out_m": 656.97
+  },
+  "SOLS": {
+    "avg_volume": 134792.35185185185,
+    "shares_out_m": 158.89
+  },
+  "NEE": {
+    "avg_volume": 894351.0185185185,
+    "shares_out_m": 2097.31
+  },
+  "SHOO": {
+    "avg_volume": 90189.94444444444,
+    "shares_out_m": 73.18
+  },
+  "ED": {
+    "avg_volume": 112034.75925925926,
+    "shares_out_m": 369.83
+  },
+  "SFIX": {
+    "avg_volume": 220496.11111111112,
+    "shares_out_m": 133.6
+  },
+  "SMMT": {
+    "avg_volume": 416682.48148148146,
+    "shares_out_m": 799.73
+  },
+  "SMTC": {
+    "avg_volume": 197030.07407407407,
+    "shares_out_m": 93.33
+  },
+  "SNEX": {
+    "avg_volume": 57379.666666666664,
+    "shares_out_m": 120.62
+  },
+  "ASML": {
+    "avg_volume": 88538.88888888889,
+    "shares_out_m": 388.15
+  },
+  "PR": {
+    "avg_volume": 691788.9814814815,
+    "shares_out_m": 837.56
+  },
+  "SFM": {
+    "avg_volume": 177166.03703703705,
+    "shares_out_m": 92.23
+  },
+  "AMRX": {
+    "avg_volume": 166025.14814814815,
+    "shares_out_m": 348.3
+  },
+  "GDRX": {
+    "avg_volume": 87374.25925925926,
+    "shares_out_m": 341.15
+  },
+  "SCI": {
+    "avg_volume": 91976.31481481482,
+    "shares_out_m": 135.91
+  },
+  "SIRI": {
+    "avg_volume": 333633.68518518517,
+    "shares_out_m": 336.49
+  },
+  "SPRY": {
+    "avg_volume": 150934.83333333334,
+    "shares_out_m": 99.45
+  },
+  "RIVN": {
+    "avg_volume": 1238905.462962963,
+    "shares_out_m": 1459.61
+  },
+  "SHAZ": {
+    "avg_volume": 100339.57407407407,
+    "shares_out_m": 35.8
+  },
+  "MWA": {
+    "avg_volume": 73070.33333333333,
+    "shares_out_m": 156.13
+  },
+  "SFD": {
+    "avg_volume": 112139.94444444444,
+    "shares_out_m": 393.8
+  },
+  "SHEL": {
+    "avg_volume": 501919.24074074073,
+    "shares_out_m": 5701.98
+  },
+  "SHLS": {
+    "avg_volume": 499828.31481481483,
+    "shares_out_m": 168.3
+  },
+  "SHOP": {
+    "avg_volume": 470722.2962962963,
+    "shares_out_m": 1286.64
+  },
+  "BTI": {
+    "avg_volume": 403988.25925925927,
+    "shares_out_m": 2155.56
+  },
+  "CCOI": {
+    "avg_volume": 124841.79629629629,
+    "shares_out_m": 51.22
+  },
+  "SIMO": {
+    "avg_volume": 52268.74074074074,
+    "shares_out_m": 135.63
+  },
+  "SMG": {
+    "avg_volume": 61473.166666666664,
+    "shares_out_m": 58.22
+  },
+  "DD": {
+    "avg_volume": 52285.11111111111,
+    "shares_out_m": 135.04
+  },
+  "SBLK": {
+    "avg_volume": 86657.5,
+    "shares_out_m": 116.07
+  },
+  "SMR": {
+    "avg_volume": 1448917.6666666667,
+    "shares_out_m": 429.72
+  },
+  "DJT": {
+    "avg_volume": 239799.24074074073,
+    "shares_out_m": 277.94
+  },
+  "HGV": {
+    "avg_volume": 66285.35185185185,
+    "shares_out_m": 75.82
+  },
+  "SBRA": {
+    "avg_volume": 169815.0185185185,
+    "shares_out_m": 255.46
+  },
+  "SLI": {
+    "avg_volume": 103260.03703703704,
+    "shares_out_m": 246.78
+  },
+  "MARA": {
+    "avg_volume": 1320935.4444444445,
+    "shares_out_m": 386.3
+  },
+  "BAC": {
+    "avg_volume": 2784234.592592593,
+    "shares_out_m": 6900.21
+  },
+  "SLM": {
+    "avg_volume": 247089.90740740742,
+    "shares_out_m": 182.82
+  },
+  "SMFG": {
+    "avg_volume": 142991.24074074073,
+    "shares_out_m": 7602.25
+  },
+  "BXMT": {
+    "avg_volume": 215142.03703703705,
+    "shares_out_m": 165.99
+  },
+  "PNW": {
+    "avg_volume": 85464.53703703704,
+    "shares_out_m": 121.2
+  },
+  "SMPL": {
+    "avg_volume": 144786.38888888888,
+    "shares_out_m": 86.86
+  },
+  "NYT": {
+    "avg_volume": 163079.87037037036,
+    "shares_out_m": 161.28
+  },
+  "SLDB": {
+    "avg_volume": 106881.25925925926,
+    "shares_out_m": 107.23
+  },
+  "VNT": {
+    "avg_volume": 97401.33333333333,
+    "shares_out_m": 135.2
+  },
+  "VYX": {
+    "avg_volume": 208754.6851851852,
+    "shares_out_m": 138.07
+  },
+  "XP": {
+    "avg_volume": 1040469.8333333334,
+    "shares_out_m": 516.68
+  },
+  "STTK": {
+    "avg_volume": 76656.72222222222,
+    "shares_out_m": 100.36
+  },
+  "TRI": {
+    "avg_volume": 94893.11111111111,
+    "shares_out_m": 435.62
+  },
+  "USAS": {
+    "avg_volume": 277384.3333333333,
+    "shares_out_m": 337.97
+  },
+  "STX": {
+    "avg_volume": 228522.05555555556,
+    "shares_out_m": 229.56
+  },
+  "UA": {
+    "avg_volume": 198138.85185185185,
+    "shares_out_m": 429.55
+  },
+  "TRLV": {
+    "avg_volume": 72987.22222222222,
+    "shares_out_m": 192.57
+  },
+  "TTI": {
+    "avg_volume": 168875.85185185185,
+    "shares_out_m": 148.07
+  },
+  "VLY": {
+    "avg_volume": 543186.5185185185,
+    "shares_out_m": 550.62
+  },
+  "VKTX": {
+    "avg_volume": 214681.42592592593,
+    "shares_out_m": 127.52
+  },
+  "SPG": {
+    "avg_volume": 70838.51851851853,
+    "shares_out_m": 323.56
+  },
+  "URGN": {
+    "avg_volume": 66058.29629629629,
+    "shares_out_m": 48.88
+  },
+  "TNGX": {
+    "avg_volume": 221187.8148148148,
+    "shares_out_m": 168.61
+  },
+  "SRPT": {
+    "avg_volume": 118843.31481481482,
+    "shares_out_m": 105.63
+  },
+  "TXN": {
+    "avg_volume": 286119.962962963,
+    "shares_out_m": 913.77
+  },
+  "UROY": {
+    "avg_volume": 228752.11111111112,
+    "shares_out_m": 377.21
+  },
+  "STRC": {
+    "avg_volume": 54617.333333333336,
+    "shares_out_m": 429.73
+  },
+  "TRP": {
+    "avg_volume": 155834.38888888888,
+    "shares_out_m": 1041.94
+  },
+  "TRVI": {
+    "avg_volume": 114708.83333333333,
+    "shares_out_m": 142.48
+  },
+  "TPG": {
+    "avg_volume": 177886.61111111112,
+    "shares_out_m": 384.55
+  },
+  "TRAX": {
+    "avg_volume": 57041.648148148146,
+    "shares_out_m": 42.02
+  },
+  "TRMB": {
+    "avg_volume": 114643.05555555556,
+    "shares_out_m": 233.18
+  },
+  "TSEM": {
+    "avg_volume": 150859.72222222222,
+    "shares_out_m": 113.52
+  },
+  "TVTX": {
+    "avg_volume": 101450.81481481482,
+    "shares_out_m": 94.26
+  },
+  "UCTT": {
+    "avg_volume": 67051.79629629629,
+    "shares_out_m": 47.96
+  },
+  "SRAD": {
+    "avg_volume": 166056.66666666666,
+    "shares_out_m": 299.76
+  },
+  "TIGR": {
+    "avg_volume": 169022.64814814815,
+    "shares_out_m": 2697.68
+  },
+  "TKO": {
+    "avg_volume": 62438.77777777778,
+    "shares_out_m": 189.27
+  },
+  "TLN": {
+    "avg_volume": 72146.92592592593,
+    "shares_out_m": 47.3
+  },
+  "BAM": {
+    "avg_volume": 183953.57407407407,
+    "shares_out_m": 1638.3
+  },
+  "TMO": {
+    "avg_volume": 136229.53703703705,
+    "shares_out_m": 370.52
+  },
+  "UAL": {
+    "avg_volume": 255023.55555555556,
+    "shares_out_m": 324.89
+  },
+  "ULCC": {
+    "avg_volume": 248863.96296296295,
+    "shares_out_m": 230.42
+  },
+  "STLN": {
+    "avg_volume": 148723.37037037036,
+    "shares_out_m": 101.92
+  },
+  "TIMB": {
+    "avg_volume": 51633.148148148146,
+    "shares_out_m": 2378.93
+  },
+  "TRTX": {
+    "avg_volume": 105970.4074074074,
+    "shares_out_m": 75.83
+  },
+  "SRTA": {
+    "avg_volume": 91267.05555555556,
+    "shares_out_m": 88.47
+  },
+  "UBER": {
+    "avg_volume": 855751.3333333334,
+    "shares_out_m": 2042.56
+  },
+  "VMC": {
+    "avg_volume": 73465.27777777778,
+    "shares_out_m": 128.34
+  },
+  "VNOM": {
+    "avg_volume": 127165.22222222222,
+    "shares_out_m": 359.19
+  },
+  "VNDA": {
+    "avg_volume": 69544.72222222222,
+    "shares_out_m": 60.47
+  },
+  "SSNC": {
+    "avg_volume": 88740.42592592593,
+    "shares_out_m": 234.65
+  },
+  "TSLA": {
+    "avg_volume": 805531.925925926,
+    "shares_out_m": 3952.76
+  },
+  "UCB": {
+    "avg_volume": 53070.25925925926,
+    "shares_out_m": 119.83
+  },
+  "VRDN": {
+    "avg_volume": 173524.7962962963,
+    "shares_out_m": 113.29
+  },
+  "ARM": {
+    "avg_volume": 256372.53703703705,
+    "shares_out_m": 1068
+  },
+  "TRV": {
+    "avg_volume": 57055.37037037037,
+    "shares_out_m": 204.95
+  },
+  "U": {
+    "avg_volume": 628562.3518518518,
+    "shares_out_m": 440.09
+  },
+  "TRMD": {
+    "avg_volume": 100083.37037037036,
+    "shares_out_m": 102.71
+  },
+  "TTWO": {
+    "avg_volume": 155722.03703703705,
+    "shares_out_m": 186.98
+  },
+  "VIR": {
+    "avg_volume": 151350.5,
+    "shares_out_m": 169.22
+  },
+  "VNET": {
+    "avg_volume": 526313.5925925926,
+    "shares_out_m": 2327.79
+  },
+  "VNO": {
+    "avg_volume": 83335.5,
+    "shares_out_m": 186.72
+  },
+  "TROW": {
+    "avg_volume": 107100.83333333333,
+    "shares_out_m": 213.33
+  },
+  "TKC": {
+    "avg_volume": 315311.1666666667,
+    "shares_out_m": 2200
+  },
+  "TNDM": {
+    "avg_volume": 166859.40740740742,
+    "shares_out_m": 69.58
+  },
+  "TWST": {
+    "avg_volume": 162614.33333333334,
+    "shares_out_m": 66.27
+  },
+  "TXT": {
+    "avg_volume": 106110.35185185185,
+    "shares_out_m": 169.4
+  },
+  "UTI": {
+    "avg_volume": 98422.68518518518,
+    "shares_out_m": 55.1
+  },
+  "TXG": {
+    "avg_volume": 215003.46296296295,
+    "shares_out_m": 130.29
+  },
+  "SUI": {
+    "avg_volume": 62293.833333333336,
+    "shares_out_m": 119.37
+  },
+  "UPST": {
+    "avg_volume": 236940.3148148148,
+    "shares_out_m": 97.31
+  },
+  "URBN": {
+    "avg_volume": 69885.24074074074,
+    "shares_out_m": 85.66
+  },
+  "TROX": {
+    "avg_volume": 230462.40740740742,
+    "shares_out_m": 159.7
+  },
+  "TW": {
+    "avg_volume": 88391.55555555556,
+    "shares_out_m": 209.08
+  },
+  "UL": {
+    "avg_volume": 273590.14814814815,
+    "shares_out_m": 2154.33
+  },
+  "VRSK": {
+    "avg_volume": 72952.64814814815,
+    "shares_out_m": 130.16
+  },
+  "TME": {
+    "avg_volume": 534830.6111111111,
+    "shares_out_m": 3147.81
+  },
+  "VMRK": {
+    "avg_volume": 255572.40740740742,
+    "shares_out_m": 773.78
+  },
+  "VSNT": {
+    "avg_volume": 112956.53703703704,
+    "shares_out_m": 139.17
+  },
+  "VSTM": {
+    "avg_volume": 267907.31481481483,
+    "shares_out_m": 121.42
+  },
+  "VSH": {
+    "avg_volume": 158731.44444444444,
+    "shares_out_m": 153.38
+  },
+  "XFOR": {
+    "avg_volume": 53799.87037037037,
+    "shares_out_m": 99.15
+  },
+  "WMT": {
+    "avg_volume": 895981.2407407408,
+    "shares_out_m": 7933.75
+  },
+  "ETN": {
+    "avg_volume": 164184.83333333334,
+    "shares_out_m": 388.4
+  },
+  "WU": {
+    "avg_volume": 556091.9074074074,
+    "shares_out_m": 311.88
+  },
+  "CELC": {
+    "avg_volume": 71454.05555555556,
+    "shares_out_m": 48.93
+  },
+  "YPF": {
+    "avg_volume": 82451.0,
+    "shares_out_m": 3933.13
+  },
+  "WRN": {
+    "avg_volume": 102865.48148148147,
+    "shares_out_m": 225.84
+  },
+  "MTCH": {
+    "avg_volume": 218833.35185185185,
+    "shares_out_m": 229.55
+  },
+  "WTRG": {
+    "avg_volume": 209357.94444444444,
+    "shares_out_m": 283.78
+  },
+  "YETI": {
+    "avg_volume": 115841.42592592593,
+    "shares_out_m": 72.99
+  },
+  "AGCO": {
+    "avg_volume": 68840.83333333333,
+    "shares_out_m": 68.95
+  },
+  "WGS": {
+    "avg_volume": 51002.61111111111,
+    "shares_out_m": 29.82
+  },
+  "WMS": {
+    "avg_volume": 57515.48148148148,
+    "shares_out_m": 75.41
+  },
+  "WRB": {
+    "avg_volume": 99787.42592592593,
+    "shares_out_m": 371.45
+  },
+  "VSXY": {
+    "avg_volume": 78608.24074074074,
+    "shares_out_m": 79.76
+  },
+  "RGEN": {
+    "avg_volume": 78581.9074074074,
+    "shares_out_m": 63.92
+  },
+  "SYK": {
+    "avg_volume": 167305.74074074073,
+    "shares_out_m": 380.69
+  },
+  "WULF": {
+    "avg_volume": 2668574.722222222,
+    "shares_out_m": 498.97
+  },
+  "XENE": {
+    "avg_volume": 116507.66666666667,
+    "shares_out_m": 96.84
+  },
+  "VIAV": {
+    "avg_volume": 328531.2037037037,
+    "shares_out_m": 245.92
+  },
+  "WIX": {
+    "avg_volume": 57106.88888888889,
+    "shares_out_m": 41.85
+  },
+  "XNDU": {
+    "avg_volume": 287702.0740740741,
+    "shares_out_m": 64.16
+  },
+  "AVT": {
+    "avg_volume": 68320.46296296296,
+    "shares_out_m": 82.23
+  },
+  "ES": {
+    "avg_volume": 141803.72222222222,
+    "shares_out_m": 376.67
+  },
+  "WWW": {
+    "avg_volume": 54107.48148148148,
+    "shares_out_m": 82.07
+  },
+  "ATEN": {
+    "avg_volume": 50307.2037037037,
+    "shares_out_m": 72.61
+  },
+  "TOL": {
+    "avg_volume": 61365.648148148146,
+    "shares_out_m": 92.15
+  },
+  "RHI": {
+    "avg_volume": 99408.51851851853,
+    "shares_out_m": 102.35
+  },
+  "RVTY": {
+    "avg_volume": 126121.03703703704,
+    "shares_out_m": 111.59
+  },
+  "SPNT": {
+    "avg_volume": 54098.90740740741,
+    "shares_out_m": 116.17
+  },
+  "WLTH": {
+    "avg_volume": 187016.7962962963,
+    "shares_out_m": 156.18
+  },
+  "WOOF": {
+    "avg_volume": 153269.61111111112,
+    "shares_out_m": 324.21
+  },
+  "EBS": {
+    "avg_volume": 63337.5,
+    "shares_out_m": 51.27
+  },
+  "BTE": {
+    "avg_volume": 1309283.462962963,
+    "shares_out_m": 684.8
+  },
+  "WSM": {
+    "avg_volume": 76778.05555555556,
+    "shares_out_m": 117.78
+  },
+  "WTTR": {
+    "avg_volume": 103104.62962962964,
+    "shares_out_m": 138.48
+  },
+  "AURA": {
+    "avg_volume": 70417.14814814815,
+    "shares_out_m": 103.7
+  },
+  "ROP": {
+    "avg_volume": 50647.2962962963,
+    "shares_out_m": 99
+  },
+  "VZLA": {
+    "avg_volume": 356510.5740740741,
+    "shares_out_m": 353.78
+  },
+  "KYMR": {
+    "avg_volume": 82011.12962962964,
+    "shares_out_m": 85.37
+  },
+  "SKM": {
+    "avg_volume": 99734.68518518518,
+    "shares_out_m": 214.79
+  },
+  "SOUN": {
+    "avg_volume": 784628.1296296297,
+    "shares_out_m": 486.77
+  },
+  "XERS": {
+    "avg_volume": 188279.83333333334,
+    "shares_out_m": 182.32
+  },
+  "XPEV": {
+    "avg_volume": 548439.1111111111,
+    "shares_out_m": 1918.93
+  },
+  "BHVN": {
+    "avg_volume": 163864.40740740742,
+    "shares_out_m": 151.06
+  },
+  "T": {
+    "avg_volume": 2621391.3333333335,
+    "shares_out_m": 6736.47
+  },
+  "FHN": {
+    "avg_volume": 541509.6481481482,
+    "shares_out_m": 473.78
+  },
+  "JOBY": {
+    "avg_volume": 1077643.2222222222,
+    "shares_out_m": 993.87
+  },
+  "XOM": {
+    "avg_volume": 460788.962962963,
+    "shares_out_m": 4079
+  },
+  "DOW": {
+    "avg_volume": 574967.1111111111,
+    "shares_out_m": 723.88
+  },
+  "QXO": {
+    "avg_volume": 1425970.8703703703,
+    "shares_out_m": 1037.49
+  },
+  "WDAY": {
+    "avg_volume": 108597.24074074074,
+    "shares_out_m": 241
+  },
+  "WSC": {
+    "avg_volume": 229943.24074074073,
+    "shares_out_m": 181.19
+  },
+  "WING": {
+    "avg_volume": 80858.92592592593,
+    "shares_out_m": 27.05
+  },
+  "VLO": {
+    "avg_volume": 158747.5,
+    "shares_out_m": 278.88
+  },
+  "WLK": {
+    "avg_volume": 56535.5,
+    "shares_out_m": 127.8
+  },
+  "BDX": {
+    "avg_volume": 109190.35185185185,
+    "shares_out_m": 272.39
+  },
+  "WMG": {
+    "avg_volume": 139490.16666666666,
+    "shares_out_m": 523.11
+  },
+  "HONA": {
+    "avg_volume": 149890.44444444444,
+    "shares_out_m": 317.03
+  },
+  "WES": {
+    "avg_volume": 81677.98148148147,
+    "shares_out_m": 413.17
+  },
+  "WFRD": {
+    "avg_volume": 66111.62962962964,
+    "shares_out_m": 72.47
+  },
+  "ZION": {
+    "avg_volume": 97556.42592592593,
+    "shares_out_m": 144.94
+  },
+  "ZM": {
+    "avg_volume": 158688.55555555556,
+    "shares_out_m": 291.78
+  },
+  "ZNTL": {
+    "avg_volume": 109718.31481481482,
+    "shares_out_m": 94.67
+  },
+  "Z": {
+    "avg_volume": 279245.18518518517,
+    "shares_out_m": 224.87
+  },
+  "ZVRA": {
+    "avg_volume": 58403.666666666664,
+    "shares_out_m": 59.38
+  },
+  "ZBH": {
+    "avg_volume": 150635.0185185185,
+    "shares_out_m": 190.74
+  },
+  "ZETA": {
+    "avg_volume": 264711.75925925927,
+    "shares_out_m": 251.01
+  },
+  "ZTO": {
+    "avg_volume": 306952.537037037,
+    "shares_out_m": 763.43
+  },
+  "OHI": {
+    "avg_volume": 102037.25925925926,
+    "shares_out_m": 303.01
+  },
+  "TT": {
+    "avg_volume": 99895.25925925926,
+    "shares_out_m": 218.9
+  },
+  "COLB": {
+    "avg_volume": 264318.01851851854,
+    "shares_out_m": 276.33
+  },
+  "ASTS": {
+    "avg_volume": 507618.2037037037,
+    "shares_out_m": 389.17
+  },
+  "GPK": {
+    "avg_volume": 488340.5740740741,
+    "shares_out_m": 296.07
+  },
+  "KEY": {
+    "avg_volume": 877982.1666666666,
+    "shares_out_m": 1058.18
+  },
+  "SLGN": {
+    "avg_volume": 71084.66666666667,
+    "shares_out_m": 105.68
+  },
+  "CCJ": {
+    "avg_volume": 208355.40740740742,
+    "shares_out_m": 435.53
+  },
+  "DNN": {
+    "avg_volume": 1628047.1296296297,
+    "shares_out_m": 905.26
+  },
+  "DOCN": {
+    "avg_volume": 189871.6851851852,
+    "shares_out_m": 117.58
+  },
+  "HUYA": {
+    "avg_volume": 88405.22222222222,
+    "shares_out_m": 228.37
+  },
+  "IAUX": {
+    "avg_volume": 554907.2962962963,
+    "shares_out_m": 867.53
+  },
+  "CDXS": {
+    "avg_volume": 51752.666666666664,
+    "shares_out_m": 109.51
+  },
+  "FORM": {
+    "avg_volume": 91725.31481481482,
+    "shares_out_m": 78.12
+  },
+  "SPOT": {
+    "avg_volume": 117527.70370370371,
+    "shares_out_m": 205.53
+  },
+  "AGI": {
+    "avg_volume": 404847.74074074073,
+    "shares_out_m": 418.56
+  },
+  "SYRE": {
+    "avg_volume": 84039.14814814815,
+    "shares_out_m": 92.18
+  },
+  "GSBD": {
+    "avg_volume": 51585.12962962963,
+    "shares_out_m": 112.57
+  },
+  "INFQ": {
+    "avg_volume": 381974.7962962963,
+    "shares_out_m": 225.36
+  },
+  "IRD": {
+    "avg_volume": 122902.18518518518,
+    "shares_out_m": 83.2
+  },
+  "CE": {
+    "avg_volume": 96193.03703703704,
+    "shares_out_m": 109.75
+  },
+  "DCH": {
+    "avg_volume": 399074.44444444444,
+    "shares_out_m": 237.6
+  },
+  "PPL": {
+    "avg_volume": 549868.1851851852,
+    "shares_out_m": 752.54
+  },
+  "GEMI": {
+    "avg_volume": 135189.64814814815,
+    "shares_out_m": 131.03
+  },
+  "LAZ": {
+    "avg_volume": 96163.07407407407,
+    "shares_out_m": 97.66
+  },
+  "TTD": {
+    "avg_volume": 1008574.7592592592,
+    "shares_out_m": 472.8
+  },
+  "CDW": {
+    "avg_volume": 96942.22222222222,
+    "shares_out_m": 125.02
+  },
+  "O": {
+    "avg_volume": 473454.24074074073,
+    "shares_out_m": 946.22
+  },
+  "OGG": {
+    "avg_volume": 129253.27777777778,
+    "shares_out_m": 306.14
+  },
+  "STAG": {
+    "avg_volume": 100679.64814814815,
+    "shares_out_m": 192.82
+  },
+  "SYM": {
+    "avg_volume": 82831.37037037036,
+    "shares_out_m": 604.8
+  },
+  "AGIO": {
+    "avg_volume": 62370.351851851854,
+    "shares_out_m": 59.7
+  },
+  "MOH": {
+    "avg_volume": 53609.77777777778,
+    "shares_out_m": 52.2
+  },
+  "DX": {
+    "avg_volume": 395934.0925925926,
+    "shares_out_m": 259.63
+  },
+  "QBTS": {
+    "avg_volume": 780953.7592592592,
+    "shares_out_m": 379.63
+  },
+  "ECVT": {
+    "avg_volume": 109900.9074074074,
+    "shares_out_m": 109.47
+  },
+  "HSBC": {
+    "avg_volume": 92440.0,
+    "shares_out_m": 17134.68
+  },
+  "KSS": {
+    "avg_volume": 299664.3333333333,
+    "shares_out_m": 113.38
+  },
+  "LI": {
+    "avg_volume": 256987.11111111112,
+    "shares_out_m": 2061.23
+  },
+  "SYNA": {
+    "avg_volume": 62895.07407407407,
+    "shares_out_m": 39.7
+  },
+  "BHC": {
+    "avg_volume": 237310.96296296295,
+    "shares_out_m": 374.27
+  },
+  "M": {
+    "avg_volume": 436234.9259259259,
+    "shares_out_m": 261.18
+  },
+  "RXST": {
+    "avg_volume": 57460.351851851854,
+    "shares_out_m": 41.59
+  },
+  "TTEK": {
+    "avg_volume": 141898.59259259258,
+    "shares_out_m": 256.04
+  },
+  "FTS": {
+    "avg_volume": 72033.07407407407,
+    "shares_out_m": 513.66
+  },
+  "NTRS": {
+    "avg_volume": 59921.59259259259,
+    "shares_out_m": 181.12
+  },
+  "FDX": {
+    "avg_volume": 84418.0925925926,
+    "shares_out_m": 234.2
+  },
+  "COUR": {
+    "avg_volume": 475919.5740740741,
+    "shares_out_m": 264.4
+  },
+  "SHO": {
+    "avg_volume": 166655.5,
+    "shares_out_m": 185.94
+  },
+  "TTAN": {
+    "avg_volume": 115770.5,
+    "shares_out_m": 96.47
+  },
+  "ASST": {
+    "avg_volume": 310678.0,
+    "shares_out_m": 127.33
+  },
+  "CDZI": {
+    "avg_volume": 106843.33333333333,
+    "shares_out_m": 90.02
+  },
+  "CNQ": {
+    "avg_volume": 584069.8148148148,
+    "shares_out_m": 2054.97
+  },
+  "HE": {
+    "avg_volume": 203484.25925925927,
+    "shares_out_m": 173.02
+  },
+  "IE": {
+    "avg_volume": 218752.61111111112,
+    "shares_out_m": 159.63
+  },
+  "CURB": {
+    "avg_volume": 82042.42592592593,
+    "shares_out_m": 121.42
+  },
+  "KO": {
+    "avg_volume": 1097910.7407407407,
+    "shares_out_m": 4301.9
+  },
+  "ASTL": {
+    "avg_volume": 93681.62962962964,
+    "shares_out_m": 105.66
+  },
+  "TSHA": {
+    "avg_volume": 294568.537037037,
+    "shares_out_m": 325.83
+  },
+  "UWMC": {
+    "avg_volume": 737755.9444444445,
+    "shares_out_m": 1606.96
+  },
+  "WK": {
+    "avg_volume": 54904.59259259259,
+    "shares_out_m": 54.42
+  },
+  "ADSK": {
+    "avg_volume": 127196.44444444444,
+    "shares_out_m": 209
+  },
+  "AVEX": {
+    "avg_volume": 79719.16666666667,
+    "shares_out_m": 126.77
+  },
+  "DUOL": {
+    "avg_volume": 63569.7962962963,
+    "shares_out_m": 46.79
+  },
+  "AGNT": {
+    "avg_volume": 111859.0,
+    "shares_out_m": 158.42
+  },
+  "FIS": {
+    "avg_volume": 551022.5370370371,
+    "shares_out_m": 515.71
+  },
+  "HPE": {
+    "avg_volume": 1037075.9074074074,
+    "shares_out_m": 1327.46
+  },
+  "HWC": {
+    "avg_volume": 57730.5,
+    "shares_out_m": 80.22
+  },
+  "BJ": {
+    "avg_volume": 116502.38888888889,
+    "shares_out_m": 126.31
+  },
+  "HOS": {
+    "avg_volume": 192623.25925925927,
+    "shares_out_m": 185.2
+  },
+  "KNTK": {
+    "avg_volume": 72452.37037037036,
+    "shares_out_m": 162.38
+  },
+  "MQ": {
+    "avg_volume": 50470.88888888889,
+    "shares_out_m": 104.1
+  },
+  "CRWV": {
+    "avg_volume": 1374720.1666666667,
+    "shares_out_m": 551.54
+  },
+  "GNRC": {
+    "avg_volume": 80790.44444444444,
+    "shares_out_m": 58.99
+  },
+  "META": {
+    "avg_volume": 770132.3148148148,
+    "shares_out_m": 2596.22
+  },
+  "BZ": {
+    "avg_volume": 543728.7592592592,
+    "shares_out_m": 940.27
+  },
+  "DG": {
+    "avg_volume": 126651.35185185185,
+    "shares_out_m": 220.62
+  },
+  "HOOD": {
+    "avg_volume": 640471.074074074,
+    "shares_out_m": 900.49
+  },
+  "ODFL": {
+    "avg_volume": 105490.66666666667,
+    "shares_out_m": 207.36
+  },
+  "REAL": {
+    "avg_volume": 286558.8703703704,
+    "shares_out_m": 124.71
+  },
+  "DUK": {
+    "avg_volume": 214202.74074074073,
+    "shares_out_m": 779.7
+  },
+  "ADPT": {
+    "avg_volume": 142809.85185185185,
+    "shares_out_m": 159.6
+  },
+  "BOBS": {
+    "avg_volume": 58789.944444444445,
+    "shares_out_m": 130.69
+  },
+  "EXE": {
+    "avg_volume": 165615.03703703705,
+    "shares_out_m": 230.96
+  },
+  "HSLV": {
+    "avg_volume": 59576.38888888889,
+    "shares_out_m": 204.17
+  },
+  "HUBG": {
+    "avg_volume": 65563.07407407407,
+    "shares_out_m": 61.15
+  },
+  "MUX": {
+    "avg_volume": 57892.90740740741,
+    "shares_out_m": 61.36
+  },
+  "ADNT": {
+    "avg_volume": 66869.92592592593,
+    "shares_out_m": 77.1
+  },
+  "IRT": {
+    "avg_volume": 278966.68518518517,
+    "shares_out_m": 235.73
+  },
+  "METC": {
+    "avg_volume": 112365.96296296296,
+    "shares_out_m": 63.68
+  },
+  "NEA": {
+    "avg_volume": 82152.92592592593,
+    "shares_out_m": 302.13
+  },
+  "ODD": {
+    "avg_volume": 51571.51851851852,
+    "shares_out_m": 46.12
+  },
+  "ALL": {
+    "avg_volume": 108753.92592592593,
+    "shares_out_m": 252.86
+  },
+  "CRDO": {
+    "avg_volume": 301146.462962963,
+    "shares_out_m": 187.95
+  },
+  "HRL": {
+    "avg_volume": 296962.8703703704,
+    "shares_out_m": 550.35
+  },
+  "OCFC": {
+    "avg_volume": 98801.24074074074,
+    "shares_out_m": 98.51
+  },
+  "MC": {
+    "avg_volume": 63163.40740740741,
+    "shares_out_m": 78.27
+  },
+  "SION": {
+    "avg_volume": 50835.18518518518,
+    "shares_out_m": 45.21
+  },
+  "AEE": {
+    "avg_volume": 91902.07407407407,
+    "shares_out_m": 276.84
+  },
+  "BRKR": {
+    "avg_volume": 165204.07407407407,
+    "shares_out_m": 152.36
+  },
+  "BROS": {
+    "avg_volume": 262277.75925925927,
+    "shares_out_m": 174.68
+  },
+  "CLOV": {
+    "avg_volume": 235275.6851851852,
+    "shares_out_m": 531.16
+  },
+  "HRMY": {
+    "avg_volume": 62680.055555555555,
+    "shares_out_m": 58.24
+  },
+  "ALC": {
+    "avg_volume": 180978.92592592593,
+    "shares_out_m": 499.7
+  },
+  "ALKS": {
+    "avg_volume": 126343.18518518518,
+    "shares_out_m": 167.76
+  },
+  "HSIC": {
+    "avg_volume": 94222.62962962964,
+    "shares_out_m": 111.45
+  },
+  "IMTX": {
+    "avg_volume": 68273.03703703704,
+    "shares_out_m": 152.23
+  },
+  "LAND": {
+    "avg_volume": 53610.25925925926,
+    "shares_out_m": 43.14
+  },
+  "PAAS": {
+    "avg_volume": 318473.3703703704,
+    "shares_out_m": 415.2
+  },
+  "RKLB": {
+    "avg_volume": 531291.8518518518,
+    "shares_out_m": 598.46
+  },
+  "HON": {
+    "avg_volume": 107947.87037037036,
+    "shares_out_m": 317.36
+  },
+  "CARR": {
+    "avg_volume": 378896.74074074073,
+    "shares_out_m": 818.16
+  },
+  "HOPE": {
+    "avg_volume": 77761.46296296296,
+    "shares_out_m": 127.76
+  },
+  "HP": {
+    "avg_volume": 60840.96296296296,
+    "shares_out_m": 99.94
+  },
+  "LDOS": {
+    "avg_volume": 56702.07407407407,
+    "shares_out_m": 125.49
+  },
+  "CVX": {
+    "avg_volume": 287677.2037037037,
+    "shares_out_m": 1951
+  },
+  "AI": {
+    "avg_volume": 336824.74074074073,
+    "shares_out_m": 160.78
+  },
+  "CSCO": {
+    "avg_volume": 749508.3703703703,
+    "shares_out_m": 3936.98
+  },
+  "PRCH": {
+    "avg_volume": 104409.22222222222,
+    "shares_out_m": 114.33
+  },
+  "SN": {
+    "avg_volume": 93256.74074074074,
+    "shares_out_m": 140.87
+  },
+  "ROL": {
+    "avg_volume": 473380.64814814815,
+    "shares_out_m": 478.05
+  },
+  "BUD": {
+    "avg_volume": 140213.7037037037,
+    "shares_out_m": 1797.21
+  },
+  "GE": {
+    "avg_volume": 228291.61111111112,
+    "shares_out_m": 1033.35
+  },
+  "RDY": {
+    "avg_volume": 236746.92592592593,
+    "shares_out_m": 833.07
+  },
+  "RELY": {
+    "avg_volume": 206721.24074074073,
+    "shares_out_m": 211.68
+  },
+  "SMRT": {
+    "avg_volume": 63347.53703703704,
+    "shares_out_m": 191.61
+  },
+  "JBIO": {
+    "avg_volume": 56666.25925925926,
+    "shares_out_m": 63.6
+  },
+  "CRWD": {
+    "avg_volume": 386540.77777777775,
+    "shares_out_m": 1023.93
+  },
+  "CRCL": {
+    "avg_volume": 351703.35185185185,
+    "shares_out_m": 255.11
+  },
+  "CRCT": {
+    "avg_volume": 81879.5925925926,
+    "shares_out_m": 209.44
+  },
+  "PLTR": {
+    "avg_volume": 647271.1111111111,
+    "shares_out_m": 2403.06
+  },
+  "EMR": {
+    "avg_volume": 148622.03703703705,
+    "shares_out_m": 557.8
+  },
+  "ALKT": {
+    "avg_volume": 112802.42592592593,
+    "shares_out_m": 107.04
+  },
+  "ESI": {
+    "avg_volume": 273206.14814814815,
+    "shares_out_m": 242.6
+  },
+  "LITE": {
+    "avg_volume": 201449.74074074073,
+    "shares_out_m": 90.58
+  },
+  "CART": {
+    "avg_volume": 321558.64814814815,
+    "shares_out_m": 236.5
+  },
+  "VVR": {
+    "avg_volume": 53019.37037037037,
+    "shares_out_m": 153.93
+  },
+  "SPT": {
+    "avg_volume": 70973.77777777778,
+    "shares_out_m": 60.59
+  },
+  "TCOM": {
+    "avg_volume": 243741.61111111112,
+    "shares_out_m": 649.58
+  },
+  "TMQ": {
+    "avg_volume": 81656.38888888889,
+    "shares_out_m": 181.36
+  },
+  "UNM": {
+    "avg_volume": 112073.87037037036,
+    "shares_out_m": 158.31
+  },
+  "WAL": {
+    "avg_volume": 57121.87037037037,
+    "shares_out_m": 107.55
+  },
+  "ULS": {
+    "avg_volume": 54647.51851851852,
+    "shares_out_m": 201.9
+  },
+  "ADCT": {
+    "avg_volume": 96193.18518518518,
+    "shares_out_m": 127.67
+  },
+  "BEAM": {
+    "avg_volume": 107177.25925925926,
+    "shares_out_m": 103.29
+  },
+  "USFD": {
+    "avg_volume": 149328.9814814815,
+    "shares_out_m": 216.33
+  },
+  "ADM": {
+    "avg_volume": 154603.37037037036,
+    "shares_out_m": 481.96
+  },
+  "AM": {
+    "avg_volume": 233756.87037037036,
+    "shares_out_m": 472.35
+  },
+  "CTMX": {
+    "avg_volume": 322777.3333333333,
+    "shares_out_m": 217.9
+  },
+  "MWH": {
+    "avg_volume": 107980.03703703704,
+    "shares_out_m": 202.39
+  },
+  "AFL": {
+    "avg_volume": 67167.44444444444,
+    "shares_out_m": 501.34
+  },
+  "CTRI": {
+    "avg_volume": 114344.33333333333,
+    "shares_out_m": 100.96
+  },
+  "SOFI": {
+    "avg_volume": 2012672.0740740742,
+    "shares_out_m": 1296.62
+  },
+  "CYTK": {
+    "avg_volume": 125342.62962962964,
+    "shares_out_m": 139.02
+  },
+  "TDC": {
+    "avg_volume": 100542.38888888889,
+    "shares_out_m": 93
+  },
+  "AMRZ": {
+    "avg_volume": 274846.72222222225,
+    "shares_out_m": 532.39
+  },
+  "HL": {
+    "avg_volume": 1174333.0740740742,
+    "shares_out_m": 671.77
+  },
+  "IAG": {
+    "avg_volume": 508374.51851851854,
+    "shares_out_m": 566.75
+  },
+  "PFE": {
+    "avg_volume": 1813096.1296296297,
+    "shares_out_m": 5699.67
+  },
+  "AON": {
+    "avg_volume": 101312.0925925926,
+    "shares_out_m": 212.16
+  },
+  "HTHT": {
+    "avg_volume": 113196.16666666667,
+    "shares_out_m": 3154.06
+  },
+  "MFC": {
+    "avg_volume": 160063.87037037036,
+    "shares_out_m": 1654.3
+  },
+  "CAVA": {
+    "avg_volume": 188478.44444444444,
+    "shares_out_m": 116.81
+  },
+  "MCD": {
+    "avg_volume": 216867.4814814815,
+    "shares_out_m": 707.64
+  },
+  "MDA": {
+    "avg_volume": 53536.81481481482,
+    "shares_out_m": 162.17
+  },
+  "DOX": {
+    "avg_volume": 88148.44444444444,
+    "shares_out_m": 104.42
+  },
+  "CMBT": {
+    "avg_volume": 82871.46296296296,
+    "shares_out_m": 315.98
+  },
+  "SIGA": {
+    "avg_volume": 54820.87037037037,
+    "shares_out_m": 71.85
+  },
+  "TCPC": {
+    "avg_volume": 63452.37037037037,
+    "shares_out_m": 83.9
+  },
+  "MSI": {
+    "avg_volume": 59547.666666666664,
+    "shares_out_m": 165.49
+  },
+  "RDW": {
+    "avg_volume": 584591.3888888889,
+    "shares_out_m": 249.99
+  },
+  "CAH": {
+    "avg_volume": 88154.85185185185,
+    "shares_out_m": 231.56
+  },
+  "QFIN": {
+    "avg_volume": 152405.59259259258,
+    "shares_out_m": 246.17
+  },
+  "APPN": {
+    "avg_volume": 50777.22222222222,
+    "shares_out_m": 71.63
+  },
+  "KMT": {
+    "avg_volume": 99425.16666666667,
+    "shares_out_m": 76.39
+  },
+  "STIM": {
+    "avg_volume": 125268.0925925926,
+    "shares_out_m": 76.2
+  },
+  "TAC": {
+    "avg_volume": 126739.87037037036,
+    "shares_out_m": 316.03
+  },
+  "RYTM": {
+    "avg_volume": 87227.70370370371,
+    "shares_out_m": 68.85
+  },
+  "UMC": {
+    "avg_volume": 943431.8148148148,
+    "shares_out_m": 12570.09
+  },
+  "HXL": {
+    "avg_volume": 67231.51851851853,
+    "shares_out_m": 75.7
+  },
+  "NOC": {
+    "avg_volume": 56871.87037037037,
+    "shares_out_m": 142.06
+  },
+  "PRU": {
+    "avg_volume": 85041.64814814815,
+    "shares_out_m": 345
+  },
+  "DOCU": {
+    "avg_volume": 126242.61111111111,
+    "shares_out_m": 186.9
+  },
+  "EVLV": {
+    "avg_volume": 152215.64814814815,
+    "shares_out_m": 181.13
+  },
+  "GNW": {
+    "avg_volume": 208291.90740740742,
+    "shares_out_m": 377.85
+  },
+  "OPK": {
+    "avg_volume": 239989.5,
+    "shares_out_m": 746.33
+  },
+  "BWXT": {
+    "avg_volume": 72827.96296296296,
+    "shares_out_m": 91.62
+  },
+  "GME": {
+    "avg_volume": 442448.27777777775,
+    "shares_out_m": 504.5
+  },
+  "NFLX": {
+    "avg_volume": 2251693.074074074,
+    "shares_out_m": 4106.33
+  },
+  "EVH": {
+    "avg_volume": 122852.31481481482,
+    "shares_out_m": 113.06
+  },
+  "GRNT": {
+    "avg_volume": 82304.5,
+    "shares_out_m": 131.9
+  },
+  "HR": {
+    "avg_volume": 430416.0,
+    "shares_out_m": 338.54
+  },
+  "LZ": {
+    "avg_volume": 194022.22222222222,
+    "shares_out_m": 171.26
+  },
+  "MFIC": {
+    "avg_volume": 65019.59259259259,
+    "shares_out_m": 82.37
+  },
+  "RLAY": {
+    "avg_volume": 180885.44444444444,
+    "shares_out_m": 219.14
+  },
+  "STLA": {
+    "avg_volume": 1778692.9814814816,
+    "shares_out_m": 2906.2
+  },
+  "TRU": {
+    "avg_volume": 162826.94444444444,
+    "shares_out_m": 190.7
+  },
+  "ARQT": {
+    "avg_volume": 150666.05555555556,
+    "shares_out_m": 125.69
+  },
+  "DE": {
+    "avg_volume": 72490.42592592593,
+    "shares_out_m": 269.63
+  },
+  "MT": {
+    "avg_volume": 75435.31481481482,
+    "shares_out_m": 775
+  },
+  "NBIS": {
+    "avg_volume": 654503.3703703703,
+    "shares_out_m": 271.86
+  },
+  "HUBS": {
+    "avg_volume": 84914.24074074074,
+    "shares_out_m": 49.87
+  },
+  "VTRS": {
+    "avg_volume": 621745.2962962963,
+    "shares_out_m": 1148.59
+  },
+  "ANNX": {
+    "avg_volume": 299469.25925925927,
+    "shares_out_m": 189.58
+  },
+  "AQST": {
+    "avg_volume": 131357.5,
+    "shares_out_m": 125.51
+  },
+  "HSY": {
+    "avg_volume": 109619.61111111111,
+    "shares_out_m": 200.98
+  },
+  "OPFI": {
+    "avg_volume": 64770.92592592593,
+    "shares_out_m": 85.21
+  },
+  "BTU": {
+    "avg_volume": 142395.16666666666,
+    "shares_out_m": 121.9
+  },
+  "ENOV": {
+    "avg_volume": 95313.25925925926,
+    "shares_out_m": 57.67
+  },
+  "IQV": {
+    "avg_volume": 95988.44444444444,
+    "shares_out_m": 164.8
+  },
+  "NVST": {
+    "avg_volume": 256388.25925925927,
+    "shares_out_m": 160.62
+  },
+  "NOG": {
+    "avg_volume": 125433.16666666667,
+    "shares_out_m": 106.55
+  },
+  "ADBE": {
+    "avg_volume": 156115.44444444444,
+    "shares_out_m": 389.2
+  },
+  "GLOB": {
+    "avg_volume": 62486.7962962963,
+    "shares_out_m": 43.18
+  },
+  "SKYD": {
+    "avg_volume": 1487329.962962963,
+    "shares_out_m": 1124.52
+  },
+  "AHRT": {
+    "avg_volume": 63405.75925925926,
+    "shares_out_m": 99.43
+  },
+  "HAFN": {
+    "avg_volume": 174829.07407407407,
+    "shares_out_m": 535.33
+  },
+  "KRMN": {
+    "avg_volume": 192628.25925925927,
+    "shares_out_m": 132.53
+  },
+  "KVYO": {
+    "avg_volume": 445956.7037037037,
+    "shares_out_m": 284.73
+  },
+  "HWM": {
+    "avg_volume": 209993.46296296295,
+    "shares_out_m": 397.66
+  },
+  "LIND": {
+    "avg_volume": 51925.851851851854,
+    "shares_out_m": 65.62
+  },
+  "NPKI": {
+    "avg_volume": 70596.62962962964,
+    "shares_out_m": 83.92
+  },
+  "XPRO": {
+    "avg_volume": 64849.01851851852,
+    "shares_out_m": 112.35
+  },
+  "ZG": {
+    "avg_volume": 65638.18518518518,
+    "shares_out_m": 224.87
+  },
+  "VZ": {
+    "avg_volume": 1376237.851851852,
+    "shares_out_m": 4144.6
+  },
+  "W": {
+    "avg_volume": 139465.96296296295,
+    "shares_out_m": 136.97
+  },
+  "ZGN": {
+    "avg_volume": 97758.31481481482,
+    "shares_out_m": 268.89
+  },
+  "ZIM": {
+    "avg_volume": 61110.833333333336,
+    "shares_out_m": 120.65
+  },
+  "IVZ": {
+    "avg_volume": 493316.01851851854,
+    "shares_out_m": 439.5
+  },
+  "OTIS": {
+    "avg_volume": 254287.2037037037,
+    "shares_out_m": 380.71
+  },
+  "UPBD": {
+    "avg_volume": 68984.70370370371,
+    "shares_out_m": 58.3
+  },
+  "CCEP": {
+    "avg_volume": 92627.01851851853,
+    "shares_out_m": 439.77
+  },
+  "CTSH": {
+    "avg_volume": 331587.27777777775,
+    "shares_out_m": 447.03
+  },
+  "JBS": {
+    "avg_volume": 674017.8148148148,
+    "shares_out_m": 1070.93
+  },
+  "MRTN": {
+    "avg_volume": 50191.944444444445,
+    "shares_out_m": 81.66
+  },
+  "RCUS": {
+    "avg_volume": 121017.22222222222,
+    "shares_out_m": 143.45
+  },
+  "SE": {
+    "avg_volume": 343652.537037037,
+    "shares_out_m": 566.96
+  },
+  "ICLR": {
+    "avg_volume": 90960.37037037036,
+    "shares_out_m": 74.92
+  },
+  "AIOT": {
+    "avg_volume": 135426.57407407407,
+    "shares_out_m": 134.23
+  },
+  "ASPN": {
+    "avg_volume": 73260.31481481482,
+    "shares_out_m": 82.99
+  },
+  "CBRE": {
+    "avg_volume": 128501.38888888889,
+    "shares_out_m": 288.2
+  },
+  "OGE": {
+    "avg_volume": 146982.59259259258,
+    "shares_out_m": 206.73
+  },
+  "ALEC": {
+    "avg_volume": 147352.7037037037,
+    "shares_out_m": 148.26
+  },
+  "DIS": {
+    "avg_volume": 468412.2962962963,
+    "shares_out_m": 1726.69
+  },
+  "IRTC": {
+    "avg_volume": 53559.38888888889,
+    "shares_out_m": 32.96
+  },
+  "MANE": {
+    "avg_volume": 51989.53703703704,
+    "shares_out_m": 41.78
+  },
+  "BB": {
+    "avg_volume": 899117.9074074074,
+    "shares_out_m": 587.03
+  },
+  "MFA": {
+    "avg_volume": 150546.77777777778,
+    "shares_out_m": 101.09
+  },
+  "PG": {
+    "avg_volume": 405781.0,
+    "shares_out_m": 2317.78
+  },
+  "RSG": {
+    "avg_volume": 78357.98148148147,
+    "shares_out_m": 304.64
+  },
+  "COF": {
+    "avg_volume": 204435.0,
+    "shares_out_m": 601.5
+  },
+  "TMC": {
+    "avg_volume": 214530.5185185185,
+    "shares_out_m": 441.14
+  },
+  "CXW": {
+    "avg_volume": 124736.83333333333,
+    "shares_out_m": 98.89
+  },
+  "REPL": {
+    "avg_volume": 145635.2037037037,
+    "shares_out_m": 94.8
+  },
+  "NG": {
+    "avg_volume": 348481.8333333333,
+    "shares_out_m": 438.82
+  },
+  "LAR": {
+    "avg_volume": 132743.0,
+    "shares_out_m": 164.18
+  },
+  "SBUX": {
+    "avg_volume": 393392.9259259259,
+    "shares_out_m": 1140.1
+  },
+  "BALL": {
+    "avg_volume": 106786.51851851853,
+    "shares_out_m": 264.7
+  },
+  "CHYM": {
+    "avg_volume": 340317.74074074073,
+    "shares_out_m": 378.59
+  },
+  "NNN": {
+    "avg_volume": 155952.35185185185,
+    "shares_out_m": 191.93
+  },
+  "MBC": {
+    "avg_volume": 252570.66666666666,
+    "shares_out_m": 203.49
+  },
+  "PLD": {
+    "avg_volume": 161558.42592592593,
+    "shares_out_m": 950.51
+  },
+  "MTH": {
+    "avg_volume": 54426.833333333336,
+    "shares_out_m": 64.42
+  },
+  "PLNT": {
+    "avg_volume": 112500.33333333333,
+    "shares_out_m": 75.53
+  },
+  "PTC": {
+    "avg_volume": 151866.7962962963,
+    "shares_out_m": 108.63
+  },
+  "SARO": {
+    "avg_volume": 305402.27777777775,
+    "shares_out_m": 330.92
+  },
+  "SEI": {
+    "avg_volume": 166244.90740740742,
+    "shares_out_m": 80.17
+  },
+  "JMKE": {
+    "avg_volume": 225490.03703703705,
+    "shares_out_m": 317.64
+  },
+  "RGTI": {
+    "avg_volume": 780501.2037037037,
+    "shares_out_m": 333.77
+  },
+  "SBET": {
+    "avg_volume": 747195.2222222222,
+    "shares_out_m": 217.22
+  },
+  "C": {
+    "avg_volume": 413333.3703703704,
+    "shares_out_m": 1655.2
+  },
+  "FIP": {
+    "avg_volume": 135292.75925925927,
+    "shares_out_m": 118.18
+  },
+  "MOD": {
+    "avg_volume": 141573.1851851852,
+    "shares_out_m": 53.2
+  },
+  "BSX": {
+    "avg_volume": 1489612.9259259258,
+    "shares_out_m": 1449.23
+  },
+  "ETR": {
+    "avg_volume": 139062.8148148148,
+    "shares_out_m": 477.78
+  },
+  "HST": {
+    "avg_volume": 611241.7592592592,
+    "shares_out_m": 685.12
+  },
+  "RWT": {
+    "avg_volume": 246660.9814814815,
+    "shares_out_m": 125.61
+  },
+  "SATL": {
+    "avg_volume": 261953.33333333334,
+    "shares_out_m": 153.74
+  },
+  "LBRT": {
+    "avg_volume": 282365.1111111111,
+    "shares_out_m": 163.19
+  },
+  "LNC": {
+    "avg_volume": 96815.35185185185,
+    "shares_out_m": 191.45
+  },
+  "RBRK": {
+    "avg_volume": 163293.14814814815,
+    "shares_out_m": 207.3
+  },
+  "FSLY": {
+    "avg_volume": 320933.9074074074,
+    "shares_out_m": 159.3
+  },
+  "BRO": {
+    "avg_volume": 140623.62962962964,
+    "shares_out_m": 331.69
+  },
+  "CWK": {
+    "avg_volume": 237604.74074074073,
+    "shares_out_m": 234.71
+  },
+  "ETOR": {
+    "avg_volume": 74927.48148148147,
+    "shares_out_m": 79.53
+  },
+  "PHM": {
+    "avg_volume": 89568.75925925926,
+    "shares_out_m": 184.09
+  },
+  "PSX": {
+    "avg_volume": 189438.57407407407,
+    "shares_out_m": 390.07
+  },
+  "SVRA": {
+    "avg_volume": 251648.77777777778,
+    "shares_out_m": 205.46
+  },
+  "CTOS": {
+    "avg_volume": 50309.72222222222,
+    "shares_out_m": 227.17
+  },
+  "TMDX": {
+    "avg_volume": 52121.88888888889,
+    "shares_out_m": 34.68
+  },
+  "TSM": {
+    "avg_volume": 651698.7037037037,
+    "shares_out_m": 25932.37
+  },
+  "FRSH": {
+    "avg_volume": 447497.64814814815,
+    "shares_out_m": 260.92
+  },
+  "ACRS": {
+    "avg_volume": 223120.72222222222,
+    "shares_out_m": 147.61
+  },
+  "AMGN": {
+    "avg_volume": 105064.12962962964,
+    "shares_out_m": 540.63
+  },
+  "Q": {
+    "avg_volume": 106529.77777777778,
+    "shares_out_m": 209.21
+  },
+  "RVMD": {
+    "avg_volume": 166643.61111111112,
+    "shares_out_m": 214.34
+  },
+  "TFSL": {
+    "avg_volume": 51819.48148148148,
+    "shares_out_m": 280.44
+  },
+  "HYT": {
+    "avg_volume": 54095.87037037037,
+    "shares_out_m": 195.66
+  },
+  "ITT": {
+    "avg_volume": 56181.75925925926,
+    "shares_out_m": 89.4
+  },
+  "NKE": {
+    "avg_volume": 1702837.888888889,
+    "shares_out_m": 1485.31
+  },
+  "ORCL": {
+    "avg_volume": 1163659.462962963,
+    "shares_out_m": 3031.5
+  },
+  "HTFL": {
+    "avg_volume": 83404.98148148147,
+    "shares_out_m": 86.95
+  },
+  "HBM": {
+    "avg_volume": 475769.6296296296,
+    "shares_out_m": 444.14
+  },
+  "LOW": {
+    "avg_volume": 153745.05555555556,
+    "shares_out_m": 561.05
+  },
+  "MAA": {
+    "avg_volume": 53167.53703703704,
+    "shares_out_m": 115.99
+  },
+  "VICI": {
+    "avg_volume": 626174.2037037037,
+    "shares_out_m": 1101.09
+  },
+  "VREX": {
+    "avg_volume": 65612.81481481482,
+    "shares_out_m": 42.46
+  },
+  "WWD": {
+    "avg_volume": 60103.2962962963,
+    "shares_out_m": 59.05
+  },
+  "XYL": {
+    "avg_volume": 141404.61111111112,
+    "shares_out_m": 229.33
+  },
+  "UPS": {
+    "avg_volume": 263707.9259259259,
+    "shares_out_m": 850.78
+  },
+  "VST": {
+    "avg_volume": 285981.14814814815,
+    "shares_out_m": 335.64
+  },
+  "VTEX": {
+    "avg_volume": 80356.05555555556,
+    "shares_out_m": 165.33
+  },
+  "WERN": {
+    "avg_volume": 54559.53703703704,
+    "shares_out_m": 59.98
+  },
+  "GPGI": {
+    "avg_volume": 103652.22222222222,
+    "shares_out_m": 289.89
+  },
+  "APAM": {
+    "avg_volume": 75050.22222222222,
+    "shares_out_m": 81.07
+  },
+  "APA": {
+    "avg_volume": 373415.98148148146,
+    "shares_out_m": 350.35
+  },
+  "SSP": {
+    "avg_volume": 55699.333333333336,
+    "shares_out_m": 92.67
+  },
+  "STUB": {
+    "avg_volume": 402551.1666666667,
+    "shares_out_m": 382.09
+  },
+  "THM": {
+    "avg_volume": 62721.12962962963,
+    "shares_out_m": 261.95
+  },
+  "ALH": {
+    "avg_volume": 62226.851851851854,
+    "shares_out_m": 195.49
+  },
+  "FTI": {
+    "avg_volume": 163039.25925925927,
+    "shares_out_m": 388.83
+  },
+  "INN": {
+    "avg_volume": 83951.18518518518,
+    "shares_out_m": 107.85
+  },
+  "RELX": {
+    "avg_volume": 186815.46296296295,
+    "shares_out_m": 1741.04
+  },
+  "VIPS": {
+    "avg_volume": 202509.55555555556,
+    "shares_out_m": 96.05
+  },
+  "MTZ": {
+    "avg_volume": 113783.0,
+    "shares_out_m": 80.3
+  },
+  "ROST": {
+    "avg_volume": 114692.22222222222,
+    "shares_out_m": 319.45
+  },
+  "VIV": {
+    "avg_volume": 199238.11111111112,
+    "shares_out_m": 3226.55
+  },
+  "ASAN": {
+    "avg_volume": 426502.462962963,
+    "shares_out_m": 228.97
+  },
+  "STWD": {
+    "avg_volume": 365551.5740740741,
+    "shares_out_m": 370.17
+  },
+  "VOD": {
+    "avg_volume": 218002.40740740742,
+    "shares_out_m": 23167.26
+  },
+  "THO": {
+    "avg_volume": 56964.444444444445,
+    "shares_out_m": 51.61
+  },
+  "TWLO": {
+    "avg_volume": 161030.87037037036,
+    "shares_out_m": 154.73
+  },
+  "FTV": {
+    "avg_volume": 131041.57407407407,
+    "shares_out_m": 297.64
+  },
+  "SPCX": {
+    "avg_volume": 3251926.5,
+    "shares_out_m": 13581.06
+  },
+  "BEPC": {
+    "avg_volume": 240691.96296296295,
+    "shares_out_m": 185.6
+  },
+  "VERA": {
+    "avg_volume": 94866.48148148147,
+    "shares_out_m": 72.06
+  },
+  "MKC": {
+    "avg_volume": 188010.96296296295,
+    "shares_out_m": 269.06
+  },
+  "BEP": {
+    "avg_volume": 122433.96296296296,
+    "shares_out_m": 300.11
+  },
+  "DOC": {
+    "avg_volume": 424731.94444444444,
+    "shares_out_m": 689.53
+  },
+  "WEC": {
+    "avg_volume": 158020.37037037036,
+    "shares_out_m": 328.99
+  },
+  "BTGO": {
+    "avg_volume": 72995.12962962964,
+    "shares_out_m": 117.55
+  },
+  "VISN": {
+    "avg_volume": 574962.1296296297,
+    "shares_out_m": 230.63
+  },
+  "FTDR": {
+    "avg_volume": 54626.72222222222,
+    "shares_out_m": 68.89
+  },
+  "EQT": {
+    "avg_volume": 620066.9444444445,
+    "shares_out_m": 625.55
+  },
+  "GTN": {
+    "avg_volume": 66654.79629629629,
+    "shares_out_m": 102.98
+  },
+  "MLI": {
+    "avg_volume": 84663.81481481482,
+    "shares_out_m": 217.97
+  },
+  "ST": {
+    "avg_volume": 94840.29629629629,
+    "shares_out_m": 145.56
+  },
+  "TEL": {
+    "avg_volume": 112602.0925925926,
+    "shares_out_m": 289.51
+  },
+  "GBCI": {
+    "avg_volume": 64545.61111111111,
+    "shares_out_m": 130.22
+  },
+  "MTN": {
+    "avg_volume": 53129.444444444445,
+    "shares_out_m": 35.72
+  },
+  "ARWR": {
+    "avg_volume": 126931.46296296296,
+    "shares_out_m": 141.25
+  },
+  "UIS": {
+    "avg_volume": 65359.40740740741,
+    "shares_out_m": 72.92
+  },
+  "MPLX": {
+    "avg_volume": 98218.48148148147,
+    "shares_out_m": 1013.86
+  },
+  "RITM": {
+    "avg_volume": 390767.64814814815,
+    "shares_out_m": 558.41
+  },
+  "RYN": {
+    "avg_volume": 233034.42592592593,
+    "shares_out_m": 297.57
+  },
+  "AZTA": {
+    "avg_volume": 59307.42592592593,
+    "shares_out_m": 43.81
+  },
+  "H": {
+    "avg_volume": 55632.88888888889,
+    "shares_out_m": 93.39
+  },
+  "HQY": {
+    "avg_volume": 56036.851851851854,
+    "shares_out_m": 82.72
+  },
+  "NFG": {
+    "avg_volume": 55169.24074074074,
+    "shares_out_m": 95.05
+  },
+  "SLB": {
+    "avg_volume": 871317.8333333334,
+    "shares_out_m": 1476.03
+  },
+  "STNE": {
+    "avg_volume": 465501.77777777775,
+    "shares_out_m": 230.6
+  },
+  "CFFN": {
+    "avg_volume": 68412.96296296296,
+    "shares_out_m": 123.41
+  },
+  "MNKD": {
+    "avg_volume": 258910.7962962963,
+    "shares_out_m": 321.54
+  },
+  "IOT": {
+    "avg_volume": 244995.3148148148,
+    "shares_out_m": 585.61
+  },
+  "RBBN": {
+    "avg_volume": 90816.66666666667,
+    "shares_out_m": 179.17
+  },
+  "SSRM": {
+    "avg_volume": 153526.6851851852,
+    "shares_out_m": 201.49
+  },
+  "VERX": {
+    "avg_volume": 107303.57407407407,
+    "shares_out_m": 162.22
+  },
+  "ARXS": {
+    "avg_volume": 55683.333333333336,
+    "shares_out_m": 430.72
+  },
+  "NTST": {
+    "avg_volume": 105590.98148148147,
+    "shares_out_m": 125.63
+  },
+  "RCI": {
+    "avg_volume": 96645.24074074074,
+    "shares_out_m": 540.23
+  },
+  "SABS": {
+    "avg_volume": 57135.22222222222,
+    "shares_out_m": 90.99
+  },
+  "SHAK": {
+    "avg_volume": 83703.01851851853,
+    "shares_out_m": 42.8
+  },
+  "ABR": {
+    "avg_volume": 474283.2037037037,
+    "shares_out_m": 184.18
+  },
+  "HNGE": {
+    "avg_volume": 73387.27777777778,
+    "shares_out_m": 80.69
+  },
+  "RLJ": {
+    "avg_volume": 137704.37037037036,
+    "shares_out_m": 152.38
+  },
+  "CBRS": {
+    "avg_volume": 377991.1111111111,
+    "shares_out_m": 237.56
+  },
+  "MOS": {
+    "avg_volume": 648636.8333333334,
+    "shares_out_m": 317.9
+  },
+  "TMUS": {
+    "avg_volume": 291333.85185185185,
+    "shares_out_m": 1059.27
+  },
+  "PEPG": {
+    "avg_volume": 153083.5,
+    "shares_out_m": 69.26
+  },
+  "VITL": {
+    "avg_volume": 82337.87037037036,
+    "shares_out_m": 42.93
+  },
+  "YMM": {
+    "avg_volume": 619503.8888888889,
+    "shares_out_m": 20750.89
+  },
+  "YUMC": {
+    "avg_volume": 98537.11111111111,
+    "shares_out_m": 342.46
+  },
+  "WM": {
+    "avg_volume": 115477.05555555556,
+    "shares_out_m": 397.63
+  },
+  "SECZ": {
+    "avg_volume": 115226.55555555556,
+    "shares_out_m": 163.27
+  },
+  "SID": {
+    "avg_volume": 485777.77777777775,
+    "shares_out_m": 1326.09
+  },
+  "SITC": {
+    "avg_volume": 124402.07407407407,
+    "shares_out_m": 52.48
+  },
+  "SERV": {
+    "avg_volume": 144976.38888888888,
+    "shares_out_m": 86.71
+  },
+  "SIDU": {
+    "avg_volume": 192190.5,
+    "shares_out_m": 101.23
+  },
+  "SKYA": {
+    "avg_volume": 58889.74074074074,
+    "shares_out_m": 43.25
+  },
+  "SES": {
+    "avg_volume": 247938.77777777778,
+    "shares_out_m": 355.88
+  },
+  "DAR": {
+    "avg_volume": 131383.38888888888,
+    "shares_out_m": 157.8
+  },
+  "SEAT": {
+    "avg_volume": 72678.54716981133,
+    "shares_out_m": 11.24
+  },
+  "SDEV": {
+    "avg_volume": 268520.74074074073,
+    "shares_out_m": 73.12
+  },
+  "UDR": {
+    "avg_volume": 329946.9074074074,
+    "shares_out_m": 321.26
+  },
+  "IP": {
+    "avg_volume": 404012.1666666667,
+    "shares_out_m": 529.57
+  },
+  "KMX": {
+    "avg_volume": 171194.64814814815,
+    "shares_out_m": 141.94
+  },
+  "SAIL": {
+    "avg_volume": 318891.1666666667,
+    "shares_out_m": 570.91
+  },
+  "SM": {
+    "avg_volume": 162916.72222222222,
+    "shares_out_m": 237.85
+  },
+  "CIEN": {
+    "avg_volume": 162543.64814814815,
+    "shares_out_m": 141.81
+  },
+  "BCE": {
+    "avg_volume": 392644.55555555556,
+    "shares_out_m": 932.53
+  },
+  "RDN": {
+    "avg_volume": 79640.38888888889,
+    "shares_out_m": 132.3
+  },
+  "PDD": {
+    "avg_volume": 293631.6296296296,
+    "shares_out_m": 5693.59
+  },
+  "GDDY": {
+    "avg_volume": 109045.16666666667,
+    "shares_out_m": 121.27
+  },
+  "INGM": {
+    "avg_volume": 112213.61111111111,
+    "shares_out_m": 230.05
+  },
+  "OPLN": {
+    "avg_volume": 54737.851851851854,
+    "shares_out_m": 122.8
+  },
+  "SU": {
+    "avg_volume": 245737.11111111112,
+    "shares_out_m": 1180.75
+  },
+  "RR": {
+    "avg_volume": 218606.46296296295,
+    "shares_out_m": 225.1
+  },
+  "GWRE": {
+    "avg_volume": 68570.74074074074,
+    "shares_out_m": 82.63
+  },
+  "DASH": {
+    "avg_volume": 295696.8333333333,
+    "shares_out_m": 435.98
+  },
+  "WMB": {
+    "avg_volume": 512964.77777777775,
+    "shares_out_m": 1223.17
+  },
+  "WPM": {
+    "avg_volume": 97925.75925925926,
+    "shares_out_m": 454.16
+  },
+  "RBNE": {
+    "avg_volume": 139497.2894736842,
+    "shares_out_m": 1.33
+  },
+  "RETO": {
+    "avg_volume": 137997.1,
+    "shares_out_m": 8.32
+  },
+  "RCAT": {
+    "avg_volume": 401555.64814814815,
+    "shares_out_m": 152.71
+  },
+  "QSI": {
+    "avg_volume": 172339.61111111112,
+    "shares_out_m": 218.88
+  },
+  "QUBT": {
+    "avg_volume": 448180.4259259259,
+    "shares_out_m": 226.35
+  },
+  "RCT": {
+    "avg_volume": 103563.0625,
+    "shares_out_m": 76.91
+  },
+  "UGP": {
+    "avg_volume": 417156.7962962963,
+    "shares_out_m": 1115.85
+  },
+  "QTEX": {
+    "avg_volume": 80700.05555555556,
+    "shares_out_m": 67.08
+  },
+  "RC": {
+    "avg_volume": 102806.03703703704,
+    "shares_out_m": 165.19
+  },
+  "AXG": {
+    "avg_volume": 51057.07407407407,
+    "shares_out_m": 1.16
+  },
+  "PGY": {
+    "avg_volume": 106610.27777777778,
+    "shares_out_m": 83.43
+  },
+  "PDSB": {
+    "avg_volume": 130981.81481481482,
+    "shares_out_m": 72.47
+  },
+  "SNX": {
+    "avg_volume": 58010.77777777778,
+    "shares_out_m": 79.78
+  },
+  "OPTU": {
+    "avg_volume": 111775.62962962964,
+    "shares_out_m": 381.43
+  },
+  "OLB": {
+    "avg_volume": 124414.05769230769,
+    "shares_out_m": 31.2
+  },
+  "PALI": {
+    "avg_volume": 186342.6851851852,
+    "shares_out_m": 174.27
+  },
+  "NWGL": {
+    "avg_volume": 52269.56862745098,
+    "shares_out_m": 452.23
+  },
+  "OCGN": {
+    "avg_volume": 179933.4814814815,
+    "shares_out_m": 339.11
+  },
+  "NMZ": {
+    "avg_volume": 62495.68518518518,
+    "shares_out_m": 217.53
+  },
+  "NUAI": {
+    "avg_volume": 549741.7592592592,
+    "shares_out_m": 117.29
+  },
+  "MRNO": {
+    "avg_volume": 56468.044444444444,
+    "shares_out_m": 82.08
+  },
+  "NAC": {
+    "avg_volume": 51126.12962962963,
+    "shares_out_m": 156.33
+  },
+  "NEOV": {
+    "avg_volume": 64535.2962962963,
+    "shares_out_m": 59.1
+  },
+  "PSEC": {
+    "avg_volume": 317760.6296296296,
+    "shares_out_m": 533.82
+  },
+  "MVST": {
+    "avg_volume": 77573.77777777778,
+    "shares_out_m": 385.92
+  },
+  "NEWP": {
+    "avg_volume": 76797.35185185185,
+    "shares_out_m": 185.63
+  },
+  "NCPL": {
+    "avg_volume": 90776.35185185185,
+    "shares_out_m": 8.02
+  },
+  "ABOS": {
+    "avg_volume": 56256.7037037037,
+    "shares_out_m": 72.33
+  },
+  "GOF": {
+    "avg_volume": 92478.0925925926,
+    "shares_out_m": 223.45
+  },
+  "RZLV": {
+    "avg_volume": 368823.037037037,
+    "shares_out_m": 416.87
+  },
+  "MEDS": {
+    "avg_volume": 50616.28301886792,
+    "shares_out_m": 3.86
+  },
+  "LUCD": {
+    "avg_volume": 52043.75925925926,
+    "shares_out_m": 190.95
+  },
+  "MRLN": {
+    "avg_volume": 109444.16666666667,
+    "shares_out_m": 101.07
+  },
+  "USB": {
+    "avg_volume": 568625.4629629629,
+    "shares_out_m": 1558
+  },
+  "COTY": {
+    "avg_volume": 313700.01851851854,
+    "shares_out_m": 880.69
+  },
+  "SON": {
+    "avg_volume": 68308.35185185185,
+    "shares_out_m": 98.88
+  },
+  "QLYS": {
+    "avg_volume": 52495.96296296296,
+    "shares_out_m": 34.6
+  },
+  "INLF": {
+    "avg_volume": 71150.46511627907,
+    "shares_out_m": 1.53
+  },
+  "RTX": {
+    "avg_volume": 208369.59259259258,
+    "shares_out_m": 1349.44
+  },
+  "BLND": {
+    "avg_volume": 78818.37037037036,
+    "shares_out_m": 236.51
+  },
+  "GS": {
+    "avg_volume": 101990.03703703704,
+    "shares_out_m": 291.17
+  },
+  "AFRM": {
+    "avg_volume": 217959.3148148148,
+    "shares_out_m": 339.01
+  },
+  "UMAC": {
+    "avg_volume": 87974.66666666667,
+    "shares_out_m": 51.91
+  },
+  "GMAB": {
+    "avg_volume": 370230.68518518517,
+    "shares_out_m": 62.41
+  },
+  "LABT": {
+    "avg_volume": 73060.33333333333,
+    "shares_out_m": 2.37
+  },
+  "ONDS": {
+    "avg_volume": 1620416.8703703703,
+    "shares_out_m": 582.3
+  },
+  "ACN": {
+    "avg_volume": 307943.5740740741,
+    "shares_out_m": 590.74
+  },
+  "CUBE": {
+    "avg_volume": 156510.38888888888,
+    "shares_out_m": 223.4
+  },
+  "OKLO": {
+    "avg_volume": 367881.962962963,
+    "shares_out_m": 186.02
+  },
+  "RSKD": {
+    "avg_volume": 190224.92592592593,
+    "shares_out_m": 132.04
+  },
+  "EOG": {
+    "avg_volume": 179158.7962962963,
+    "shares_out_m": 524.53
+  },
+  "KBH": {
+    "avg_volume": 74122.18518518518,
+    "shares_out_m": 60.76
+  },
+  "MA": {
+    "avg_volume": 173441.8148148148,
+    "shares_out_m": 871.18
+  },
+  "OI": {
+    "avg_volume": 293954.31481481483,
+    "shares_out_m": 153.94
+  },
+  "VALE": {
+    "avg_volume": 2594768.203703704,
+    "shares_out_m": 4439.16
+  },
+  "FCPT": {
+    "avg_volume": 65748.64814814815,
+    "shares_out_m": 109.76
+  },
+  "PVH": {
+    "avg_volume": 50765.944444444445,
+    "shares_out_m": 46.14
+  },
+  "LAC": {
+    "avg_volume": 476078.35185185185,
+    "shares_out_m": 377.33
+  },
+  "HIVE": {
+    "avg_volume": 630480.5555555555,
+    "shares_out_m": 276.22
+  },
+  "IHRT": {
+    "avg_volume": 81385.0925925926,
+    "shares_out_m": 154.79
+  },
+  "HUMA": {
+    "avg_volume": 64400.61111111111,
+    "shares_out_m": 277.8
+  },
+  "ECC": {
+    "avg_volume": 55490.87037037037,
+    "shares_out_m": 133.01
+  },
+  "GERN": {
+    "avg_volume": 432499.962962963,
+    "shares_out_m": 642.47
+  },
+  "GPRO": {
+    "avg_volume": 281367.4074074074,
+    "shares_out_m": 179.75
+  },
+  "GSOL": {
+    "avg_volume": 102954.22222222222,
+    "shares_out_m": 19.97
+  },
+  "GLAS": {
+    "avg_volume": 58571.09259259259,
+    "shares_out_m": 93.77
+  },
+  "GRML": {
+    "avg_volume": 70369.77777777778,
+    "shares_out_m": 12.03
+  },
+  "FCHL": {
+    "avg_volume": 784793.8055555555,
+    "shares_out_m": 1.32
+  },
+  "EOSE": {
+    "avg_volume": 1013971.5555555555,
+    "shares_out_m": 364.17
+  },
+  "ENVX": {
+    "avg_volume": 522789.27777777775,
+    "shares_out_m": 219.45
+  },
+  "EU": {
+    "avg_volume": 166564.7037037037,
+    "shares_out_m": 195.11
+  },
+  "EYPT": {
+    "avg_volume": 348386.6111111111,
+    "shares_out_m": 86.21
+  },
+  "ECX": {
+    "avg_volume": 58283.351851851854,
+    "shares_out_m": 392.99
+  },
+  "ABAT": {
+    "avg_volume": 145085.75925925927,
+    "shares_out_m": 142.58
+  },
+  "CYAB": {
+    "avg_volume": 65011.43396226415,
+    "shares_out_m": 33.28
+  },
+  "DLXY": {
+    "avg_volume": 75097.40476190476,
+    "shares_out_m": 3.27
+  },
+  "CAPR": {
+    "avg_volume": 166087.3148148148,
+    "shares_out_m": 58.14
+  },
+  "CGC": {
+    "avg_volume": 50430.75925925926,
+    "shares_out_m": 423.35
+  },
+  "JMIA": {
+    "avg_volume": 125751.87037037036,
+    "shares_out_m": 249.14
+  },
+  "CENN": {
+    "avg_volume": 55900.967741935485,
+    "shares_out_m": 17.59
+  },
+  "CLM": {
+    "avg_volume": 83404.74074074074,
+    "shares_out_m": 309.68
+  },
+  "CATX": {
+    "avg_volume": 148255.55555555556,
+    "shares_out_m": 114.15
+  },
+  "CNTB": {
+    "avg_volume": 85738.74074074074,
+    "shares_out_m": 62.97
+  },
+  "WIT": {
+    "avg_volume": 920437.9629629629,
+    "shares_out_m": 9893.75
+  },
+  "BMEA": {
+    "avg_volume": 57361.46296296296,
+    "shares_out_m": 72.48
+  },
+  "BXSL": {
+    "avg_volume": 112492.64814814815,
+    "shares_out_m": 232.97
+  },
+  "BORR": {
+    "avg_volume": 605601.074074074,
+    "shares_out_m": 308.51
+  },
+  "SRFM": {
+    "avg_volume": 51632.68518518518,
+    "shares_out_m": 132.85
+  },
+  "BKKT": {
+    "avg_volume": 54422.166666666664,
+    "shares_out_m": 45.07
+  },
+  "BTBT": {
+    "avg_volume": 637953.5185185185,
+    "shares_out_m": 360.63
+  },
+  "BAK": {
+    "avg_volume": 118119.01851851853,
+    "shares_out_m": 797.21
+  },
+  "AUTL": {
+    "avg_volume": 155732.85185185185,
+    "shares_out_m": 266.16
+  },
+  "BDMD": {
+    "avg_volume": 57796.36734693877,
+    "shares_out_m": 32
+  },
+  "BENF": {
+    "avg_volume": 81978.71153846153,
+    "shares_out_m": 18.99
+  },
+  "ASPI": {
+    "avg_volume": 257909.72222222222,
+    "shares_out_m": 153.31
+  },
+  "EC": {
+    "avg_volume": 90282.57407407407,
+    "shares_out_m": 41116.69
+  },
+  "WCC": {
+    "avg_volume": 56261.96296296296,
+    "shares_out_m": 48.67
+  },
+  "AMTX": {
+    "avg_volume": 50341.833333333336,
+    "shares_out_m": 72.17
+  },
+  "ANVS": {
+    "avg_volume": 50232.22222222222,
+    "shares_out_m": 42.68
+  },
+  "AKBA": {
+    "avg_volume": 95466.68518518518,
+    "shares_out_m": 277.11
+  },
+  "AMOD": {
+    "avg_volume": 88855.27083333333,
+    "shares_out_m": 63.82
+  },
+  "ARCC": {
+    "avg_volume": 320848.9074074074,
+    "shares_out_m": 722.19
+  },
+  "ENGS": {
+    "avg_volume": 161654.88888888888,
+    "shares_out_m": 54.18
+  },
+  "ALOY": {
+    "avg_volume": 74019.42592592593,
+    "shares_out_m": 69.67
+  },
+  "ALVO": {
+    "avg_volume": 102098.25925925926,
+    "shares_out_m": 356.82
+  },
+  "VLTO": {
+    "avg_volume": 100350.96296296296,
+    "shares_out_m": 243.14
+  },
+  "LMT": {
+    "avg_volume": 54874.87037037037,
+    "shares_out_m": 231
+  },
+  "SONO": {
+    "avg_volume": 102334.62962962964,
+    "shares_out_m": 118.29
+  },
+  "GEV": {
+    "avg_volume": 152947.85185185185,
+    "shares_out_m": 264.68
+  },
+  "BANC": {
+    "avg_volume": 193981.87037037036,
+    "shares_out_m": 158.43
+  },
+  "DOCS": {
+    "avg_volume": 182842.59259259258,
+    "shares_out_m": 178.25
+  },
+  "HUM": {
+    "avg_volume": 98550.75925925926,
+    "shares_out_m": 120.08
+  },
+  "MRK": {
+    "avg_volume": 444159.24074074073,
+    "shares_out_m": 2467.17
+  },
+  "CI": {
+    "avg_volume": 84909.35185185185,
+    "shares_out_m": 264.24
+  },
+  "CERS": {
+    "avg_volume": 183817.83333333334,
+    "shares_out_m": 201.52
+  },
+  "RYAM": {
+    "avg_volume": 76184.05555555556,
+    "shares_out_m": 67.64
+  },
+  "SUNB": {
+    "avg_volume": 165901.35185185185,
+    "shares_out_m": 409.76
+  },
+  "IMAX": {
+    "avg_volume": 70871.31481481482,
+    "shares_out_m": 54.84
+  },
+  "MXCT": {
+    "avg_volume": 77743.22222222222,
+    "shares_out_m": 103.21
+  },
+  "CZR": {
+    "avg_volume": 395155.98148148146,
+    "shares_out_m": 203.81
+  },
+  "HDB": {
+    "avg_volume": 703579.574074074,
+    "shares_out_m": 15432.29
+  },
+  "RES": {
+    "avg_volume": 136704.0,
+    "shares_out_m": 221.57
+  },
+  "SKHY": {
+    "avg_volume": 681217.8333333334,
+    "shares_out_m": 730.49
+  },
+  "VOYA": {
+    "avg_volume": 62602.11111111111,
+    "shares_out_m": 90.6
+  },
+  "BUR": {
+    "avg_volume": 149596.9814814815,
+    "shares_out_m": 219.6
+  },
+  "ADP": {
+    "avg_volume": 97859.11111111111,
+    "shares_out_m": 394.76
+  },
+  "PCOR": {
+    "avg_volume": 164518.62962962964,
+    "shares_out_m": 151.96
+  },
+  "RNG": {
+    "avg_volume": 90962.68518518518,
+    "shares_out_m": 84.46
+  },
+  "BILL": {
+    "avg_volume": 121190.66666666667,
+    "shares_out_m": 85.87
+  },
+  "CPNG": {
+    "avg_volume": 1194984.4259259258,
+    "shares_out_m": 1797.51
+  },
+  "MDT": {
+    "avg_volume": 858008.8148148148,
+    "shares_out_m": 1279.17
+  },
+  "PURR": {
+    "avg_volume": 1001213.1851851852,
+    "shares_out_m": 278.27
+  },
+  "STZ": {
+    "avg_volume": 108077.05555555556,
+    "shares_out_m": 169.22
+  },
+  "SDGR": {
+    "avg_volume": 132988.09259259258,
+    "shares_out_m": 74.81
+  },
+  "WTI": {
+    "avg_volume": 197854.92592592593,
+    "shares_out_m": 154.9
+  },
+  "CNI": {
+    "avg_volume": 80591.31481481482,
+    "shares_out_m": 599.7
+  },
+  "FATE": {
+    "avg_volume": 95121.81481481482,
+    "shares_out_m": 119.82
+  },
+  "UAA": {
+    "avg_volume": 583820.2037037037,
+    "shares_out_m": 429.55
+  },
+  "SWK": {
+    "avg_volume": 109212.98148148147,
+    "shares_out_m": 151.02
+  },
+  "SNN": {
+    "avg_volume": 111888.20370370371,
+    "shares_out_m": 837.43
+  },
+  "BSP": {
+    "avg_volume": 203874.3148148148,
+    "shares_out_m": 656.74
+  },
+  "AGLT": {
+    "avg_volume": 109423.05555555556,
+    "shares_out_m": 55.7
+  },
+  "GORO": {
+    "avg_volume": 71140.38888888889,
+    "shares_out_m": 158.63
+  },
+  "LHSW": {
+    "avg_volume": 55180.64102564102,
+    "shares_out_m": 3.18
+  },
+  "MAX": {
+    "avg_volume": 55368.88888888889,
+    "shares_out_m": 59.19
+  },
+  "GPUS": {
+    "avg_volume": 111345.11111111111,
+    "shares_out_m": 170.04
+  },
+  "SOC": {
+    "avg_volume": 561321.7777777778,
+    "shares_out_m": 191.87
+  },
+  "ACCO": {
+    "avg_volume": 56753.09259259259,
+    "shares_out_m": 92.34
+  },
+  "QGEN": {
+    "avg_volume": 228079.05555555556,
+    "shares_out_m": 206.5
+  },
+  "SOAR": {
+    "avg_volume": 146470.2962962963,
+    "shares_out_m": 53.63
+  },
+  "HAWK": {
+    "avg_volume": 114087.94444444444,
+    "shares_out_m": 97.97
+  },
+  "SLS": {
+    "avg_volume": 328968.2962962963,
+    "shares_out_m": 201.95
+  },
+  "WYFI": {
+    "avg_volume": 61079.53703703704,
+    "shares_out_m": 45.28
+  },
+  "ACP": {
+    "avg_volume": 60505.92592592593,
+    "shares_out_m": 125.47
+  },
+  "AIB": {
+    "avg_volume": 53679.24074074074,
+    "shares_out_m": 75.98
+  },
+  "INV": {
+    "avg_volume": 117976.20370370371,
+    "shares_out_m": 86.76
+  },
+  "ADBT": {
+    "avg_volume": 64565.055555555555,
+    "shares_out_m": 487.07
+  }
+}
