@@ -536,6 +536,7 @@
       if (r.is_highest_quality) badge = '<span class="badge hq">\u2605 A+ Setup</span>';
       else if (r.is_candidate) badge = '<span class="badge">Candidate</span>';
       else if (r.squeeze_watch) badge = '<span class="badge squeeze">Squeeze watch</span>';
+      if (r.split_adjusted) badge += '<span class="badge" title="Percent change was recalculated using split-adjusted prices.">split-adj</span>';
       if (r.suspect) badge += '<span class="badge squeeze" title="A move this large is usually bad data, such as a reverse split. Verify on your broker.">\u26a0 Verify</span>';
       if (r.leader_rank) badge += '<span class="badge leader">Leader #' + r.leader_rank + '</span>';
       var rowClass = (r.is_candidate || r.is_highest_quality) ? ' class="candidate"' : '';

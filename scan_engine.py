@@ -26,7 +26,7 @@ from alpaca.data.historical import StockHistoricalDataClient
 from alpaca.data.historical.news import NewsClient
 from alpaca.data.requests import StockSnapshotRequest, NewsRequest, StockBarsRequest
 from alpaca.data.timeframe import TimeFrame
-from alpaca.data.enums import DataFeed
+from alpaca.data.enums import DataFeed, Adjustment
 
 from pillars_config import THRESHOLDS, VOLUME_TO_WATCH, HIGHEST_QUALITY, MIN_AVG_VOLUME_FOR_CACHE
 from candle_patterns import find_pullback_setup, is_topping_tail, macd_crossed_below, volume_fading, CONFIRM_ON_CLOSE
@@ -126,6 +126,34 @@ def fetch_recent_bars(symbols, hist_client, minutes=PATTERN_LOOKBACK_MINUTES):
         return {}
 
 
+def fetch_split_adjusted_prev_closes(symbols, hist_client, session_date):
+    """
+    Alpaca's snapshot 'previous bar' is NOT adjusted for stock splits, so a
+    reverse split makes a flat stock look like it is up 1000%+. For the
+    few stocks that look like movers, re-fetch recent daily bars adjusted
+    for splits and take the last close before today's session.
+    Returns {symbol: previous_close}; a symbol is simply missing if the
+    lookup failed, and the caller keeps the original number for it.
+    """
+    out = {}
+    if not symbols or not session_date:
+        return out
+    end = datetime.now(timezone.utc)
+    start = end - timedelta(days=12)
+    try:
+        req = StockBarsRequest(symbol_or_symbols=symbols, timeframe=TimeFrame.Day, start=start, end=end,
+                               adjustment=Adjustment.SPLIT, feed=DataFeed.IEX)
+        bars = hist_client.get_stock_bars(req)
+        data = bars.data if hasattr(bars, "data") else bars
+    except Exception:
+        return out
+    for sym, day_bars in data.items():
+        prior = [b for b in day_bars if b.timestamp.date().isoformat() < session_date]
+        if prior:
+            out[sym] = prior[-1].close
+    return out
+
+
 def fetch_news(symbol, news_client, max_items=3):
     """
     Recent headlines for one symbol (newest first), as a list of dicts:
@@ -190,6 +218,7 @@ def evaluate(symbol, snap, ref, now_et, th):
         "price": price,
         "change_pct": change_pct,
         "suspect": change_pct >= SUSPECT_MOVE_PCT,
+        "split_adjusted": False,
         "bar_date": d_ts.date().isoformat() if d_ts else None,
         "rvol": rvol,
         "volume_today": volume_so_far,
@@ -240,6 +269,20 @@ def run_scan(alpaca_key, alpaca_secret):
         if session_date and result.get("bar_date") and result["bar_date"] != session_date:
             continue
         scored.append(result)
+
+    # Fix reverse/forward-split distortions for the stocks that look like
+    # movers: recompute the % change from split-adjusted previous closes.
+    raw_movers = sorted([r for r in scored if r["pass_up"]], key=lambda r: r["change_pct"], reverse=True)[:NEWS_CHECK_MAX]
+    adjusted_prev = fetch_split_adjusted_prev_closes([r["symbol"] for r in raw_movers], hist_client, session_date)
+    for r in raw_movers:
+        pc = adjusted_prev.get(r["symbol"])
+        if pc and pc > 0:
+            new_change = (r["price"] - pc) / pc * 100
+            if abs(new_change - r["change_pct"]) > 1:
+                r["split_adjusted"] = True
+            r["change_pct"] = new_change
+            r["pass_up"] = new_change >= THRESHOLDS["up_pct"]
+            r["suspect"] = new_change >= SUSPECT_MOVE_PCT
 
     # News is looked up for every stock that is up enough (not just ones
     # passing all the other pillars) so you can see WHAT is behind each move.
