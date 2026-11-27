@@ -126,6 +126,43 @@ def api_download_cache(token: str = ""):
     return FileResponse(REFERENCE_CACHE_PATH, filename="reference_cache.json", media_type="application/json")
 
 
+@app.get("/api/debug")
+def api_debug(symbol: str = "", token: str = ""):
+    # Shows the raw numbers Alpaca returns for ONE stock, so a wrong price or
+    # percentage can be traced to its source. Same token as the rebuild link.
+    if not ADMIN_TOKEN or token != ADMIN_TOKEN:
+        return JSONResponse({"error": "Missing or incorrect token."}, status_code=403)
+    sym = symbol.upper().strip()
+    if not sym:
+        return JSONResponse({"error": "Add &symbol=TICKER to the link."}, status_code=400)
+    try:
+        from fastapi.encoders import jsonable_encoder
+        from alpaca.data.historical import StockHistoricalDataClient
+        from alpaca.data.requests import StockSnapshotRequest
+        from alpaca.data.enums import DataFeed
+        client = StockHistoricalDataClient(ALPACA_KEY, ALPACA_SECRET)
+        snaps = client.get_stock_snapshot(StockSnapshotRequest(symbol_or_symbols=[sym], feed=DataFeed.IEX))
+        snap = snaps.get(sym)
+        out = {"symbol": sym, "feed": "iex"}
+        for name in ("latest_trade", "latest_quote", "minute_bar", "daily_bar", "previous_daily_bar"):
+            obj = getattr(snap, name, None) if snap is not None else None
+            if obj is None:
+                out[name] = None
+            elif hasattr(obj, "model_dump"):
+                out[name] = obj.model_dump()
+            else:
+                out[name] = str(obj)
+        try:
+            import json
+            with open(REFERENCE_CACHE_PATH) as f:
+                out["cache_entry"] = json.load(f).get(sym)
+        except Exception:
+            out["cache_entry"] = None
+        return JSONResponse(jsonable_encoder(out))
+    except Exception as e:
+        return JSONResponse({"error": str(e)}, status_code=500)
+
+
 @app.get("/api/rebuild-status")
 def api_rebuild_status():
     return JSONResponse(_rebuild_status)

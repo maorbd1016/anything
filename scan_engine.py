@@ -37,6 +37,7 @@ NEWS_LOOKBACK_HOURS = 24
 NEWS_CHECK_MAX = 40              # look up news for the top N stocks that are up enough
 PATTERN_LOOKBACK_MINUTES = 90    # enough bars for MACD (needs ~35 one-minute bars)
 PULLBACK_WINDOW_MINUTES = 30     # the pullback pattern still looks at the last 30 minutes
+SUSPECT_MOVE_PCT = 300           # moves this big are usually bad data (e.g. a reverse split) -- flagged, never ranked as a leader
 LEADER_COUNT = 3                 # tag the top N percentage gainers
 EARLY_CLOSE_DATES = {"2026-11-27", "2026-12-24"}   # market closes 1:00pm ET
 MARKET_HOLIDAYS = {"2026-12-25", "2027-01-01"}
@@ -164,6 +165,16 @@ def evaluate(symbol, snap, ref, now_et, th):
     if not daily or not prev_daily or not prev_daily.close:
         return None
 
+    # The 'previous' bar must really be the session before today's bar.
+    # If the free feed has no recent prints for a thin stock, it can hand
+    # back a previous bar from weeks ago, which makes the % change nonsense.
+    d_ts = getattr(daily, "timestamp", None)
+    p_ts = getattr(prev_daily, "timestamp", None)
+    if d_ts and p_ts:
+        gap_days = (d_ts.date() - p_ts.date()).days
+        if gap_days < 1 or gap_days > 5:
+            return None
+
     price = daily.close
     change_pct = (daily.close - prev_daily.close) / prev_daily.close * 100
     volume_so_far = daily.volume or 0
@@ -178,6 +189,8 @@ def evaluate(symbol, snap, ref, now_et, th):
         "symbol": symbol,
         "price": price,
         "change_pct": change_pct,
+        "suspect": change_pct >= SUSPECT_MOVE_PCT,
+        "bar_date": d_ts.date().isoformat() if d_ts else None,
         "rvol": rvol,
         "volume_today": volume_so_far,
         "shares_out_m": shares_out_m,
@@ -208,13 +221,25 @@ def run_scan(alpaca_key, alpaca_secret):
 
     snapshots = fetch_snapshots(symbols, hist_client)
 
+    # Today's bar must come from the latest session seen across all stocks;
+    # anything older is a stock with no recent prints, not a live mover.
+    bar_dates = [
+        getattr(getattr(s, "daily_bar", None), "timestamp", None)
+        for s in snapshots.values() if s is not None
+    ]
+    bar_dates = [d.date().isoformat() for d in bar_dates if d]
+    session_date = max(bar_dates) if bar_dates else None
+
     scored = []
     for symbol, snap in snapshots.items():
         if snap is None or symbol not in reference:
             continue
         result = evaluate(symbol, snap, reference[symbol], now_et, THRESHOLDS)
-        if result:
-            scored.append(result)
+        if not result:
+            continue
+        if session_date and result.get("bar_date") and result["bar_date"] != session_date:
+            continue
+        scored.append(result)
 
     # News is looked up for every stock that is up enough (not just ones
     # passing all the other pillars) so you can see WHAT is behind each move.
@@ -253,7 +278,7 @@ def run_scan(alpaca_key, alpaca_secret):
     # Leading gainers: the top few percentage gainers inside your price range.
     for r in scored:
         r["leader_rank"] = None
-    leaders = sorted([r for r in scored if r["pass_price"] and r["pass_up"]], key=lambda r: r["change_pct"], reverse=True)[:LEADER_COUNT]
+    leaders = sorted([r for r in scored if r["pass_price"] and r["pass_up"] and not r["suspect"]], key=lambda r: r["change_pct"], reverse=True)[:LEADER_COUNT]
     for i, r in enumerate(leaders, 1):
         r["leader_rank"] = i
 
