@@ -30,13 +30,14 @@ Deploy: see README.md, "Deploying the web version".
 import os
 import time
 import threading
+from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
 from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from dotenv import load_dotenv
 
-from scan_engine import run_scan, build_reference
+from scan_engine import run_scan, build_reference, REFERENCE_CACHE_PATH
 
 load_dotenv()
 
@@ -58,7 +59,13 @@ _cache = {"data": None, "at": 0.0}
 _rebuild_status = {"state": "idle", "message": "", "done": 0, "total": 0}
 _rebuild_lock = threading.Lock()
 
-app = FastAPI()
+@asynccontextmanager
+async def lifespan(_app):
+    _auto_build_cache_if_missing()
+    yield
+
+
+app = FastAPI(lifespan=lifespan)
 
 
 def _run_rebuild():
@@ -75,6 +82,22 @@ def _run_rebuild():
         _rebuild_status.update({"state": "error", "message": str(e)})
 
 
+def _auto_build_cache_if_missing():
+    # Render's free plan erases files the app wrote itself on every restart.
+    # So if the stock list is missing at startup, rebuild it automatically --
+    # no manual step needed. (Takes about an hour; the site shows a
+    # "not found yet" notice until it's done.)
+    if os.path.exists(REFERENCE_CACHE_PATH):
+        return
+    if not (ALPACA_KEY and ALPACA_SECRET and FINNHUB_KEY):
+        return
+    with _rebuild_lock:
+        if _rebuild_status["state"] == "running":
+            return
+        _rebuild_status.update({"state": "running", "message": "Starting automatically...", "done": 0, "total": 0})
+        threading.Thread(target=_run_rebuild, daemon=True).start()
+
+
 @app.get("/api/rebuild-cache")
 def api_rebuild_cache(token: str = ""):
     if not ADMIN_TOKEN or token != ADMIN_TOKEN:
@@ -89,6 +112,18 @@ def api_rebuild_cache(token: str = ""):
                    "refresh this page (or visit /api/rebuild-status) to check progress.",
         **_rebuild_status,
     })
+
+
+@app.get("/api/download-cache")
+def api_download_cache(token: str = ""):
+    # Render's free plan wipes files the app wrote itself whenever it
+    # restarts or goes to sleep. Downloading the finished cache and
+    # uploading it to GitHub makes it part of the project, so it survives.
+    if not ADMIN_TOKEN or token != ADMIN_TOKEN:
+        return JSONResponse({"error": "Missing or incorrect token."}, status_code=403)
+    if not os.path.exists(REFERENCE_CACHE_PATH):
+        return JSONResponse({"error": "The cache hasn't been built yet."}, status_code=404)
+    return FileResponse(REFERENCE_CACHE_PATH, filename="reference_cache.json", media_type="application/json")
 
 
 @app.get("/api/rebuild-status")

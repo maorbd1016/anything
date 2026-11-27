@@ -69,6 +69,18 @@
     padding: 10px 12px; font-size: 12.5px; line-height: 1.5; }
   .walk-alert.show { display: block; }
   .walk-alert strong { color: var(--supply); }
+  input[type="text"], select { padding: 6px 8px; border-radius: 6px; border: 1px solid var(--border);
+    background: var(--surface-2); color: var(--text); font-family: 'JetBrains Mono', monospace; font-size: 13px; max-width: 100%; }
+  input[type="text"] { width: 100%; }
+  .form-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-bottom: 12px; }
+  .form-grid .wide { grid-column: span 2; }
+  .hint { font-size: 12px; color: var(--text-muted); line-height: 1.5; margin: 6px 0 0; }
+  .badge.leader { color: var(--demand); border-color: var(--demand); }
+  .stats-table { width: auto; min-width: 0; font-size: 12.5px; margin: 10px 0 14px; }
+  .stats-table td, .stats-table th { padding: 5px 16px 5px 0; border-bottom: 1px solid var(--border); white-space: nowrap; }
+  .j-table { min-width: 640px; font-size: 12px; }
+  .j-table td { padding: 6px 8px; }
+  button.small { padding: 3px 9px; font-size: 11px; }
   button { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 13px; border-radius: 7px;
     padding: 8px 16px; cursor: pointer; border: 1px solid var(--border); background: var(--surface-2); color: var(--text); }
   button.primary { background: var(--accent); color: #1B140A; border: none; }
@@ -149,6 +161,25 @@
     <p class="subtitle" style="margin-top:8px;">Not connected to your broker — enter your own running P&amp;L. "Best window closed" and "No A+ setups" come from the live scan; the rest is tracked here in your browser only.</p>
   </div>
 
+  <div class="panel" id="premarketPanel">
+    <div class="panel-title">Pre-Market Checklist</div>
+    <div class="form-grid">
+      <div class="field"><label>Market strength today (0&ndash;10)</label>
+        <input type="number" id="pmStrength" min="0" max="10" step="1" placeholder="0-10"></div>
+      <div class="field"><label>Rested, centered, ready to perform?</label>
+        <select id="pmReady"><option value="">&mdash;</option><option value="yes">Yes</option><option value="no">Not really</option></select></div>
+      <div class="field"><label>Market cycle</label>
+        <select id="pmCycle"><option value="hot">Hot</option><option value="cold">Cold</option></select></div>
+      <div class="field wide"><label>The obvious stock of the day</label>
+        <input type="text" id="pmObvious" placeholder="ticker and why"></div>
+      <div class="field wide"><label>When was the last massive squeeze?</label>
+        <input type="text" id="pmSqueeze" placeholder="ticker / date"></div>
+      <div class="field wide"><label>How I'll adjust my trading today</label>
+        <input type="text" id="pmAdjust" placeholder="e.g. smaller size, only A-quality"></div>
+    </div>
+    <p class="hint" id="pmHint"></p>
+  </div>
+
   <div class="panel rules-panel" id="rulesPanel">Loading current rules from the server…</div>
 
   <div class="table-scroll">
@@ -166,6 +197,40 @@
   <div class="panel" style="margin-top:16px;">
     <div class="panel-title">Entry / Exit Signals</div>
     <div class="patterns-list" id="patternsList">No shortlisted names yet.</div>
+  </div>
+
+  <div class="panel" id="journalPanel">
+    <div class="panel-title">Trade Journal &amp; Weekly Report</div>
+    <div class="form-grid">
+      <div class="field"><label>Symbol</label><input type="text" id="jSymbol" placeholder="e.g. ABCD" style="text-transform:uppercase;"></div>
+      <div class="field"><label>Profit / loss $</label><input type="number" id="jPnl" step="0.01"></div>
+      <div class="field"><label>P/L cents per share</label><input type="number" id="jCents" step="0.1"></div>
+      <div class="field"><label>Meets 5 pillars?</label>
+        <select id="jPillars"><option value="">&mdash;</option><option value="yes">Yes</option><option value="no">No</option></select></div>
+      <div class="field"><label>Entry price</label><input type="number" id="jPrice" step="0.01"></div>
+      <div class="field"><label>% gain on the day</label><input type="number" id="jGain" step="0.1"></div>
+      <div class="field"><label>Relative volume</label><input type="number" id="jRvol" step="0.1"></div>
+      <div class="field"><label>Float (M)</label><input type="number" id="jFloat" step="0.1"></div>
+      <div class="field"><label>News?</label>
+        <select id="jNews"><option value="">&mdash;</option><option value="yes">Yes</option><option value="no">No</option></select></div>
+      <div class="field"><label>Time frame of trade</label>
+        <select id="jTimeframe"><option value="">&mdash;</option><option>10 sec</option><option>1 min</option><option>5 min</option></select></div>
+      <div class="field"><label>Candlestick pattern</label><input type="text" id="jPattern" placeholder="e.g. pullback"></div>
+      <div class="field"><label>Hold time</label><input type="text" id="jHold" placeholder="e.g. 90 sec"></div>
+      <div class="field wide"><label>Notes (what you saw, what to do better)</label><input type="text" id="jNotes"></div>
+    </div>
+    <div style="display:flex; gap:8px; flex-wrap:wrap;">
+      <button class="primary" id="jAddBtn">Add trade</button>
+      <button id="jExportBtn">Download as CSV</button>
+    </div>
+    <p class="hint">Typing a symbol that's in the scan fills in price, % gain, volume, float, news and pillars for you. Trades dated today also update Today's P&amp;L above. Saved in this browser only.</p>
+    <div id="weeklyReport"></div>
+    <div class="table-scroll" style="margin-top:10px;">
+      <table class="j-table">
+        <thead><tr><th>When (ET)</th><th>Symbol</th><th class="num">P/L $</th><th class="num">&cent;/sh</th><th>5 pillars</th><th>News</th><th>Frame</th><th>Pattern</th><th>Hold</th><th>Notes</th><th></th></tr></thead>
+        <tbody id="journalBody"><tr><td colspan="11" style="padding:14px; color:var(--text-muted);">No trades logged yet.</td></tr></tbody>
+      </table>
+    </div>
   </div>
 
   <footer class="note">
@@ -228,8 +293,10 @@
     var lostHalfDay = walkState.peak > 0 && walkState.current <= half;
     var hitMaxLoss = maxLoss.value != null && walkState.current <= -Math.abs(maxLoss.value);
 
+    var consec = consecutiveLossesToday();
     var checks = [
       { label: 'Lost half the day from peak', on: lostHalfDay },
+      { label: 'Three losing trades in a row today' + (consec > 0 ? ' (' + consec + ' so far)' : ''), on: consec >= 3 },
       { label: 'Hit max loss' + (maxLoss.value != null ? ' ($' + maxLoss.value.toFixed(0) + ')' : ' (not set)'), on: hitMaxLoss },
       { label: 'Best trading window has closed (past 9:30am ET)', on: bestWindowClosed },
       { label: 'No A+ setups on the last scan', on: noAPlus },
@@ -271,6 +338,175 @@
     saveWalkAwayToday(); updateWalkAwayPanel();
   });
 
+  // ---- Pre-market checklist (saved per day in this browser) ----
+  var pmFields = { strength: 'pmStrength', ready: 'pmReady', obvious: 'pmObvious', adjust: 'pmAdjust' };
+  function loadPremarket() {
+    var today = getEasternDateString(), saved = null;
+    try { saved = JSON.parse(localStorage.getItem('premarketToday') || 'null'); } catch (e) {}
+    if (saved && saved.date === today) {
+      Object.keys(pmFields).forEach(function(k) { document.getElementById(pmFields[k]).value = saved[k] || ''; });
+    }
+    try {
+      document.getElementById('pmSqueeze').value = localStorage.getItem('lastSqueeze') || '';
+      document.getElementById('pmCycle').value = localStorage.getItem('marketCycle') || 'hot';
+    } catch (e) {}
+    updatePremarketHint();
+  }
+  function savePremarket() {
+    var o = { date: getEasternDateString() };
+    Object.keys(pmFields).forEach(function(k) { o[k] = document.getElementById(pmFields[k]).value; });
+    try {
+      localStorage.setItem('premarketToday', JSON.stringify(o));
+      localStorage.setItem('lastSqueeze', document.getElementById('pmSqueeze').value);
+      localStorage.setItem('marketCycle', document.getElementById('pmCycle').value);
+    } catch (e) {}
+    updatePremarketHint();
+  }
+  function updatePremarketHint() {
+    var cold = document.getElementById('pmCycle').value === 'cold';
+    var s = parseFloat(document.getElementById('pmStrength').value);
+    var msg = cold
+      ? 'Cold market: prefer float under 10M (the table marks floats above 10M as not passing), and sit tight when nothing is A-quality.'
+      : 'Hot market: float under 20M is fine. Be aggressive with quick entries, take profits fast, and don’t overstay.';
+    if (!isNaN(s) && s <= 3) msg += ' Market strength is weak — trade cautiously.';
+    if (!isNaN(s) && s >= 8) msg += ' Market strength is strong — the market is giving a green light.';
+    document.getElementById('pmHint').textContent = msg;
+  }
+  ['pmStrength','pmReady','pmObvious','pmAdjust','pmSqueeze','pmCycle'].forEach(function(id) {
+    var el = document.getElementById(id);
+    el.addEventListener('input', savePremarket);
+    el.addEventListener('change', function() { savePremarket(); if (id === 'pmCycle' && lastData) renderTable(lastData.results); });
+  });
+
+  // ---- Trade journal + weekly report (saved in this browser) ----
+  var journal = [];
+  function loadJournal() { try { journal = JSON.parse(localStorage.getItem('tradeJournal') || '[]'); } catch (e) { journal = []; } }
+  function saveJournal() { try { localStorage.setItem('tradeJournal', JSON.stringify(journal.slice(-500))); } catch (e) {} }
+
+  function weekStartString() {
+    var p = getEasternDateString().split('-').map(Number);
+    var dt = new Date(Date.UTC(p[0], p[1] - 1, p[2]));
+    dt.setUTCDate(dt.getUTCDate() - ((dt.getUTCDay() + 6) % 7));
+    return dt.toISOString().slice(0, 10);
+  }
+  function consecutiveLossesToday() {
+    var today = getEasternDateString(), n = 0;
+    var t = journal.filter(function(x) { return x.date === today; });
+    for (var i = t.length - 1; i >= 0 && t[i].pnl < 0; i--) n++;
+    return n;
+  }
+  function avg(a) { return a.length ? a.reduce(function(x, y) { return x + y; }, 0) / a.length : null; }
+  function money(v) { return v == null ? '—' : (v < 0 ? '-$' : '$') + Math.abs(v).toFixed(2); }
+  function cents(v) { return v == null ? '—' : v.toFixed(1) + '¢'; }
+  function statsFor(trades) {
+    var wins = trades.filter(function(t) { return t.pnl > 0; });
+    var losses = trades.filter(function(t) { return t.pnl < 0; });
+    var aw = avg(wins.map(function(t) { return t.pnl; })), al = avg(losses.map(function(t) { return t.pnl; }));
+    return {
+      n: trades.length,
+      avgWin: aw, avgLoss: al,
+      avgWinC: avg(wins.filter(function(t) { return t.cents != null; }).map(function(t) { return t.cents; })),
+      avgLossC: avg(losses.filter(function(t) { return t.cents != null; }).map(function(t) { return t.cents; })),
+      accuracy: trades.length ? wins.length / trades.length * 100 : null,
+      total: trades.reduce(function(s, t) { return s + t.pnl; }, 0),
+      ratio: (aw != null && al != null && al !== 0) ? aw / Math.abs(al) : null
+    };
+  }
+  function renderWeekly() {
+    var ws = weekStartString();
+    var wk = statsFor(journal.filter(function(t) { return t.date >= ws; }));
+    var all = statsFor(journal);
+    function row(label, f) { return '<tr><td>' + label + '</td><td>' + f(wk) + '</td><td>' + f(all) + '</td></tr>'; }
+    document.getElementById('weeklyReport').innerHTML =
+      '<table class="stats-table"><thead><tr><th></th><th>This week</th><th>All logged</th></tr></thead><tbody>' +
+      row('Trades', function(s) { return s.n; }) +
+      row('Average winner', function(s) { return money(s.avgWin); }) +
+      row('Avg winner in cents', function(s) { return cents(s.avgWinC); }) +
+      row('Average loser', function(s) { return money(s.avgLoss); }) +
+      row('Avg loser in cents', function(s) { return cents(s.avgLossC); }) +
+      row('Total accuracy', function(s) { return s.accuracy == null ? '—' : s.accuracy.toFixed(0) + '%'; }) +
+      row('Profit / loss ratio', function(s) { return s.ratio == null ? '—' : s.ratio.toFixed(2); }) +
+      row('Total profit (loss)', function(s) { return money(s.total); }) +
+      '</tbody></table>';
+  }
+  function renderJournal() {
+    var tb = document.getElementById('journalBody');
+    if (!journal.length) {
+      tb.innerHTML = '<tr><td colspan="11" style="padding:14px; color:var(--text-muted);">No trades logged yet.</td></tr>';
+    } else {
+      tb.innerHTML = journal.slice(-30).reverse().map(function(t) {
+        var when = '';
+        try { when = new Date(t.at).toLocaleString('en-US', {timeZone:'America/New_York', month:'short', day:'numeric', hour:'numeric', minute:'2-digit'}); } catch (e) {}
+        return '<tr><td>' + esc(when) + '</td><td>' + esc(t.symbol) + '</td>' +
+          '<td class="num ' + (t.pnl > 0 ? 'pass' : (t.pnl < 0 ? 'fail' : '')) + '">' + money(t.pnl) + '</td>' +
+          '<td class="num">' + (t.cents == null ? '—' : t.cents) + '</td>' +
+          '<td>' + esc(t.pillars || '—') + '</td><td>' + esc(t.news || '—') + '</td>' +
+          '<td>' + esc(t.timeframe || '—') + '</td><td>' + esc(t.pattern || '—') + '</td>' +
+          '<td>' + esc(t.hold || '—') + '</td><td style="white-space:normal; min-width:140px;">' + esc(t.notes || '') + '</td>' +
+          '<td><button class="small" data-del="' + t.id + '">Delete</button></td></tr>';
+      }).join('');
+    }
+    renderWeekly();
+  }
+  function numOrNull(id) { var v = document.getElementById(id).value; if (v === '') return null; var n = parseFloat(v); return isNaN(n) ? null : n; }
+  function syncPnlInput() {
+    document.getElementById('pnlInput').value = Math.round(walkState.current * 100) / 100;
+    saveWalkAwayToday(); updateWalkAwayPanel();
+  }
+
+  document.getElementById('jSymbol').addEventListener('change', function() {
+    var sym = this.value.trim().toUpperCase();
+    this.value = sym;
+    if (!sym || !lastData) return;
+    var r = lastData.results.filter(function(x) { return x.symbol === sym; })[0];
+    if (!r) return;
+    document.getElementById('jPrice').value = r.price.toFixed(2);
+    document.getElementById('jGain').value = r.change_pct.toFixed(1);
+    document.getElementById('jRvol').value = r.rvol.toFixed(1);
+    document.getElementById('jFloat').value = r.shares_out_m.toFixed(1);
+    document.getElementById('jPillars').value = r.is_candidate ? 'yes' : 'no';
+    if (r.news_checked) document.getElementById('jNews').value = r.pass_news ? 'yes' : 'no';
+  });
+  document.getElementById('jAddBtn').addEventListener('click', function() {
+    var sym = document.getElementById('jSymbol').value.trim().toUpperCase();
+    var pnl = numOrNull('jPnl');
+    if (!sym || pnl == null) { alert('Enter a symbol and a profit/loss amount first.'); return; }
+    var t = {
+      id: Date.now(), at: new Date().toISOString(), date: getEasternDateString(), symbol: sym, pnl: pnl,
+      cents: numOrNull('jCents'), pillars: document.getElementById('jPillars').value,
+      price: numOrNull('jPrice'), gain: numOrNull('jGain'), rvol: numOrNull('jRvol'), float: numOrNull('jFloat'),
+      news: document.getElementById('jNews').value, timeframe: document.getElementById('jTimeframe').value,
+      pattern: document.getElementById('jPattern').value, hold: document.getElementById('jHold').value,
+      notes: document.getElementById('jNotes').value
+    };
+    journal.push(t); saveJournal();
+    walkState.current += pnl;
+    if (walkState.current > walkState.peak) walkState.peak = walkState.current;
+    syncPnlInput();
+    ['jSymbol','jPnl','jCents','jPillars','jPrice','jGain','jRvol','jFloat','jNews','jTimeframe','jPattern','jHold','jNotes']
+      .forEach(function(id) { document.getElementById(id).value = ''; });
+    renderJournal();
+  });
+  document.getElementById('journalBody').addEventListener('click', function(e) {
+    var id = e.target && e.target.getAttribute && e.target.getAttribute('data-del');
+    if (!id) return;
+    var t = journal.filter(function(x) { return String(x.id) === id; })[0];
+    if (!t) return;
+    journal = journal.filter(function(x) { return x !== t; }); saveJournal();
+    if (t.date === getEasternDateString()) { walkState.current -= t.pnl; syncPnlInput(); }
+    renderJournal();
+  });
+  document.getElementById('jExportBtn').addEventListener('click', function() {
+    var cols = ['at','date','symbol','pnl','cents','pillars','price','gain','rvol','float','news','timeframe','pattern','hold','notes'];
+    var lines = [cols.join(',')].concat(journal.map(function(t) {
+      return cols.map(function(c) { var v = t[c] == null ? '' : String(t[c]); return '"' + v.replace(/"/g, '""') + '"'; }).join(',');
+    }));
+    var blob = new Blob([lines.join('\n')], { type: 'text/csv' });
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob); a.download = 'trade-journal.csv';
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  });
+
   // ---- Live data ----
   function esc(t) {
     return String(t == null ? '' : t).replace(/[&<>"']/g, function(c) {
@@ -300,7 +536,10 @@
       if (r.is_highest_quality) badge = '<span class="badge hq">\u2605 A+ Setup</span>';
       else if (r.is_candidate) badge = '<span class="badge">Candidate</span>';
       else if (r.squeeze_watch) badge = '<span class="badge squeeze">Squeeze watch</span>';
+      if (r.leader_rank) badge += '<span class="badge leader">Leader #' + r.leader_rank + '</span>';
       var rowClass = (r.is_candidate || r.is_highest_quality) ? ' class="candidate"' : '';
+      var cold = document.getElementById('pmCycle').value === 'cold';
+      var floatOk = r.pass_float && !(cold && r.shares_out_m > 10);
       return '<tr' + rowClass + '>' +
         '<td class="ticker">' + r.symbol + badge + '</td>' +
         '<td class="num">$' + r.price.toFixed(2) + '</td>' +
@@ -308,7 +547,7 @@
         '<td class="num ' + (r.pass_rvol ? 'pass' : 'fail') + '">' + r.rvol.toFixed(1) + 'x</td>' +
         '<td class="num">' + (r.volume_today / 1e6).toFixed(1) + (r.crossed_volume_watch ? ' <span class="pass">\u2713</span>' : '') + '</td>' +
         '<td class="' + (r.pass_news ? 'pass' : (r.news_checked ? 'fail' : '')) + '">' + (r.pass_news ? 'Yes' : (r.news_checked ? 'No' : '\u2014')) + '</td>' +
-        '<td class="num ' + (r.pass_float ? 'pass' : 'fail') + '">' + r.shares_out_m.toFixed(1) + '</td>' +
+        '<td class="num ' + (floatOk ? 'pass' : 'fail') + '">' + r.shares_out_m.toFixed(1) + '</td>' +
         '<td class="num">' + r.pillars_met + '/5</td>' +
       '</tr>' + newsLine(r);
     }).join('');
@@ -325,11 +564,14 @@
       else if (p.status === 'trending') text = 'still trending, no pullback formed yet';
       else if (p.status === 'breakout') {
         text = 'BREAKOUT entry $' + p.entry.entry_price.toFixed(2) + ', support $' + p.new_support.toFixed(2) +
-               ', risk $' + p.entry.risk.toFixed(2) + ' (' + p.entry.risk_pct.toFixed(1) + '%)';
+               ', risk $' + p.entry.risk.toFixed(2) + ' (' + p.entry.risk_pct.toFixed(1) + '%)' +
+               ', 2:1 target $' + p.entry.target_2to1.toFixed(2);
       } else {
         text = 'pulled back to $' + p.new_support.toFixed(2) + ', watching $' + p.swing_high.toFixed(2) + ' to break';
       }
-      if (p.topping_tail) text += ' <span class="topping">\u26a0 TOPPING TAIL</span>';
+      if (p.topping_tail) text += ' <span class="topping">⚠ TOPPING TAIL</span>';
+      if (p.macd_cross_below === true) text += ' <span class="topping">⚠ MACD crossed below signal</span>';
+      if (p.volume_fading === true) text += ' <span class="topping">⚠ volume fading</span>';
       return '<div class="pattern-row"><span class="sym">' + sym + '</span>' + text + '</div>';
     }).join('');
   }
@@ -378,6 +620,11 @@
   document.getElementById('pnlInput').value = walkState.current;
   document.getElementById('bearishToggle').classList.toggle('on', walkState.bearish);
   document.getElementById('bearishToggleLabel').textContent = walkState.bearish ? 'Bearish' : 'Not bearish';
+
+  loadJournal();
+  loadPremarket();
+  renderJournal();
+  updateWalkAwayPanel();
 
   fetchScan();
   setInterval(fetchScan, AUTO_REFRESH_MS);

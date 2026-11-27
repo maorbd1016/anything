@@ -29,12 +29,17 @@ from alpaca.data.timeframe import TimeFrame
 from alpaca.data.enums import DataFeed
 
 from pillars_config import THRESHOLDS, VOLUME_TO_WATCH, HIGHEST_QUALITY, MIN_AVG_VOLUME_FOR_CACHE
-from candle_patterns import find_pullback_setup, is_topping_tail, CONFIRM_ON_CLOSE
+from candle_patterns import find_pullback_setup, is_topping_tail, macd_crossed_below, volume_fading, CONFIRM_ON_CLOSE
 
 REFERENCE_CACHE_PATH = "reference_cache.json"
 SNAPSHOT_BATCH_SIZE = 200
 NEWS_LOOKBACK_HOURS = 24
-PATTERN_LOOKBACK_MINUTES = 30
+NEWS_CHECK_MAX = 40              # look up news for the top N stocks that are up enough
+PATTERN_LOOKBACK_MINUTES = 90    # enough bars for MACD (needs ~35 one-minute bars)
+PULLBACK_WINDOW_MINUTES = 30     # the pullback pattern still looks at the last 30 minutes
+LEADER_COUNT = 3                 # tag the top N percentage gainers
+EARLY_CLOSE_DATES = {"2026-11-27", "2026-12-24"}   # market closes 1:00pm ET
+MARKET_HOLIDAYS = {"2026-12-25", "2027-01-01"}
 MARKET_TZ = ZoneInfo("America/New_York")
 
 BAR_LOOKBACK_DAYS = 75           # calendar days back, comfortably covers 50 sessions
@@ -55,7 +60,8 @@ def time_of_day_fraction(now_et):
     simplification, not a precise time-of-day volume curve.
     """
     open_t = now_et.replace(hour=9, minute=30, second=0, microsecond=0)
-    close_t = now_et.replace(hour=16, minute=0, second=0, microsecond=0)
+    close_hour = 13 if now_et.strftime("%Y-%m-%d") in EARLY_CLOSE_DATES else 16
+    close_t = now_et.replace(hour=close_hour, minute=0, second=0, microsecond=0)
     if now_et < open_t:
         return 0.05
     if now_et > close_t:
@@ -72,7 +78,12 @@ def session_note(now_et):
     orders, stop orders, or halt mechanics working in their favor against
     retail. Once the 9:30 bell rings, trading generally gets harder.
     """
+    today = now_et.strftime("%Y-%m-%d")
+    if today in MARKET_HOLIDAYS:
+        return "Market holiday -- closed today"
     total_min = now_et.hour * 60 + now_et.minute
+    if today in EARLY_CLOSE_DATES and total_min >= 780:
+        return "Market closed (early close at 1:00pm ET)"
     if total_min < 420:
         return "Early pre-market -- thin liquidity before the target window"
     if total_min < 570:
@@ -114,21 +125,37 @@ def fetch_recent_bars(symbols, hist_client, minutes=PATTERN_LOOKBACK_MINUTES):
         return {}
 
 
-def check_news(symbol, news_client):
+def fetch_news(symbol, news_client, max_items=3):
     """
-    Alpaca's news SDK response shape has shifted between versions, so this
-    is defensive on purpose.
+    Recent headlines for one symbol (newest first), as a list of dicts:
+    {headline, source, time, url}. Empty list = no news found in the
+    lookback window. Returns None if the lookup itself failed, so a
+    broken lookup is never mistaken for "no news".
+    Alpaca groups articles under a "news" key, so this collects articles
+    from anywhere in the response.
     """
     try:
         end = datetime.now(timezone.utc)
         start = end - timedelta(hours=NEWS_LOOKBACK_HOURS)
-        req = NewsRequest(symbols=symbol, start=start, end=end, limit=1)
+        req = NewsRequest(symbols=symbol, start=start, end=end, limit=max_items)
         articles = news_client.get_news(req)
         data = articles.data if hasattr(articles, "data") else {}
-        items = data.get(symbol, []) if isinstance(data, dict) else list(articles)
-        return len(items) > 0
+        if isinstance(data, dict):
+            items = [a for v in data.values() if isinstance(v, (list, tuple)) for a in v]
+        else:
+            items = list(articles)
+        out = []
+        for a in items[:max_items]:
+            created = getattr(a, "created_at", None)
+            out.append({
+                "headline": getattr(a, "headline", "") or "",
+                "source": getattr(a, "source", "") or "",
+                "time": created.isoformat() if created else "",
+                "url": getattr(a, "url", "") or "",
+            })
+        return out
     except Exception:
-        return False
+        return None
 
 
 def evaluate(symbol, snap, ref, now_et, th):
@@ -189,13 +216,24 @@ def run_scan(alpaca_key, alpaca_secret):
         if result:
             scored.append(result)
 
-    near_candidates = [
-        r for r in scored if r["pass_up"] and r["pass_rvol"] and r["pass_price"] and r["pass_float"]
-    ]
-    for r in near_candidates:
-        r["pass_news"] = check_news(r["symbol"], news_client) if THRESHOLDS["require_news"] else True
-        r["_was_near_candidate"] = True
+    # News is looked up for every stock that is up enough (not just ones
+    # passing all the other pillars) so you can see WHAT is behind each move.
+    movers = sorted([r for r in scored if r["pass_up"]], key=lambda r: r["change_pct"], reverse=True)[:NEWS_CHECK_MAX]
+    for r in movers:
+        r["_was_near_candidate"] = r["pass_rvol"] and r["pass_price"] and r["pass_float"]
+        r["news_checked"] = True
+        if THRESHOLDS["require_news"]:
+            items = fetch_news(r["symbol"], news_client)
+            r["news_error"] = items is None
+            r["news_items"] = items or []
+            r["pass_news"] = bool(items)
+        else:
+            r["news_items"] = []
+            r["pass_news"] = True
     for r in scored:
+        r.setdefault("news_checked", False)
+        r.setdefault("news_items", [])
+        r.setdefault("news_error", False)
         r.setdefault("pass_news", False if THRESHOLDS["require_news"] else True)
         r["pillars_met"] = sum([r["pass_up"], r["pass_rvol"], r["pass_price"], r["pass_float"], r["pass_news"]])
         r["is_candidate"] = r["pillars_met"] == 5
@@ -212,12 +250,19 @@ def run_scan(alpaca_key, alpaca_secret):
             and in_hq_window
         )
 
+    # Leading gainers: the top few percentage gainers inside your price range.
+    for r in scored:
+        r["leader_rank"] = None
+    leaders = sorted([r for r in scored if r["pass_price"] and r["pass_up"]], key=lambda r: r["change_pct"], reverse=True)[:LEADER_COUNT]
+    for i, r in enumerate(leaders, 1):
+        r["leader_rank"] = i
+
     scored.sort(
         key=lambda r: (r["is_highest_quality"], r["is_candidate"], r["pillars_met"], r["change_pct"]),
         reverse=True,
     )
 
-    watchlist = [r["symbol"] for r in scored if r["is_candidate"] or r["squeeze_watch"] or r["is_highest_quality"]]
+    watchlist = [r["symbol"] for r in scored if r["is_candidate"] or r["squeeze_watch"] or r["is_highest_quality"] or r["leader_rank"]]
     bar_data = fetch_recent_bars(watchlist, hist_client) if watchlist else {}
 
     patterns = {}
@@ -226,7 +271,12 @@ def run_scan(alpaca_key, alpaca_secret):
         if not bars:
             patterns[symbol] = {"status": "no_data"}
             continue
-        setup = find_pullback_setup(bars)
+        last_ts = getattr(bars[-1], "timestamp", None)
+        if last_ts is not None:
+            window = [b for b in bars if getattr(b, "timestamp", last_ts) >= last_ts - timedelta(minutes=PULLBACK_WINDOW_MINUTES)]
+        else:
+            window = bars[-PULLBACK_WINDOW_MINUTES:]
+        setup = find_pullback_setup(window)
         topping = is_topping_tail(bars[-1])
         entry = None
         if setup and setup.get("crossed"):
@@ -234,6 +284,8 @@ def run_scan(alpaca_key, alpaca_secret):
                 "entry_price": setup["entry_price"],
                 "risk": setup["risk"],
                 "risk_pct": setup["risk_pct"],
+                # 2:1 profit-to-loss target (from the course's risk rule)
+                "target_2to1": setup["entry_price"] + 2 * setup["risk"],
             }
         patterns[symbol] = {
             "status": "breakout" if entry else ("pulling_back" if setup else "trending"),
@@ -241,6 +293,8 @@ def run_scan(alpaca_key, alpaca_secret):
             "new_support": setup["new_support"] if setup else None,
             "entry": entry,
             "topping_tail": topping,
+            "macd_cross_below": macd_crossed_below(bars),
+            "volume_fading": volume_fading(bars),
         }
 
     return {
