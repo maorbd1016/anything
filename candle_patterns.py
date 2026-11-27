@@ -32,6 +32,9 @@ def _hi(b): return b.high if hasattr(b, "high") else b["high"]
 def _lo(b): return b.low if hasattr(b, "low") else b["low"]
 def _op(b): return b.open if hasattr(b, "open") else b["open"]
 def _cl(b): return b.close if hasattr(b, "close") else b["close"]
+def _vol(b):
+    v = b.volume if hasattr(b, "volume") else b.get("volume")
+    return v or 0
 
 
 def find_pullback_setup(bars):
@@ -88,3 +91,48 @@ def is_topping_tail(bar):
     tolerance = body_bottom * (LOWER_WICK_TOLERANCE_PCT / 100)
     has_lower_wick = l < (body_bottom - tolerance)
     return has_upper_wick and not has_lower_wick
+
+
+# ---------------------------------------------------------------------
+# Extra exit warnings from the sample trading plan: MACD crossing below
+# its signal line, and fading volume. Both come from 1-minute bars.
+# ---------------------------------------------------------------------
+
+def _ema(values, period):
+    k = 2.0 / (period + 1)
+    out = []
+    for i, v in enumerate(values):
+        out.append(v if i == 0 else v * k + out[-1] * (1 - k))
+    return out
+
+
+def macd_crossed_below(bars, fast=12, slow=26, signal=9, lookback_bars=3):
+    """
+    True if the MACD line crossed from above to below its signal line
+    within the last `lookback_bars` bars and is below it now. Looking back
+    a few bars (not just one) keeps a cross from slipping between the
+    page's 30-second refreshes. Returns None when there aren't enough
+    bars yet (needs about 35) -- 'unknown', not 'no'.
+    """
+    closes = [_cl(b) for b in bars]
+    if len(closes) < slow + signal:
+        return None
+    macd = [f - s for f, s in zip(_ema(closes, fast), _ema(closes, slow))]
+    sig = _ema(macd, signal)
+    diff = [m - g for m, g in zip(macd, sig)]
+    if diff[-1] >= 0:
+        return False
+    recent = diff[-(lookback_bars + 1):]
+    return any(recent[i] >= 0 and recent[i + 1] < 0 for i in range(len(recent) - 1))
+
+
+def volume_fading(bars, n=3):
+    """
+    True if volume fell on each of the last `n` COMPLETED bars (the newest
+    bar is still forming, so its partial volume is ignored). None if there
+    aren't enough bars.
+    """
+    if len(bars) < n + 2:
+        return None
+    vols = [_vol(b) for b in bars[-(n + 1) - 1:-1]]
+    return all(vols[i] > vols[i + 1] for i in range(len(vols) - 1))

@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Live Scan — 5-Pillar Stock Scanner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #EEF2F5; --surface: #FFFFFF; --surface-2: #F5F8FA; --border: #D7DFE5;
+    --text: #1B222A; --text-muted: #64707B; --accent: #B87821;
+    --demand: #2C8F5C; --supply: #B84A46; --squeeze: #7A5FB8;
+    --candidate-bg: rgba(184,120,33,0.10); --candidate-border: #B87821;
+    --shadow: 0 1px 2px rgba(20,30,40,0.06); --error: #B84A46;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #10131A; --surface: #171B24; --surface-2: #1D222D; --border: #2B313D;
+      --text: #E8EAED; --text-muted: #8B93A0; --accent: #E3A24A;
+      --demand: #52C98A; --supply: #E37270; --squeeze: #A594E0;
+      --candidate-bg: rgba(227,162,74,0.10); --candidate-border: #E3A24A;
+      --shadow: 0 1px 3px rgba(0,0,0,0.4); --error: #E37270;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #10131A; --surface: #171B24; --surface-2: #1D222D; --border: #2B313D;
+    --text: #E8EAED; --text-muted: #8B93A0; --accent: #E3A24A;
+    --demand: #52C98A; --supply: #E37270; --squeeze: #A594E0;
+    --candidate-bg: rgba(227,162,74,0.10); --candidate-border: #E3A24A;
+    --shadow: 0 1px 3px rgba(0,0,0,0.4); --error: #E37270;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text);
+    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  body { min-height: 100vh; padding: 28px 20px 60px; }
+  .wrap { max-width: 980px; margin: 0 auto; }
+  header.top { display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 14px; margin-bottom: 22px; }
+  h1 { font-size: 26px; font-weight: 700; margin: 0 0 4px; }
+  .subtitle { color: var(--text-muted); font-size: 13px; margin: 0; }
+  .meta { text-align: right; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--text-muted); }
+  .meta .session { color: var(--text); font-weight: 700; font-size: 13px; margin-top: 2px; }
+  .panel { background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+    box-shadow: var(--shadow); padding: 16px 18px; margin-bottom: 16px; }
+  .panel-title { font-size: 12px; font-weight: 600; margin-bottom: 10px; }
+  .walk-panel { border-left: 3px solid var(--supply); }
+  .walk-panel .panel-title { color: var(--supply); }
+  .walk-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 14px; align-items: end; margin-bottom: 12px; }
+  .field label { display: block; font-size: 11px; color: var(--text-muted); margin-bottom: 5px; }
+  .input-row { display: flex; align-items: center; gap: 6px; }
+  input[type="number"] { width: 80px; padding: 6px 8px; border-radius: 6px; border: 1px solid var(--border);
+    background: var(--surface-2); color: var(--text); font-family: 'JetBrains Mono', monospace; font-size: 13px; }
+  .unit { font-size: 12px; color: var(--text-muted); }
+  .walk-stat { font-family: 'JetBrains Mono', monospace; font-size: 12px; }
+  .walk-stat .big { font-family: 'Space Grotesk', sans-serif; font-size: 17px; font-weight: 700; display: block; }
+  .toggle-field { display: flex; align-items: center; gap: 8px; cursor: pointer; }
+  .toggle { width: 32px; height: 19px; border-radius: 10px; background: var(--border); position: relative; flex-shrink: 0; }
+  .toggle::after { content: ""; position: absolute; top: 2px; left: 2px; width: 15px; height: 15px; border-radius: 50%; background: var(--surface); transition: transform .15s; }
+  .toggle.on { background: var(--demand); }
+  .toggle.on::after { transform: translateX(13px); }
+  .toggle-label { font-size: 12px; }
+  .checklist { display: flex; flex-direction: column; gap: 6px; margin-bottom: 12px; }
+  .check-row { display: flex; align-items: center; gap: 8px; font-size: 12.5px; }
+  .check-row .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--border); flex-shrink: 0; }
+  .check-row.triggered .dot { background: var(--supply); }
+  .check-row.triggered { color: var(--supply); font-weight: 600; }
+  .walk-alert { display: none; background: rgba(184,74,70,0.10); border: 1px solid var(--supply); border-radius: 8px;
+    padding: 10px 12px; font-size: 12.5px; line-height: 1.5; }
+  .walk-alert.show { display: block; }
+  .walk-alert strong { color: var(--supply); }
+  input[type="text"], select { padding: 6px 8px; border-radius: 6px; border: 1px solid var(--border);
+    background: var(--surface-2); color: var(--text); font-family: 'JetBrains Mono', monospace; font-size: 13px; max-width: 100%; }
+  input[type="text"] { width: 100%; }
+  .form-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-bottom: 12px; }
+  .form-grid .wide { grid-column: span 2; }
+  .hint { font-size: 12px; color: var(--text-muted); line-height: 1.5; margin: 6px 0 0; }
+  .badge.leader { color: var(--demand); border-color: var(--demand); }
+  .stats-table { width: auto; min-width: 0; font-size: 12.5px; margin: 10px 0 14px; }
+  .stats-table td, .stats-table th { padding: 5px 16px 5px 0; border-bottom: 1px solid var(--border); white-space: nowrap; }
+  .j-table { min-width: 640px; font-size: 12px; }
+  .j-table td { padding: 6px 8px; }
+  button.small { padding: 3px 9px; font-size: 11px; }
+  button { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 13px; border-radius: 7px;
+    padding: 8px 16px; cursor: pointer; border: 1px solid var(--border); background: var(--surface-2); color: var(--text); }
+  button.primary { background: var(--accent); color: #1B140A; border: none; }
+  .rules-panel { font-size: 12px; color: var(--text-muted); line-height: 1.7; }
+  .rules-panel code { background: var(--surface-2); padding: 1px 5px; border-radius: 4px; color: var(--text); }
+  .table-scroll { overflow-x: auto; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); box-shadow: var(--shadow); }
+  table { width: 100%; min-width: 720px; border-collapse: collapse; font-family: 'JetBrains Mono', monospace; font-size: 13px; }
+  thead th { text-align: left; padding: 10px 12px; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 11px; color: var(--text-muted); border-bottom: 1px solid var(--border); white-space: nowrap; }
+  thead th.num { text-align: right; }
+  tbody td { padding: 10px 12px; border-bottom: 1px solid var(--border); white-space: nowrap; }
+  tbody tr:last-child td { border-bottom: none; }
+  td.num { text-align: right; }
+  td.ticker { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 14px; }
+  .pass { color: var(--demand); font-weight: 700; }
+  .fail { color: var(--text-muted); }
+  tr.candidate td { background: var(--candidate-bg); }
+  tr.candidate td.ticker { border-left: 3px solid var(--candidate-border); padding-left: 9px; }
+  .badge { display: inline-block; font-family: 'Space Grotesk', sans-serif; font-size: 10px; font-weight: 600;
+    color: var(--accent); border: 1px solid var(--accent); border-radius: 999px; padding: 1px 7px; margin-left: 8px; vertical-align: middle; }
+  .badge.hq { background: var(--accent); color: var(--surface); border-color: var(--accent); font-weight: 700; }
+  .badge.squeeze { color: var(--squeeze); border-color: var(--squeeze); }
+  .patterns-list { display: flex; flex-direction: column; gap: 8px; font-family: 'JetBrains Mono', monospace; font-size: 12.5px; }
+  .pattern-row { padding: 8px 10px; background: var(--surface-2); border-radius: 6px; }
+  .pattern-row .sym { font-family: 'Space Grotesk', sans-serif; font-weight: 700; margin-right: 8px; }
+  .topping { color: var(--supply); font-weight: 700; }
+  .error-banner { background: rgba(184,74,70,0.12); border: 1px solid var(--error); color: var(--error);
+    border-radius: 8px; padding: 12px 14px; font-size: 13px; margin-bottom: 16px; }
+  footer.note { margin-top: 16px; font-size: 12px; color: var(--text-muted); line-height: 1.5; }
+  @media (max-width: 560px) { h1 { font-size: 21px; } .meta { text-align: left; } header.top { flex-direction: column; align-items: flex-start; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <div>
+      <h1>Live Scan</h1>
+      <p class="subtitle">Real data from your own scanner backend — not a sample.</p>
+    </div>
+    <div class="meta">
+      <div id="updatedAt">not loaded yet</div>
+      <div class="session" id="sessionNote">—</div>
+      <button id="refreshBtn" style="margin-top:6px;">Refresh now</button>
+    </div>
+  </header>
+
+  <div id="errorBanner" class="error-banner" style="display:none;"></div>
+
+  <div class="panel walk-panel">
+    <div class="panel-title">Walk Away Check</div>
+    <div class="walk-grid">
+      <div class="field">
+        <label>Today's P&amp;L</label>
+        <div class="input-row"><span class="unit">$</span><input type="number" id="pnlInput" value="0" step="1"></div>
+      </div>
+      <div class="walk-stat">Peak today<span class="big" id="pnlPeak">$0</span></div>
+      <div class="walk-stat">Half of peak<span class="big" id="pnlHalf">$0</span></div>
+      <div class="walk-stat">Max loss<span class="big" id="maxLossDisplay">not set</span></div>
+      <div class="field">
+        <label>Today's theme</label>
+        <div class="toggle-field" id="bearishToggleField">
+          <div class="toggle" id="bearishToggle"></div>
+          <span class="toggle-label" id="bearishToggleLabel">Not bearish</span>
+        </div>
+      </div>
+    </div>
+    <div class="checklist" id="walkChecklist"></div>
+    <div class="walk-alert" id="walkAlert">
+      <strong>⚠ Walk-away condition met.</strong> The right time to walk away usually feels too soon — and once you've left, don't come back today.
+    </div>
+    <div style="display:flex; justify-content:flex-end; gap:8px; margin-top:10px;">
+      <button id="logDayBtn">Log today's result &amp; reset</button>
+    </div>
+    <div class="field" style="margin-top:10px; max-width:220px;">
+      <label>Manual max loss override</label>
+      <div class="input-row"><span class="unit">$</span><input type="number" id="maxLossOverride" placeholder="optional" step="1"></div>
+    </div>
+    <p class="subtitle" style="margin-top:8px;">Not connected to your broker — enter your own running P&amp;L. "Best window closed" and "No A+ setups" come from the live scan; the rest is tracked here in your browser only.</p>
+  </div>
+
+  <div class="panel" id="premarketPanel">
+    <div class="panel-title">Pre-Market Checklist</div>
+    <div class="form-grid">
+      <div class="field"><label>Market strength today (0&ndash;10)</label>
+        <input type="number" id="pmStrength" min="0" max="10" step="1" placeholder="0-10"></div>
+      <div class="field"><label>Rested, centered, ready to perform?</label>
+        <select id="pmReady"><option value="">&mdash;</option><option value="yes">Yes</option><option value="no">Not really</option></select></div>
+      <div class="field"><label>Market cycle</label>
+        <select id="pmCycle"><option value="hot">Hot</option><option value="cold">Cold</option></select></div>
+      <div class="field wide"><label>The obvious stock of the day</label>
+        <input type="text" id="pmObvious" placeholder="ticker and why"></div>
+      <div class="field wide"><label>When was the last massive squeeze?</label>
+        <input type="text" id="pmSqueeze" placeholder="ticker / date"></div>
+      <div class="field wide"><label>How I'll adjust my trading today</label>
+        <input type="text" id="pmAdjust" placeholder="e.g. smaller size, only A-quality"></div>
+    </div>
+    <p class="hint" id="pmHint"></p>
+  </div>
+
+  <div class="panel rules-panel" id="rulesPanel">Loading current rules from the server…</div>
+
+  <div class="table-scroll">
+    <table>
+      <thead>
+        <tr>
+          <th>Ticker</th><th class="num">Price</th><th class="num">% Chg</th><th class="num">RVOL</th>
+          <th class="num">Vol (M)</th><th>News</th><th class="num">Float (M)</th><th class="num">Pillars</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"><tr><td colspan="8" style="padding:20px; text-align:center; color:var(--text-muted);">Loading…</td></tr></tbody>
+    </table>
+  </div>
+
+  <div class="panel" style="margin-top:16px;">
+    <div class="panel-title">Entry / Exit Signals</div>
+    <div class="patterns-list" id="patternsList">No shortlisted names yet.</div>
+  </div>
+
+  <div class="panel" id="journalPanel">
+    <div class="panel-title">Trade Journal &amp; Weekly Report</div>
+    <div class="form-grid">
+      <div class="field"><label>Symbol</label><input type="text" id="jSymbol" placeholder="e.g. ABCD" style="text-transform:uppercase;"></div>
+      <div class="field"><label>Profit / loss $</label><input type="number" id="jPnl" step="0.01"></div>
+      <div class="field"><label>P/L cents per share</label><input type="number" id="jCents" step="0.1"></div>
+      <div class="field"><label>Meets 5 pillars?</label>
+        <select id="jPillars"><option value="">&mdash;</option><option value="yes">Yes</option><option value="no">No</option></select></div>
+      <div class="field"><label>Entry price</label><input type="number" id="jPrice" step="0.01"></div>
+      <div class="field"><label>% gain on the day</label><input type="number" id="jGain" step="0.1"></div>
+      <div class="field"><label>Relative volume</label><input type="number" id="jRvol" step="0.1"></div>
+      <div class="field"><label>Float (M)</label><input type="number" id="jFloat" step="0.1"></div>
+      <div class="field"><label>News?</label>
+        <select id="jNews"><option value="">&mdash;</option><option value="yes">Yes</option><option value="no">No</option></select></div>
+      <div class="field"><label>Time frame of trade</label>
+        <select id="jTimeframe"><option value="">&mdash;</option><option>10 sec</option><option>1 min</option><option>5 min</option></select></div>
+      <div class="field"><label>Candlestick pattern</label><input type="text" id="jPattern" placeholder="e.g. pullback"></div>
+      <div class="field"><label>Hold time</label><input type="text" id="jHold" placeholder="e.g. 90 sec"></div>
+      <div class="field wide"><label>Notes (what you saw, what to do better)</label><input type="text" id="jNotes"></div>
+    </div>
+    <div style="display:flex; gap:8px; flex-wrap:wrap;">
+      <button class="primary" id="jAddBtn">Add trade</button>
+      <button id="jExportBtn">Download as CSV</button>
+    </div>
+    <p class="hint">Typing a symbol that's in the scan fills in price, % gain, volume, float, news and pillars for you. Trades dated today also update Today's P&amp;L above. Saved in this browser only.</p>
+    <div id="weeklyReport"></div>
+    <div class="table-scroll" style="margin-top:10px;">
+      <table class="j-table">
+        <thead><tr><th>When (ET)</th><th>Symbol</th><th class="num">P/L $</th><th class="num">&cent;/sh</th><th>5 pillars</th><th>News</th><th>Frame</th><th>Pattern</th><th>Hold</th><th>Notes</th><th></th></tr></thead>
+        <tbody id="journalBody"><tr><td colspan="11" style="padding:14px; color:var(--text-muted);">No trades logged yet.</td></tr></tbody>
+      </table>
+    </div>
+  </div>
+
+  <footer class="note">
+    This page shows live output from your own scanner backend — the same rules as <code>scanner.py</code>, refreshed automatically. If you see an error above, the server likely needs its Alpaca keys set or <code>reference_cache.json</code> built. See README.md.
+  </footer>
+
+</div>
+
+<script>
+(function() {
+  var AUTO_REFRESH_MS = 30000;
+  var lastData = null;
+
+  function getEasternDateString() {
+    return new Intl.DateTimeFormat('en-CA', { timeZone: 'America/New_York' }).format(new Date());
+  }
+
+  // ---- Walk Away state (client-side only, same as the sample dashboard) ----
+  var walkState = { peak: 0, current: 0, bearish: false, date: null };
+  var walkHistory = [];
+
+  function loadWalkAwayState() {
+    var today = getEasternDateString();
+    try { walkHistory = JSON.parse(localStorage.getItem('walkAwayHistory') || '[]'); } catch (e) { walkHistory = []; }
+    try {
+      var t = JSON.parse(localStorage.getItem('walkAwayToday') || 'null');
+      walkState = (t && t.date === today) ? t : { peak: 0, current: 0, bearish: false, date: today };
+    } catch (e) { walkState = { peak: 0, current: 0, bearish: false, date: today }; }
+    try {
+      var override = localStorage.getItem('walkAwayMaxLossOverride');
+      if (override != null) document.getElementById('maxLossOverride').value = override;
+    } catch (e) {}
+  }
+  function saveWalkAwayToday() { try { localStorage.setItem('walkAwayToday', JSON.stringify(walkState)); } catch (e) {} }
+  function saveWalkAwayHistory() { try { localStorage.setItem('walkAwayHistory', JSON.stringify(walkHistory)); } catch (e) {} }
+  function computeAvgGain() {
+    var wins = walkHistory.filter(function(d) { return d.pnl > 0; }).map(function(d) { return d.pnl; });
+    return wins.length ? wins.reduce(function(a,b){return a+b;},0) / wins.length : null;
+  }
+  function getMaxLoss() {
+    var el = document.getElementById('maxLossOverride');
+    var override = el && el.value !== '' ? parseFloat(el.value) : null;
+    if (override != null && !isNaN(override)) return { value: override, source: 'manual' };
+    var avg = computeAvgGain();
+    return avg != null ? { value: avg, source: 'auto' } : { value: null, source: 'none' };
+  }
+
+  function updateWalkAwayPanel() {
+    document.getElementById('pnlPeak').textContent = '$' + walkState.peak.toFixed(0);
+    var half = walkState.peak / 2;
+    document.getElementById('pnlHalf').textContent = '$' + half.toFixed(0);
+
+    var maxLoss = getMaxLoss();
+    document.getElementById('maxLossDisplay').textContent = maxLoss.value != null
+      ? '$' + maxLoss.value.toFixed(0) + (maxLoss.source === 'auto' ? ' (auto)' : ' (manual)')
+      : 'not set yet';
+
+    var bestWindowClosed = lastData ? lastData.walk_away.best_window_closed : false;
+    var noAPlus = lastData ? lastData.walk_away.no_a_plus : false;
+    var lostHalfDay = walkState.peak > 0 && walkState.current <= half;
+    var hitMaxLoss = maxLoss.value != null && walkState.current <= -Math.abs(maxLoss.value);
+
+    var consec = consecutiveLossesToday();
+    var checks = [
+      { label: 'Lost half the day from peak', on: lostHalfDay },
+      { label: 'Three losing trades in a row today' + (consec > 0 ? ' (' + consec + ' so far)' : ''), on: consec >= 3 },
+      { label: 'Hit max loss' + (maxLoss.value != null ? ' ($' + maxLoss.value.toFixed(0) + ')' : ' (not set)'), on: hitMaxLoss },
+      { label: 'Best trading window has closed (past 9:30am ET)', on: bestWindowClosed },
+      { label: 'No A+ setups on the last scan', on: noAPlus },
+      { label: "Today's theme is bearish", on: walkState.bearish }
+    ];
+    document.getElementById('walkChecklist').innerHTML = checks.map(function(c) {
+      return '<div class="check-row' + (c.on ? ' triggered' : '') + '"><span class="dot"></span>' + c.label + '</div>';
+    }).join('');
+    document.getElementById('walkAlert').className = 'walk-alert' + (checks.some(function(c){return c.on;}) ? ' show' : '');
+  }
+
+  document.getElementById('pnlInput').addEventListener('input', function() {
+    var v = parseFloat(this.value);
+    walkState.current = isNaN(v) ? 0 : v;
+    if (walkState.current > walkState.peak) walkState.peak = walkState.current;
+    saveWalkAwayToday(); updateWalkAwayPanel();
+  });
+  document.getElementById('bearishToggleField').addEventListener('click', function() {
+    walkState.bearish = !walkState.bearish;
+    document.getElementById('bearishToggle').classList.toggle('on', walkState.bearish);
+    document.getElementById('bearishToggleLabel').textContent = walkState.bearish ? 'Bearish' : 'Not bearish';
+    saveWalkAwayToday(); updateWalkAwayPanel();
+  });
+  document.getElementById('maxLossOverride').addEventListener('input', function() {
+    try {
+      if (this.value === '') localStorage.removeItem('walkAwayMaxLossOverride');
+      else localStorage.setItem('walkAwayMaxLossOverride', this.value);
+    } catch (e) {}
+    updateWalkAwayPanel();
+  });
+  document.getElementById('logDayBtn').addEventListener('click', function() {
+    walkHistory.push({ date: walkState.date, pnl: walkState.current });
+    if (walkHistory.length > 60) walkHistory = walkHistory.slice(-60);
+    saveWalkAwayHistory();
+    walkState = { peak: 0, current: 0, bearish: false, date: getEasternDateString() };
+    document.getElementById('pnlInput').value = 0;
+    document.getElementById('bearishToggle').classList.remove('on');
+    document.getElementById('bearishToggleLabel').textContent = 'Not bearish';
+    saveWalkAwayToday(); updateWalkAwayPanel();
+  });
+
+  // ---- Pre-market checklist (saved per day in this browser) ----
+  var pmFields = { strength: 'pmStrength', ready: 'pmReady', obvious: 'pmObvious', adjust: 'pmAdjust' };
+  function loadPremarket() {
+    var today = getEasternDateString(), saved = null;
+    try { saved = JSON.parse(localStorage.getItem('premarketToday') || 'null'); } catch (e) {}
+    if (saved && saved.date === today) {
+      Object.keys(pmFields).forEach(function(k) { document.getElementById(pmFields[k]).value = saved[k] || ''; });
+    }
+    try {
+      document.getElementById('pmSqueeze').value = localStorage.getItem('lastSqueeze') || '';
+      document.getElementById('pmCycle').value = localStorage.getItem('marketCycle') || 'hot';
+    } catch (e) {}
+    updatePremarketHint();
+  }
+  function savePremarket() {
+    var o = { date: getEasternDateString() };
+    Object.keys(pmFields).forEach(function(k) { o[k] = document.getElementById(pmFields[k]).value; });
+    try {
+      localStorage.setItem('premarketToday', JSON.stringify(o));
+      localStorage.setItem('lastSqueeze', document.getElementById('pmSqueeze').value);
+      localStorage.setItem('marketCycle', document.getElementById('pmCycle').value);
+    } catch (e) {}
+    updatePremarketHint();
+  }
+  function updatePremarketHint() {
+    var cold = document.getElementById('pmCycle').value === 'cold';
+    var s = parseFloat(document.getElementById('pmStrength').value);
+    var msg = cold
+      ? 'Cold market: prefer float under 10M (the table marks floats above 10M as not passing), and sit tight when nothing is A-quality.'
+      : 'Hot market: float under 20M is fine. Be aggressive with quick entries, take profits fast, and don’t overstay.';
+    if (!isNaN(s) && s <= 3) msg += ' Market strength is weak — trade cautiously.';
+    if (!isNaN(s) && s >= 8) msg += ' Market strength is strong — the market is giving a green light.';
+    document.getElementById('pmHint').textContent = msg;
+  }
+  ['pmStrength','pmReady','pmObvious','pmAdjust','pmSqueeze','pmCycle'].forEach(function(id) {
+    var el = document.getElementById(id);
+    el.addEventListener('input', savePremarket);
+    el.addEventListener('change', function() { savePremarket(); if (id === 'pmCycle' && lastData) renderTable(lastData.results); });
+  });
+
+  // ---- Trade journal + weekly report (saved in this browser) ----
+  var journal = [];
+  function loadJournal() { try { journal = JSON.parse(localStorage.getItem('tradeJournal') || '[]'); } catch (e) { journal = []; } }
+  function saveJournal() { try { localStorage.setItem('tradeJournal', JSON.stringify(journal.slice(-500))); } catch (e) {} }
+
+  function weekStartString() {
+    var p = getEasternDateString().split('-').map(Number);
+    var dt = new Date(Date.UTC(p[0], p[1] - 1, p[2]));
+    dt.setUTCDate(dt.getUTCDate() - ((dt.getUTCDay() + 6) % 7));
+    return dt.toISOString().slice(0, 10);
+  }
+  function consecutiveLossesToday() {
+    var today = getEasternDateString(), n = 0;
+    var t = journal.filter(function(x) { return x.date === today; });
+    for (var i = t.length - 1; i >= 0 && t[i].pnl < 0; i--) n++;
+    return n;
+  }
+  function avg(a) { return a.length ? a.reduce(function(x, y) { return x + y; }, 0) / a.length : null; }
+  function money(v) { return v == null ? '—' : (v < 0 ? '-$' : '$') + Math.abs(v).toFixed(2); }
+  function cents(v) { return v == null ? '—' : v.toFixed(1) + '¢'; }
+  function statsFor(trades) {
+    var wins = trades.filter(function(t) { return t.pnl > 0; });
+    var losses = trades.filter(function(t) { return t.pnl < 0; });
+    var aw = avg(wins.map(function(t) { return t.pnl; })), al = avg(losses.map(function(t) { return t.pnl; }));
+    return {
+      n: trades.length,
+      avgWin: aw, avgLoss: al,
+      avgWinC: avg(wins.filter(function(t) { return t.cents != null; }).map(function(t) { return t.cents; })),
+      avgLossC: avg(losses.filter(function(t) { return t.cents != null; }).map(function(t) { return t.cents; })),
+      accuracy: trades.length ? wins.length / trades.length * 100 : null,
+      total: trades.reduce(function(s, t) { return s + t.pnl; }, 0),
+      ratio: (aw != null && al != null && al !== 0) ? aw / Math.abs(al) : null
+    };
+  }
+  function renderWeekly() {
+    var ws = weekStartString();
+    var wk = statsFor(journal.filter(function(t) { return t.date >= ws; }));
+    var all = statsFor(journal);
+    function row(label, f) { return '<tr><td>' + label + '</td><td>' + f(wk) + '</td><td>' + f(all) + '</td></tr>'; }
+    document.getElementById('weeklyReport').innerHTML =
+      '<table class="stats-table"><thead><tr><th></th><th>This week</th><th>All logged</th></tr></thead><tbody>' +
+      row('Trades', function(s) { return s.n; }) +
+      row('Average winner', function(s) { return money(s.avgWin); }) +
+      row('Avg winner in cents', function(s) { return cents(s.avgWinC); }) +
+      row('Average loser', function(s) { return money(s.avgLoss); }) +
+      row('Avg loser in cents', function(s) { return cents(s.avgLossC); }) +
+      row('Total accuracy', function(s) { return s.accuracy == null ? '—' : s.accuracy.toFixed(0) + '%'; }) +
+      row('Profit / loss ratio', function(s) { return s.ratio == null ? '—' : s.ratio.toFixed(2); }) +
+      row('Total profit (loss)', function(s) { return money(s.total); }) +
+      '</tbody></table>';
+  }
+  function renderJournal() {
+    var tb = document.getElementById('journalBody');
+    if (!journal.length) {
+      tb.innerHTML = '<tr><td colspan="11" style="padding:14px; color:var(--text-muted);">No trades logged yet.</td></tr>';
+    } else {
+      tb.innerHTML = journal.slice(-30).reverse().map(function(t) {
+        var when = '';
+        try { when = new Date(t.at).toLocaleString('en-US', {timeZone:'America/New_York', month:'short', day:'numeric', hour:'numeric', minute:'2-digit'}); } catch (e) {}
+        return '<tr><td>' + esc(when) + '</td><td>' + esc(t.symbol) + '</td>' +
+          '<td class="num ' + (t.pnl > 0 ? 'pass' : (t.pnl < 0 ? 'fail' : '')) + '">' + money(t.pnl) + '</td>' +
+          '<td class="num">' + (t.cents == null ? '—' : t.cents) + '</td>' +
+          '<td>' + esc(t.pillars || '—') + '</td><td>' + esc(t.news || '—') + '</td>' +
+          '<td>' + esc(t.timeframe || '—') + '</td><td>' + esc(t.pattern || '—') + '</td>' +
+          '<td>' + esc(t.hold || '—') + '</td><td style="white-space:normal; min-width:140px;">' + esc(t.notes || '') + '</td>' +
+          '<td><button class="small" data-del="' + t.id + '">Delete</button></td></tr>';
+      }).join('');
+    }
+    renderWeekly();
+  }
+  function numOrNull(id) { var v = document.getElementById(id).value; if (v === '') return null; var n = parseFloat(v); return isNaN(n) ? null : n; }
+  function syncPnlInput() {
+    document.getElementById('pnlInput').value = Math.round(walkState.current * 100) / 100;
+    saveWalkAwayToday(); updateWalkAwayPanel();
+  }
+
+  document.getElementById('jSymbol').addEventListener('change', function() {
+    var sym = this.value.trim().toUpperCase();
+    this.value = sym;
+    if (!sym || !lastData) return;
+    var r = lastData.results.filter(function(x) { return x.symbol === sym; })[0];
+    if (!r) return;
+    document.getElementById('jPrice').value = r.price.toFixed(2);
+    document.getElementById('jGain').value = r.change_pct.toFixed(1);
+    document.getElementById('jRvol').value = r.rvol.toFixed(1);
+    document.getElementById('jFloat').value = r.shares_out_m.toFixed(1);
+    document.getElementById('jPillars').value = r.is_candidate ? 'yes' : 'no';
+    if (r.news_checked) document.getElementById('jNews').value = r.pass_news ? 'yes' : 'no';
+  });
+  document.getElementById('jAddBtn').addEventListener('click', function() {
+    var sym = document.getElementById('jSymbol').value.trim().toUpperCase();
+    var pnl = numOrNull('jPnl');
+    if (!sym || pnl == null) { alert('Enter a symbol and a profit/loss amount first.'); return; }
+    var t = {
+      id: Date.now(), at: new Date().toISOString(), date: getEasternDateString(), symbol: sym, pnl: pnl,
+      cents: numOrNull('jCents'), pillars: document.getElementById('jPillars').value,
+      price: numOrNull('jPrice'), gain: numOrNull('jGain'), rvol: numOrNull('jRvol'), float: numOrNull('jFloat'),
+      news: document.getElementById('jNews').value, timeframe: document.getElementById('jTimeframe').value,
+      pattern: document.getElementById('jPattern').value, hold: document.getElementById('jHold').value,
+      notes: document.getElementById('jNotes').value
+    };
+    journal.push(t); saveJournal();
+    walkState.current += pnl;
+    if (walkState.current > walkState.peak) walkState.peak = walkState.current;
+    syncPnlInput();
+    ['jSymbol','jPnl','jCents','jPillars','jPrice','jGain','jRvol','jFloat','jNews','jTimeframe','jPattern','jHold','jNotes']
+      .forEach(function(id) { document.getElementById(id).value = ''; });
+    renderJournal();
+  });
+  document.getElementById('journalBody').addEventListener('click', function(e) {
+    var id = e.target && e.target.getAttribute && e.target.getAttribute('data-del');
+    if (!id) return;
+    var t = journal.filter(function(x) { return String(x.id) === id; })[0];
+    if (!t) return;
+    journal = journal.filter(function(x) { return x !== t; }); saveJournal();
+    if (t.date === getEasternDateString()) { walkState.current -= t.pnl; syncPnlInput(); }
+    renderJournal();
+  });
+  document.getElementById('jExportBtn').addEventListener('click', function() {
+    var cols = ['at','date','symbol','pnl','cents','pillars','price','gain','rvol','float','news','timeframe','pattern','hold','notes'];
+    var lines = [cols.join(',')].concat(journal.map(function(t) {
+      return cols.map(function(c) { var v = t[c] == null ? '' : String(t[c]); return '"' + v.replace(/"/g, '""') + '"'; }).join(',');
+    }));
+    var blob = new Blob([lines.join('\n')], { type: 'text/csv' });
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob); a.download = 'trade-journal.csv';
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  });
+
+  // ---- Live data ----
+  function esc(t) {
+    return String(t == null ? '' : t).replace(/[&<>"']/g, function(c) {
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
+  }
+  function newsLine(r) {
+    if (!r.news_checked) return '';
+    if (r.news_error) return '<tr class="newsrow"><td colspan="8" style="padding:2px 12px 10px; color:var(--text-muted); font-size:12px;">News lookup failed for this stock.</td></tr>';
+    if (!r.news_items || !r.news_items.length) return '<tr class="newsrow"><td colspan="8" style="padding:2px 12px 10px; color:var(--text-muted); font-size:12px;">No news in the last 24 hours.</td></tr>';
+    var n = r.news_items[0];
+    var when = '';
+    if (n.time) { try { when = new Date(n.time).toLocaleString('en-US', {timeZone:'America/New_York', month:'short', day:'numeric', hour:'numeric', minute:'2-digit'}) + ' ET'; } catch (e) {} }
+    var link = /^https?:\/\//.test(n.url) ? '<a href="' + esc(n.url) + '" target="_blank" rel="noopener" style="color:inherit;">' + esc(n.headline) + '</a>' : esc(n.headline);
+    return '<tr class="newsrow"><td colspan="8" style="padding:2px 12px 10px; font-size:12px; color:var(--text-muted);">\u25B8 ' + link +
+           ' <span style="opacity:.7;">(' + esc(n.source) + (when ? ', ' + when : '') + ')</span></td></tr>';
+  }
+
+  function renderTable(results) {
+    var tbody = document.getElementById('tbody');
+    if (!results.length) {
+      tbody.innerHTML = '<tr><td colspan="8" style="padding:20px; text-align:center; color:var(--text-muted);">No symbols scored this run.</td></tr>';
+      return;
+    }
+    tbody.innerHTML = results.slice(0, 40).map(function(r) {
+      var badge = '';
+      if (r.is_highest_quality) badge = '<span class="badge hq">\u2605 A+ Setup</span>';
+      else if (r.is_candidate) badge = '<span class="badge">Candidate</span>';
+      else if (r.squeeze_watch) badge = '<span class="badge squeeze">Squeeze watch</span>';
+      if (r.leader_rank) badge += '<span class="badge leader">Leader #' + r.leader_rank + '</span>';
+      var rowClass = (r.is_candidate || r.is_highest_quality) ? ' class="candidate"' : '';
+      var cold = document.getElementById('pmCycle').value === 'cold';
+      var floatOk = r.pass_float && !(cold && r.shares_out_m > 10);
+      return '<tr' + rowClass + '>' +
+        '<td class="ticker">' + r.symbol + badge + '</td>' +
+        '<td class="num">$' + r.price.toFixed(2) + '</td>' +
+        '<td class="num ' + (r.pass_up ? 'pass' : 'fail') + '">' + (r.change_pct >= 0 ? '+' : '') + r.change_pct.toFixed(1) + '%</td>' +
+        '<td class="num ' + (r.pass_rvol ? 'pass' : 'fail') + '">' + r.rvol.toFixed(1) + 'x</td>' +
+        '<td class="num">' + (r.volume_today / 1e6).toFixed(1) + (r.crossed_volume_watch ? ' <span class="pass">\u2713</span>' : '') + '</td>' +
+        '<td class="' + (r.pass_news ? 'pass' : (r.news_checked ? 'fail' : '')) + '">' + (r.pass_news ? 'Yes' : (r.news_checked ? 'No' : '\u2014')) + '</td>' +
+        '<td class="num ' + (floatOk ? 'pass' : 'fail') + '">' + r.shares_out_m.toFixed(1) + '</td>' +
+        '<td class="num">' + r.pillars_met + '/5</td>' +
+      '</tr>' + newsLine(r);
+    }).join('');
+  }
+
+  function renderPatterns(patterns) {
+    var el = document.getElementById('patternsList');
+    var symbols = Object.keys(patterns || {});
+    if (!symbols.length) { el.textContent = 'No shortlisted names yet.'; return; }
+    el.innerHTML = symbols.map(function(sym) {
+      var p = patterns[sym];
+      var text;
+      if (p.status === 'no_data') text = 'no recent bar data';
+      else if (p.status === 'trending') text = 'still trending, no pullback formed yet';
+      else if (p.status === 'breakout') {
+        text = 'BREAKOUT entry $' + p.entry.entry_price.toFixed(2) + ', support $' + p.new_support.toFixed(2) +
+               ', risk $' + p.entry.risk.toFixed(2) + ' (' + p.entry.risk_pct.toFixed(1) + '%)' +
+               ', 2:1 target $' + p.entry.target_2to1.toFixed(2);
+      } else {
+        text = 'pulled back to $' + p.new_support.toFixed(2) + ', watching $' + p.swing_high.toFixed(2) + ' to break';
+      }
+      if (p.topping_tail) text += ' <span class="topping">⚠ TOPPING TAIL</span>';
+      if (p.macd_cross_below === true) text += ' <span class="topping">⚠ MACD crossed below signal</span>';
+      if (p.volume_fading === true) text += ' <span class="topping">⚠ volume fading</span>';
+      return '<div class="pattern-row"><span class="sym">' + sym + '</span>' + text + '</div>';
+    }).join('');
+  }
+
+  function renderRules(data) {
+    var win = data.highest_quality_window;
+    document.getElementById('rulesPanel').innerHTML =
+      'Rules currently running on the server (edit <code>pillars_config.py</code> and redeploy to change these) \u2014 ' +
+      'volume-to-watch: <code>' + data.volume_to_watch.toLocaleString() + '</code> shares (not a requirement), ' +
+      'A+ window: <code>' + Math.floor(win[0]/60) + ':00\u2013' + Math.floor(win[1]/60) + ':00 ET</code>, ' +
+      'entry confirmation: <code>' + (data.confirm_on_close ? 'candle close' : 'intrabar') + '</code>.';
+  }
+
+  function showError(msg) {
+    var el = document.getElementById('errorBanner');
+    el.textContent = msg;
+    el.style.display = 'block';
+  }
+  function hideError() {
+    document.getElementById('errorBanner').style.display = 'none';
+  }
+
+  function fetchScan() {
+    fetch('/api/scan')
+      .then(function(res) { return res.json().then(function(body) { return { ok: res.ok, body: body }; }); })
+      .then(function(r) {
+        if (!r.ok || r.body.error) {
+          showError(r.body.error || 'Unknown server error.');
+          return;
+        }
+        hideError();
+        lastData = r.body;
+        document.getElementById('updatedAt').textContent = 'Updated ' + new Date(r.body.generated_at).toLocaleTimeString();
+        document.getElementById('sessionNote').textContent = r.body.session_note;
+        renderTable(r.body.results);
+        renderPatterns(r.body.patterns);
+        renderRules(r.body);
+        updateWalkAwayPanel();
+      })
+      .catch(function(e) { showError('Could not reach the server: ' + e.message); });
+  }
+
+  document.getElementById('refreshBtn').addEventListener('click', fetchScan);
+
+  loadWalkAwayState();
+  document.getElementById('pnlInput').value = walkState.current;
+  document.getElementById('bearishToggle').classList.toggle('on', walkState.bearish);
+  document.getElementById('bearishToggleLabel').textContent = walkState.bearish ? 'Bearish' : 'Not bearish';
+
+  loadJournal();
+  loadPremarket();
+  renderJournal();
+  updateWalkAwayPanel();
+
+  fetchScan();
+  setInterval(fetchScan, AUTO_REFRESH_MS);
+})();
+</script>
+</body>
+</html>
